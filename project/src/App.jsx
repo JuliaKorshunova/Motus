@@ -39,7 +39,7 @@ function App() {
                   {/* Указание маршрута по умолчанию с path="/" */}
                 <Route path="/" element={<HomeAuthorized />} />
                 <Route path="/auth" element={<Auth />} />
-                {/* <Route path="/reg" element={<PageRegister />} /> */}
+                <Route path="/reg" element={<PageRegister />} />
                 <Route path="/podcastEmpty" element={<Release />} />
                 <Route path="/release" element={<ThePageOfPodcast />} />
                 <Route path="/podcaster" element={<PodcasterCheck/>} />
