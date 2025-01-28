@@ -1,0 +1,33 @@
+.tab-buttons {
+    margin: 20px 0;
+}
+
+.tab-buttons button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: lightgray;
+    border: none;
+    cursor: pointer;
+}
+
+.tab-buttons button:hover {
+    background-color: darkgray; /* Цвет при наведении */
+}
+
+
+.obedinen11{/* Frame 6 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 299px;
+height: 40px;
+left: 310px;
+top: 240px;
+z-index: 1999;
+}

@@ -1,0 +1,60 @@
+.container {
+    position: relative; /* Убедитесь, что это установлено */
+    /* padding: 30px;     Отступы вокруг контейнера */
+    /* margin-left: 30px;  */
+    overflow-x: hidden; 
+}
+
+.obedinen {
+    justify-content: flex-end; /* Выравниваем элементы по правому краю */
+    position: absolute;
+    display: grid; /* Включаем CSS Grid */
+    grid-template-columns: 1fr; /* Одна колонка */
+    gap: 20px; /* Устанавливаем расстояние между элементами */
+    right: 30px; /* Отступ от правого края */
+    top: 19.875%; 
+    overflow-x: hidden;
+}
+
+.obedinen1{
+   
+    display: flex;            /* Включаем Flexbox */
+    flex-direction: column;  /* Располагаем элементы в столбец */
+    gap: 30px;   
+    overflow-x: hidden;
+
+}
+
+.o{
+    right: 30px;
+    /* overflow-x: hidden; */
+}
+
+@media (max-width: 1439px) {
+    .obedinen {
+        justify-content: flex-end; /* Выравниваем элементы по правому краю */
+        position: absolute;
+        display: grid; /* Включаем CSS Grid */
+        grid-template-columns: 1fr; /* Одна колонка */
+        gap: 20px; /* Устанавливаем расстояние между элементами */
+        right: 30px; /* Отступ от правого края */
+        top: 19.875%; 
+    
+        overflow-x: hidden;
+    }
+
+}
+@media (max-width: 1279px) {
+    .obedinen {
+        justify-content: flex-start;
+        position: absolute;
+        display: grid; /* Включаем CSS Grid */
+        grid-template-columns: 1fr; /* Одна колонка */
+        gap: 16px; /* Устанавливаем расстояние между элементами */
+        left: 15px; /* Отступ от правого края */
+        top: 107px; 
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
+}

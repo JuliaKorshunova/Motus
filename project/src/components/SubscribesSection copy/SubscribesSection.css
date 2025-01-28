@@ -1,0 +1,10 @@
+
+.card-container {
+    display: grid; /* Используем Grid для расположения карточек */
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    gap: 20px; /* Устанавливаем расстояние между элементами */
+ 
+    
+    margin-left: 280px;
+ 
+}

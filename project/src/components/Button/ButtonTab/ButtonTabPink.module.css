@@ -1,0 +1,162 @@
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('src/fonts/Inter-Medium.otf') format('truetype');
+  }
+
+
+
+
+
+.defmainbtn{
+    /* btn */
+  
+
+
+  color: #FFFFFF;
+  position: relative;
+  /* white-space: nowrap; */
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6.75px 13.5px;
+  gap: 6.75px;
+
+
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.9px;
+  line-height: 142%;
+  
+
+
+  left: 0px;
+  top: 0px;
+  background: #6D6D6D;
+  border-radius: 13px;
+  border: 0;
+   }
+
+
+
+
+   .defmainbtn:hover {
+    /* Стили для hover-эффекта */
+  
+    
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.9px;
+  line-height: 142%;
+    position: relative;
+    /* white-space: nowrap; */
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6.75px 13.5px;
+    gap: 6.75px;
+    color: #000000;
+    left: 0px;
+    top: 0px;
+    background: #aae09d;
+    border-radius: 13px;
+    border: 0;
+  }
+ .defmainbtn:active{
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 6.75px 13.5px;
+gap: 6.75px;
+border: 0px;
+
+left: 0px;
+top: 0px;
+
+  
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 18.9px;
+line-height: 142%;
+  color: #000000;
+  
+  white-space: nowrap;
+/* white */
+background: #FFE5F1;
+border-radius: 13px;
+
+}
+
+
+
+.defmainbtndisabled{
+  /* btn */
+/* Frame 5 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 6.75px 13.5px;
+gap: 6.75px;
+border: 0px;
+/* width: 196px;
+height: 40px; */
+left: 0px;
+top: 0px;
+
+  
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 18.9px;
+line-height: 142%;
+color: #ffffff;
+
+white-space: nowrap;
+/* white */
+background: #FF99C7;
+border-radius: 13px;
+
+}
+
+.activegreen{
+
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.9px;
+  line-height: 142%;
+  color: #ffffff;
+  position: relative;
+  /* white-space: nowrap; */
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6.75px 13.5px;
+  gap: 6.75px;
+  left: 0px;
+  top: 0px;
+  background: #FF0074;
+  border-radius: 13px;
+  border: 0;
+}

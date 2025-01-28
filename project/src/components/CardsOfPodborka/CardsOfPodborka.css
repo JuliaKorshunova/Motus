@@ -1,0 +1,398 @@
+._image_of_podborka{
+    /* image 293 */
+
+position: absolute;
+width: 264px;
+height: 264px;
+left: 3px;
+top: 3px;
+border-radius: 39px;
+
+}
+
+.textMain {
+    height: auto;
+   
+}
+._card_of_podborka{
+    background: white; /* Цвет фона карточки */
+    width: 100%; /* Занимает всю ширину доступного пространства */
+    display: flex; /* Используем Flexbox для размещения элементов */
+    flex-direction: column; /* Вертикальное направление размещения */
+    overflow: hidden; /* Скрываем лишние части */
+
+    min-width: 1100px;  
+    height: 270px; 
+    position: relative; /* Установите относительное позиционирование для секции */
+    gap: 20px; /* Устанавливаем расстояние между элементами */
+
+}
+
+.btnn1_of_podborka{
+/* btn */
+
+position: absolute;
+width: 110px;
+height: 40px;
+left: 280px;
+top: 210px;
+
+}
+
+.icon_of_podborka{
+    /* Ellipse 196 */
+
+position: absolute;
+left: 410px;
+top: 210px;
+
+
+}
+
+.text_for_pod{
+/* 123 подписчика */
+
+position: absolute;
+left: 460px;
+top: 232px;
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 126%;
+/* or 15px */
+
+/* black */
+color: #0E0E0E;
+
+
+}
+.name_of_author_podborka{
+    /* Альфа-Банк */
+
+position: absolute;
+left: 460px;
+top: 212px;
+
+
+/* platform/txt */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+/* black */
+color: #0E0E0E;
+
+
+}
+
+.text__for__name_pod{
+
+        position: relative;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 126%;
+        color: #0E0E0E;
+        order: 2;
+        top: 0px;
+    
+}
+.text__for__name_release {
+    position: relative;
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 124%;
+    color: #0E0E0E;
+    order: 1;
+    top: 0px;
+}
+.container8786 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    position: relative;
+    order: 3;
+    top: 0px;
+}
+.text__for__description__release {
+    position: relative;
+    top: 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 126%;
+    color: #0E0E0E;
+    order: 4;
+}
+._text__time{
+    width: auto;
+}
+.content-wrapper{
+    width: calc(100vw - 600px);
+}
+@media (min-width: 1279px) {
+    .au{
+        display: none;}
+    .container87867{
+        display: none;
+    }
+    ._text__date2{
+        display: none;
+    }
+}
+
+@media (max-width: 1439px) {
+
+  
+    /*width: 228px !important; */
+  
+    ._card_of_podborka {
+  
+      min-width: 972px ;
+      height: 270px ;
+
+  
+  }
+  .home_for_card_container {
+
+    min-width: 500px;
+}
+   
+  }
+
+  @media (max-width: 1279px) {
+    .container8786{
+        display: none;
+    }
+    ._whiteblock{
+        justify-content: space-between;
+        flex-direction: row; /* Убеждаемся, что на мобилках - колонка */
+        border-radius: 20px;
+    }
+   /*  Изменяем порядок элементов с помощью свойства `order` */
+
+    ._image_of_podborka {
+        position: relative;
+         order: 1;
+         left: 0px;
+         right: 0px;
+         top: 0px;
+         margin-right: -10px;
+         margin-top: 10px;
+     }
+     .text__for__name_release {
+        position: relative;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        order: 1;
+        white-space: nowrap;
+          /* order: 2; */
+      }
+     .text__for__description__release {
+        display: none;
+        position: relative;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+      
+        /* order: 3; */
+    }
+    .container87867 {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        position: relative;
+        left: 8px;
+        margin-top: 0px;
+        right: 0px;
+        top: 0px;
+        padding: 0;
+        height: auto;
+        margin-bottom: 0px;
+        text-align: center;
+        margin-top: -4px;
+         order: 3;
+     }
+     ._text__date2{
+        height: auto;
+        /* mobile/txt */
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 134%;
+        /* identical to box height, or 16px */
+        margin-left: 8px;
+        margin-top: 0px;
+        top: 0px;
+        /* subt */
+        margin-top: -4px;
+        color: #6D6D6D;
+        white-space: nowrap;
+        order: 4;
+
+
+     }
+    .btnn1_of_podborka {
+        position: relative;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        order: 6;
+         /* order: 5; */
+     }
+      .author_of_podbrka {
+        position: relative;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        margin-left: 8px;
+        margin-top: 4px;
+        order: 5;
+        /* order: 6; */
+    }
+    .icon_of_podborka{
+        position: relative;
+        height: 24px;
+        width: 24px;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+    }
+    .name_of_author_podborka {
+        position: relative;
+        left: 0px;
+        top: 0px;
+  
+        font-size: 12px;
+      
+    }
+    .btnn1_of_podborka{
+        margin-top: 8px;
+        margin-left: 8px;
+    }
+    .col2{
+        display: flex;
+        flex-direction: column;
+    }
+    .text_for_pod{
+        position: relative;
+        left: 0px;
+        top: 0px;
+  
+        font-size: 8px;
+    }
+    .text__for__name_release{
+        position: relative;
+        left: 8px;
+        right: 0px;
+        top: 11px;
+        font-family: 'Stolzl';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 112%;
+        order: 1;
+        color: #0E0E0E;
+
+
+    }
+
+    .text__for__name_pod{
+        position: relative;
+        left: 8px;
+        right: 0px;
+        white-space: nowrap;
+        top: 0px;
+        margin-top: 0px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        padding: 0;
+        font-size: 12px;
+        line-height: 134%;
+        color: #0E0E0E;
+        margin-top: 1px;
+        order: 2;
+
+
+    }
+    ._text__time{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 134%;
+        /* or 16px */
+        margin-bottom: 0px;
+        /* black */
+        width: auto;
+        color: #0E0E0E;
+        white-space: nowrap;
+
+
+    }
+    .text__for__description__release{
+        position: relative;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+    }
+    ._image_of_podborka{
+  
+    width: 100vw;
+    height: 144px;
+    border-radius: 20px;
+    
+    }
+    ._card_of_podborka{
+        min-width: 100px;
+        height: 144px;
+    }
+    .imgpodborka{
+        height: 124px;
+        width: 124px;
+        border-radius: 20px;
+    }
+    ._image_of_podborka {
+        width: 144px;
+        height: 144px;
+        border-radius: 20px;
+    }
+.content-wrapper{
+    display: flex;
+   flex-direction: column;
+}
+
+.testt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.st{
+    display: none;
+}
+
+.au{
+    width: 16px;
+    height: 16px;
+}
+
+  }

@@ -1,0 +1,145 @@
+.groupforpodcastercheck{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 200px;
+margin-left: 0px;
+gap: 10px;
+position: absolute;
+}
+.checkofprofile{
+    position: absolute;
+
+/* platform/txt */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+margin-left: 60px;
+top: 195px;
+/* main */
+color: #FF0074;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+}
+
+.profilepodcastercheck{
+  /* Профиль */
+  
+  position: relative;
+  
+  height: 60px;
+  width: 21.18%; /* 305px */
+  
+  margin-top: 0px;
+  /* platform/h1 */
+  font-family: 'Stolzl';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  color: #000000;
+  margin-bottom: 0px;
+  
+  }
+
+.rowforcheking{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+.bgforbtnpodcaster{
+    width: auto;
+    height: 40px;
+    
+    
+    background: #FF0074;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+     } 
+
+     @media (min-width: 1280px)   {
+        .imgpod{
+            display: none;
+        }
+     }
+
+
+
+     @media (max-width: 1439px) {
+
+        .checkofprofile{
+        
+            top: 165px;
+            margin-left: 80px;
+           
+          }
+    
+          .groupforpodcastercheck{
+            top: 170px;
+            margin-left: 20px;
+           
+          }
+          
+
+     }
+
+@media (max-width: 1279px) {
+    .countofsubpodcaster {
+      display: none;
+    }
+
+    .personforcheck{
+    
+  
+      display: none;
+    
+    }
+      .bgforbtnpodcaster{
+        height: 24px;
+      }
+  
+      .checkofprofile{
+        font-size: 12px;
+        margin-top: 0px;
+        margin-left: 50px;
+      }
+
+      .groupforpodcastercheck{
+        top: 160px;
+        margin-left: 15px;
+      }
+
+      .profilepodcastercheck{
+        /* Профиль */
+        
+        position: relative;
+        
+        height: 40px;
+        width: 21.18%; /* 305px */
+        
+        margin-top: 0px;
+        /* platform/h1 */
+        font-family: 'Stolzl';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 60px;
+        color: #000000;
+        margin-bottom: 0px;
+        margin-top: -20px;
+      
+        
+        }
+  }

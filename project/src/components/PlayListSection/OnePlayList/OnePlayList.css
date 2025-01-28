@@ -1,0 +1,653 @@
+@font-face {
+    font-family: 'Inter-MediumItalic';
+    src: url('src/fonts/Inter-MediumItalic.otf') format('truetype');
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url('src/fonts/SF-Pro-Display-Light.otf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Stolzl';
+    src: url('src/fonts/stolzl_regular.otf') format('truetype');
+  }
+
+.bottomob{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  /* gap:10px; */
+
+}
+.obedinenie1ForPlayLists{
+  display: grid; /* Включаем Grid */
+  grid-template-columns: 1fr; /* Одна колонка */
+  gap: 31px; 
+  position: relative;
+/* left: 21.25%;  */
+/* min-width: 76.39%; */
+width: 76vw;
+height: 270px;
+margin-bottom: 30px;
+min-width: 900px;
+left: 280px;
+
+}
+.sForPlayList {
+position: relative;
+
+height: auto;
+
+ /* 260px */
+
+}
+.profile{
+  /* Профиль */
+  
+  position: relative;
+  
+  height: 60px;
+  width: 21.18%; /* 305px */
+  
+  margin-top: 0px;
+  /* platform/h1 */
+  font-family: 'Stolzl';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  color: #000000;
+  margin-bottom: 0px;
+  
+  }
+
+.whiteblock1playlist{
+    position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* white */
+background: #FFFFFF;
+border-radius: 20px;
+}
+
+.blackblock{
+
+/* profile */
+/* Rectangle 11 */
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* main */
+background: #000000;
+
+}
+
+.thef1playlist{
+    /* названиеплейлиста */
+
+/* Мои любимые блогеры */
+
+position: absolute;
+width: 486px;
+height: 25px;
+left: 20px;
+top: 20px;
+margin-top: 0px;
+margin-bottom: 0px;
+/* platform/h2 */
+font-family: 'Stolzl';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 124%;
+/* identical to box height, or 25px */
+
+/* black */
+color: #0E0E0E;
+
+
+
+}
+
+.minitextplaylist{
+
+    gap: 20px;
+   margin-top: 54px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    margin-left: 20px;
+
+margin-bottom: 0px;
+}
+
+
+.thesec1playlist{/* По моим видео ты станешь блогером и начнешь зарабатывать. Подпишись🤟🏻 */
+
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+margin-top: 0px;
+/* black */
+color: #0E0E0E;
+margin-bottom: 0px;
+
+
+ }
+
+ .des1playlist{
+    /* vk.com/user */
+/* Нет описания */
+
+position: absolute;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+font-family: 'SF Pro Display';
+/* subt */
+color: #6D6D6D;
+margin-top: 9px;
+margin-left: 20px;
+
+ }
+ .des2playlist{
+  /* vk.com/user */
+/* Нет описания */
+/* 
+position: absolute; */
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+font-family: 'SF Pro Display';
+/* subt */
+color: #6D6D6D;
+
+
+}
+
+
+
+ .button2{
+        top:2.5%;
+ }
+
+ .groupofbtn1ForPlayList{
+
+  padding: 0px;
+  gap: 10px; /* 10px в процентах, если нужно, можно пересчитать */
+
+  
+  left: 1.39%; 
+  top: 200px; /* 200px */
+  /* Frame 8796 */
+/* width: 160px; */
+/* Auto layout */
+width: auto;
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+position: absolute;
+
+height: 40px; }
+
+
+
+  .bgforbtnnn{
+    width: 110px;
+    height: 40px;
+    
+    
+    background: #FF0074;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 0px;
+
+ } 
+ .bgforbtnn2{
+    width: 196px;
+    height: 40px;
+    
+    
+    background: #FF0074;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+     } 
+ 
+ .bgforbtn2{
+  width: 196px;
+  height: 40px;
+  
+  
+  background: #FF99C7;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  
+   } 
+
+
+   .slushatdis{
+    display: flex;
+flex-direction: row;
+align-items: center;
+width: 800px;
+   }
+  
+   .pocastdis p {
+
+    white-space: nowrap;
+    /* Чтобы стать подкастером необходимо набрать 100 подписчиков */
+
+width: auto;
+height: auto;
+display: flex;
+flex-direction: row;
+align-items: center;
+/* margin-right: 242px; */
+
+/* platform/txt */
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+/* main */
+color: #FF0074;
+
+
+/* Inside auto layout */
+
+order: 2;
+flex-grow: 0;
+margin-left: 10px;
+
+}
+
+.picturessForPlayList{
+  /* Frame 10 */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+ 
+  right:297px;
+  position: absolute;
+  width: 241px;
+  height: 19px;
+  /* right: 350px; */
+  top: 122px;
+
+}
+
+.picturessoneForPlayList {
+/* image 293 */
+white-space: nowrap;
+
+
+position: relative;
+width: 264px;
+height: 264px;
+/* right: -60px; */
+top: 3px;
+border-radius: 40px;
+z-index: 4;
+
+}
+.picturesstwoForPlayList{
+   
+        /* image 293 */
+         /* right: 90px;  */
+        position: relative;
+        width: 264px;
+        height: 264px;
+        margin-left: -174px; 
+        top: 3px;
+        border-radius: 40px;
+        z-index: 3;
+        
+}
+.picturessthreeForPlayList{
+   
+    /* image 293 */
+     /* right: 360px;  */
+    position: relative;
+    width: 264px;
+    height: 264px;
+    margin-left: -174px; 
+    top: 3px;
+    border-radius: 40px;
+    z-index: 2;
+    
+}
+
+.picturessfourForPlayList{
+   
+    /* image 293 */
+     /* right: 540px;  */
+    position: relative;
+    width: 264px;
+    height: 264px;
+    margin-left: -174px; 
+    top: 3px;
+    border-radius: 40px;
+    z-index: 1;
+    
+}
+
+
+
+
+.kos{
+  width: 260px;
+  height: 260px;
+}
+
+
+.person{
+  
+/* image 293 */
+
+position: relative;
+margin-top: 100px;
+
+
+
+}
+.obedineniesphoto{
+  /* top: 19.875%; */
+  position: relative;
+  display: flex;
+flex-direction: row;
+align-items: center;
+gap: 20px;
+
+
+}
+
+.bgforbtnn3{
+
+
+   background: #69FF12; 
+  
+  /* flex: none;
+  order: 0;
+  flex-grow: 0; */
+  }
+  .imageclass{
+    width: 40px;
+    height: 40px;
+    text-align: center;  
+    margin-top:13px; 
+    line-height: normal;
+    
+  }
+
+
+
+
+  @media (max-width: 1279px) {
+
+    
+    .picturessForPlayList{
+      /* Frame 10 */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0px;
+     
+      right:-105px;
+      position: absolute;
+      width: 241px;
+      height: 19px;
+      /* right: 350px; */
+      /* top: 108px; */
+      margin-top: -63px;
+    
+    }
+    .obedinenie1ForPlayLists{
+    
+        width: calc(100vw  - 30px);
+        height: 100px;
+        margin-bottom: 50px;
+      
+        }
+
+        
+
+  .picturessoneForPlayList {
+    width: 124px;
+    height: 124px;
+    border-radius: 20px;
+    
+    }
+    .picturesstwoForPlayList{
+      width: 124px;
+      height: 124px;
+      border-radius: 20px;
+      right: -53px;
+     
+    }
+    .picturessthreeForPlayList{
+      width: 124px;
+      height: 124px;
+      border-radius: 20px;
+      right: -106px;
+    }
+    
+    .picturessfourForPlayList{
+      display: none;
+
+        
+    }
+
+    .sForPlayList {
+      position: relative;
+      
+      height: 144px;
+      width: calc(100vw - 30px);
+      
+       /* 260px */
+      
+      }
+
+
+      .thef1playlist{
+        /* названиеплейлиста */
+    
+    /* Мои любимые блогеры */
+    
+    position: absolute;
+    left: 8px;
+    top: 11px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /* platform/h2 */
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 124%;
+    color: #0E0E0E;
+     }
+
+     
+.thesec1playlist{/* По моим видео ты станешь блогером и начнешь зарабатывать. Подпишись🤟🏻 */
+
+
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 126%;
+  /* or 20px */
+  margin-top: 0px;
+  /* black */
+  color: #0E0E0E;
+  margin-bottom: 0px;
+  
+  
+   }
+
+
+  
+   .des1playlist{
+    /* vk.com/user */
+/* Нет описания */
+
+position: absolute;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 126%;
+/* or 20px */
+font-family: 'SF Pro Display';
+/* subt */
+color: #6D6D6D;
+margin-top: 0px;
+margin-left: 8px;
+}
+
+
+.minitextplaylist{
+
+  gap: 0px;
+ margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  margin-left: 8px;
+  justify-content: flex-start;
+margin-bottom: 0px;
+}
+
+.groupofbtn1ForPlayList{
+
+  top: 100px;
+}
+
+.des2playlist{
+  /* vk.com/user */
+/* Нет описания */
+/* 
+position: absolute; */
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 126%;
+/* or 20px */
+font-family: 'SF Pro Display';
+/* subt */
+color: #6D6D6D;
+
+
+}
+.imageclass2{
+  width: 16px;
+  height: 16px;
+  margin-top: 5px;
+}
+
+.shuffle{
+  width: 16px;
+  height: 16px;
+}
+      
+  
+  }
+  
+@media (max-width: 1439px) and (min-width: 1280px) {
+  .obedinenie1ForPlayLists{
+/* 
+
+  height: 240px;
+
+  width: 75vw;
+  margin-right: 30px;
+  min-width: 820px;
+  */
+  /* width: calc(100vw - 234px - 30px - 30px - 18px); */
+  width: 76vw;
+  height: 100px;
+  margin-bottom: 170px;
+
+  }
+
+
+
+  .picturessoneForPlayList {
+    width: 234px;
+    height: 234px;
+    
+    
+    }
+    .picturesstwoForPlayList{
+      width: 234px;
+      height: 234px;
+            
+    }
+    .picturessthreeForPlayList{
+      width: 234px;
+      height: 234px;
+    }
+    
+    .picturessfourForPlayList{
+      width: 234px;
+      height: 234px;
+
+        
+    }
+
+    .picturessForPlayList{
+      /* Frame 10 */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0px;
+     
+      right:175px;
+      position: absolute;
+      width: 241px;
+      height: 19px;
+      /* right: 350px; */
+      top: 108px;
+    
+    }
+
+    .sForPlayList {
+      position: relative;
+      
+      height: 240px;
+      
+       /* 260px */
+      
+      }
+
+
+      .groupofbtn1ForPlayList{
+
+        top: 180px; /* 200px */
+   }
+}
+

@@ -1,0 +1,535 @@
+@font-face { 
+    font-family: 'Inter-Medium'; 
+    src: url('../../fonts/Inter-Medium.otf') format('opentype');
+    font-weight: 500; /* Или значение, которое соответствует стилю шрифта */
+    font-style: normal; 
+  }
+  
+  
+  .group__8794{
+  /* Group 8794 */
+  
+  
+  
+  height: 1661px;
+  left: 25px;
+  top: 149px;
+  margin-right: 30px;
+  
+  }
+  
+  
+  .frame__8793{
+  /* Frame 8793 */
+  
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 15px;
+  
+  position: absolute;
+  margin-right: 30px;
+  height: 175px;
+  left: 306px;
+  top: 148px;
+  
+   
+  }
+  
+  .text__for__rich { 
+    width: calc(100% - 30px); /* Занимает всю ширину с отступом */
+    height: 120px; 
+    
+    /* остальной стиль */
+    font-family: 'Stolzl'; 
+    font-style: normal; 
+    font-weight: 400; 
+    font-size: 60px; 
+    line-height: 60px; 
+    color: #0E0E0E; 
+    align-self: stretch; 
+    flex-grow: 0; 
+    position: relative; 
+  }
+  
+  .frame__8786{
+  /* Frame 8786 */
+  
+  width: 1104px;
+  height: 40px;
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  position: relative;
+  }
+  
+  .text__for__description { 
+      position: absolute; 
+      width: calc(100% - 30px); /* Занимает всю ширину с отступом */
+      height: 40px; 
+      left: 3px; 
+      top: 0px; 
+      
+      font-family: 'Inter'; 
+      font-style: normal; 
+      font-weight: 400; 
+      font-size: 16px; 
+      line-height: 126%; 
+      color: #0E0E0E; 
+  }
+  
+  .lessons{
+  /* lessons */
+  
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+  
+  position: relative;
+  height: 1350px;
+  margin-left: 300px;
+  
+  }
+  
+  
+  .home_for_card_container {
+      display: grid; /* Включаем Grid */
+      grid-template-columns: 1fr; /* Одна колонка */
+      gap: 30px;  
+      position: absolute; 
+      min-width: 1100px; 
+      height: auto; 
+      min-height: 140px; 
+      right: 0px;
+      left:0px;
+      top:60px;
+  }
+  
+  
+  
+  .releasephotoanddes {
+      /* margin-left: 30px; Отступ слева для releasephoto */
+  
+   margin-left: 30px;
+  
+   position: relative; /* Фиксированное позиционирование */; 
+
+   margin-top: 149px;
+      
+  }
+  .fix{
+    position: relative; /* Относительное, когда не фиксировано */
+    margin: 0;
+    padding: 0;
+    
+    transition: all 0.8s ease-in-out; /* Плавный переход для всех свойств */
+    }
+    .fixed {
+    position: fixed;
+    top: 20px;
+    
+    transition: all 0.8s ease-in-out; 
+    
+    }
+    
+    .releasephoto {
+        height: 260px;
+        width: 260px; 
+
+       
+    }
+  
+  
+    .t1{
+      display: grid; /* Включаем Grid */
+    grid-template-columns: 1fr; /* Одна колонка */
+    gap: 15px; 
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .t2{
+      display: flex; 
+      /* align-items: center; Центрируем элементы по вертикали */
+  
+      padding: 0; /* Убедитесь, что нет дополнительных отступов */
+      position: relative; /* Для контекста позиционирования дочерних элементов */
+     
+  
+    flex-direction: row;
+    gap: 10px;
+  
+  
+  }
+  
+  .nazv1{ 
+    /* Альфа-Банк */ 
+     
+    margin: 0px; 
+    /* platform/txt */ 
+  
+     
+  
+  /* platform/txt */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 126%;
+  /* or 20px */
+  
+  /* black */
+  color: #0E0E0E;
+  
+  
+     
+     
+     
+    } 
+     
+     
+    .nazv2{ 
+    /* 123 подписчика */ 
+     
+    margin: 0px; 
+    /* platform/txt */ 
+  
+  /* 123 подписчика */
+  
+  
+  
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 126%;
+  /* or 15px */
+  
+  /* black */
+  color: #0E0E0E;
+  
+  
+    
+    }
+  
+    .side{
+      /* side */
+  
+  position: absolute;
+  width: 270px;
+  height: 164px;
+  left: 25px;
+  top: 460px;
+  
+  
+    }
+  
+  .player {
+      margin-right: 30px;
+      width: 76vw;
+      background-color: none;
+     
+      /* width: 76.4vw; Задайте ширину, которая автоматически изменяется при масштабировании */
+      height: 38vw; /* Сохраните пропорции */
+     border-radius: 40px;
+      position: relative; /* Или оставьте без изменения, если не требуется абсолютное позиционирование */
+      min-width: 1100px;
+       border: none;
+  }
+  .bgg2{
+    width: 198px;
+    height: 40px;
+    background: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    /* platform/txt */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 126%;
+  /* or 20px */
+  }
+  .kn { 
+    font-family: 'Inter-Medium'; 
+    font-size: 16px; } 
+  .second-button, .second-button-black 
+  { 
+    font-family: 'Inter-Medium'; 
+    font-size: 16px; }
+  .bgg{
+    width: 144px;
+    height: 40px;
+    background: #FF0074;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  
+    /* platform/txt */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 126%;
+  /* or 20px */
+  
+    }
+    .bgg3{
+      
+      background: #FF0074;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+  
+      /* platform/txt */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 126%;
+  /* or 20px */
+    
+      }
+  .nazv2{
+      /* Категории */
+  
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 0px;
+  gap: 0px 10px;
+  margin-right: 20px;
+  
+  
+  }
+  .nazv3{
+     /* #образование */
+  margin: 0px;
+  /* platform/txt */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 126%;
+  /* or 20px */
+  
+  /* fourth */
+  color: #FF7510;
+  
+  white-space: normal; /* Перенос строк по умолчанию */
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  
+  }
+  
+  .obedineniep{
+      /* overflow-x: hidden; */
+      display: grid; /* Включаем Grid */
+      grid-template-columns: 1fr; /* Одна колонка */
+      gap: 31px; 
+      position: relative;
+    /* left: 21.25%;  */
+    /* min-width: 76.39%; */
+    width: 76vw;
+    min-width: 1100px;
+    /* height: 140px; */
+    height: auto;
+    min-height: 140px;
+    /* max-height: 500px;  */
+    
+    }
+    .sp {
+    position: relative;
+  /*   
+    height: auto; */
+    
+     /* 260px */
+    
+    }
+  
+    .frame_9{
+      /* Категории */
+  
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 0px;
+  gap: 0px 10px;
+  
+  position: absolute;
+  width: 260px;
+  height: 40px;
+  left: 0px;
+  top: 434px;
+  
+  
+    }
+  
+  
+    .text__for__age{
+      /* 18+ */
+  
+  position: absolute;
+  width: 34px;
+  height: 25px;
+  left: 590px;
+  top: 372px;
+  
+  /* platform/h3 */
+  font-family: 'Stolzl';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 124%;
+  /* identical to box height, or 25px */
+  
+  /* main */
+  color: #FF0074;
+  
+  
+    }
+  
+  
+    .frame__8815{
+      /* Frame 8815 */
+  
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 5px;
+  
+  position: absolute;
+  width: 404px;
+  height: 15px;
+  left: 310px;
+  top: 118px;
+  
+  
+    }
+  
+    .bread_crumbs1{
+  /* Мои подписки */
+  
+  width: 86px;
+  height: 15px;
+  
+  /* platform/subt */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 126%;
+  /* or 15px */
+  
+  /* subt */
+  color: #6D6D6D;
+  
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  
+    }
+  
+    .bread_crumbs2{
+  /* Как стать богатым за 5 минут не выходя из дома */
+  
+  width: 293px;
+  height: 15px;
+  
+  /* platform/subt */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 126%;
+  /* or 15px */
+  
+  /* subt */
+  color: #6D6D6D;
+  
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  
+    }
+  
+  
+    .custom-button {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 9px 20px 10px;
+      gap: 5px;
+  
+      position: absolute;
+      width: 262px;
+      height: 40px;
+      left: 310px;
+      top: 360px;
+  
+      background: #FF0074;
+      border-radius: 13px;
+      color: white; /* Цвет текста */
+      border: none; /* Убираем рамку */
+      cursor: pointer; /* Добавление курсора указателя */
+  }
+  
+  .custom-button:disabled {
+      background: gray; /* Укажите стили для отключенной кнопки */
+  }
+  
+  
+  .button-container {
+    display: flex;           /* Включаем flexbox */
+    align-items: center;     /* Центрируем кнопку по вертикали (если это нужно) */
+    margin-top: -215px;
+    width: 100%;            /* Ширина контейнера на 100% */
+    margin-left: 300px;
+  }
+  
+  
+  .active-button {
+    background: #FF0074; /* Цвет для активного состояния */
+    /* Другие стили... */
+  }
+  
+  .inactive-button {
+    background: #FF0074; /* Цвет для неактивного состояния */
+    /* Другие стили... */
+    color: white;
+  }
+  .bgforlisten{
+    background: #FF0074;
+    margin: 0;
+    padding: o;
+  }
+  
+  
+  
+  
+   
+  
+  
+  

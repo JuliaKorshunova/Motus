@@ -1,0 +1,21 @@
+.card-containerforpodcasts{
+    display: grid; /* Используем Grid для расположения карточек */
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    gap: 20px; /* Устанавливаем расстояние между элементами */
+    right: 30px; /* Отступ от правого края */
+    margin-bottom: 30px; /* Отступ снизу */
+    min-width: 540px;
+    margin-left: 280px;
+    /* margin-right: 30px; */
+}
+
+
+@media (max-width: 1439px) {
+    .card-containerforpodcasts{
+ 
+        left: 25vw;
+        /* margin-right: 30px; */
+    }
+    
+}
+

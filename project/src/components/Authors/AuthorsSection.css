@@ -1,0 +1,26 @@
+.author-card {
+    display: grid; /* Используем Grid для расположения карточек */
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    gap: 20px; /* Устанавливаем расстояние между элементами */
+    right: 30px; /* Отступ от правого края */
+    margin-bottom: 30px; /* Отступ снизу */
+    min-width: 400px;
+    margin-left: 280px;
+
+
+}
+
+@media (max-width: 1279px) {
+    .author-card{
+        right: 30px;
+        position: relative;
+        display: flex;            /* Включаем Flexbox */
+        flex-direction: column;  /* Располагаем элементы в столбец */
+        gap: 8px;
+        width: calc(100vw - 30px );
+       
+        /* gap: 50px; */
+    }
+    
+
+}

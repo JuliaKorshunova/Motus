@@ -1,0 +1,10 @@
+.vm1 {
+    right: 30px;
+    position: relative;
+    display: flex;            /* Включаем Flexbox */
+    flex-direction: column;  /* Располагаем элементы в столбец */
+    left: 280px;
+    width: calc(100% - 280px );
+   
+    /* gap: 50px; */
+}

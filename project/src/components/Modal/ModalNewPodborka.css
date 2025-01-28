@@ -1,0 +1,76 @@
+.ssearch{
+    margin-top: -60px;
+     margin-left: calc(50% - 40px);
+     
+     
+}
+
+.bgforbtncreate{
+
+    height: 40px;
+    display: table-cell; 
+    background: #FF0074;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 0px;
+  }
+
+  .addrel{
+
+
+    left: 50px;
+    margin-top: 50px;
+
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 124%;
+    color: #0E0E0E;
+
+
+  }
+
+  ._rectangleGreen{
+   
+    background: #69FF12;
+    width: calc(50%);
+    height: 40px;
+    
+    }
+  
+
+  .addsub{
+    margin-top: 21px;
+    margin-left: 48px;
+    width: calc(100% - 86px);
+  }
+
+  @media (max-width: 1279px) {
+
+    .addsub{
+      margin-top: 0px;
+      margin-left: 32px;
+      width: calc(100% - 47px);
+    }
+    .ssearch{
+      margin-top: -32px;
+       margin-left: calc(100% - 38px);
+       
+    }
+    .bgforbtncreate{
+
+      height: 24px;
+     
+    }
+    ._rectangleGreen{
+      display: flex;
+      justify-content: center; /* Центрирование по горизонтали */
+      /* align-items: center; */
+      height: 25px;
+      width: calc(100% - 15px );
+    }
+  
+  }
+

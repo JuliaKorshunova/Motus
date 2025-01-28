@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('src/fonts/Inter-Medium.otf') format('truetype');
+  }
+  
+  
+  .defmainbtn{
+    /* btn */
+    justify-content: center;
+  /* width: 88px; */
+  /* height: 40px; */
+  font-family:  'Inter-Medium';
+  font-size: 16px;
+  color: #000000;
+  position: relative;
+  white-space: nowrap;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  width: 40px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px;
+  gap: 5px;
+  /* width: 88px; */
+  height: 40px;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+  border-radius: 13px;
+  border: 0;
+  z-index: 2;
+   }
+  
+   .defmainbtn:hover {
+    justify-content: center;
+    /* Стили для hover-эффекта */
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 40px;
+  /* padding: 9px 20px 10px; */
+  gap: 5px;
+  border: 0px;
+  /* width: 88px; */
+  height: 40px;
+  left: 0px;
+  position: relative; 
+  top: 0px;
+  font-family:  'Inter-Medium';
+  font-size: 16px;
+  color: #ffffff;
+  padding: 8px;
+  white-space: nowrap;
+  /* white */
+  background:#FF0074;
+  border-radius: 13px;
+  }
+  .defmainbtn:active{
+    /* btn */
+  /* Frame 5 */
+  justify-content: center;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* padding: 9px 20px 10px; */
+  gap: 5px;
+  border: 0px;
+  /* width: 88px; */
+  height: 40px;
+  width: 40px;
+  left: 0px;
+  top: 0px;
+  font-family:  'Inter-Medium';
+  font-size: 16px;
+  color: #ffffff;
+  padding: 8px;
+  white-space: nowrap;
+  /* white */
+  background:#FF0074;
+  border-radius: 13px;
+  padding: 8px;
+  }
+  
+  .defmainbtndisabled{
+    width: 40px;
+  /* btn */
+  /* Frame 5 */
+  justify-content: center;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* padding: 9px 20px 10px; */
+  
+  gap: 5px;
+  border: 0px;
+  /* width: 88px; */
+  height: 40px;
+  left: 0px;
+  top: 0px;
+  font-family:  'Inter-Medium';
+  font-size: 16px;
+  color: #453d43;
+  padding: 8px;
+  white-space: nowrap;
+  /* white */
+  background: #ffffff;
+  border-radius: 13px;
+  display: inline-block;
+  
+  }
+  
+  .defmainbtnactive{
+  /* btn */
+  /* Frame 5 */
+  justify-content: center; /* Горизонтальное выравнивание */
+  width: 40px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+padding: 8px;
+  gap: 5px;
+  border: 0px;
+  /* width: 88px; */
+  height: 40px;
+  left: 0px;
+  top: 0px;
+  font-family:  'Inter-Medium';
+  font-size: 16px;
+  color: #ffffff;
+  
+  white-space: nowrap;
+  /* white */
+  background: #FF0074;
+  border-radius: 13px;
+  
+  
+  }
+  
+  .wrapper {
+    position: relative; /* Позволяет правильно позиционировать внутренние элементы */
+    display: inline-block; /* Чтобы блокы располагались рядом, как строковые элементы */
+}
+
+.background {
+    position: absolute; /* Абсолютное позиционирование для перекрытия кнопки */
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; /* Заполнение всего пространства кнопки */
+    background-color: rgba(0, 255, 0, 0.5); /* Полупрозрачный зеленый фон */
+    opacity: 0; /* Скрываем по умолчанию */
+    transition: opacity 0.3s ease; /* Плавный переход для появления */
+    pointer-events: none; /* Блок не взаимодействует с мышью, пока скрыт */
+}
+
+.wrapper:hover .background {
+    opacity: 1; /* Показываем зеленый прямоугольник при наведении */
+}
+
+@media (max-width: 1279px) {
+
+  .defmainbtn{
+    /* btn */
+    border-radius: 7px;
+    height: 24px;
+    width: 24px;
+   }
+  
+   .defmainbtn:hover {
+    border-radius: 7px;
+    height: 24px;
+    width: 24px;
+  }
+  .defmainbtn:active{
+    border-radius: 7px;
+    height: 24px;
+    width: 24px;
+  
+  }
+  
+  .defmainbtndisabled{
+    border-radius: 7px;
+    height: 24px;
+    width: 24px;
+  
+  }
+  
+  .defmainbtnactive{
+  
+    border-radius: 7px;
+    height: 24px;
+    width: 24px;
+  
+  }
+  }

@@ -1,0 +1,681 @@
+@font-face {
+  font-family: 'Inter-MediumItalic';
+  src: url('src/fonts/Inter-MediumItalic.otf') format('truetype');
+}
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('src/fonts/SF-Pro-Display-Light.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Stolzl';
+  src: url('src/fonts/stolzl_regular.otf') format('truetype');
+}
+
+.sectionsubForSubs{
+  
+  /* width: 37vw; */
+  /* height: 270px; */
+  height: 270px;
+  top: 0px;
+  margin-left: 0px;
+  min-width: 540px;
+  
+ 
+}
+.cardsub {
+  background: white; /* Цвет фона карточки */
+  width: 100%; /* Занимает всю ширину доступного пространства */
+  display: flex; /* Используем Flexbox для размещения элементов */
+  flex-direction: column; /* Вертикальное направление размещения */
+  overflow: hidden; /* Скрываем лишние части */
+  position: relative;
+  height: 100%;
+   
+}
+
+.blackblocksub{
+    /* position: absolute; */
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #0E0E0E;
+    position: absolute;
+    }
+    
+    .whiteblocksubribes {
+    
+    
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    
+    background: #FFFFFF;
+    border-radius: 40px;
+    
+    }
+    
+  .bgforbtnsub{
+    width: 110px;
+    height: 40px;
+    
+    
+    background: #FF0074;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 0px;
+
+ } 
+    
+    .sectionsub {
+    /* card */
+
+    }
+    
+
+    
+    .zagalovoksubscribes { 
+      position: absolute; 
+      left: 20px; 
+      right: 60.56%; 
+      /* top: 20px;  */
+      font-family: 'Stolzl'; 
+      font-style: normal; 
+      font-weight: 400; 
+      font-size: 20px; 
+      line-height: 1.24; 
+      color: #0E0E0E; 
+      max-height: calc(2* 1.24em); 
+      overflow: hidden; 
+      text-overflow: ellipsis; 
+      white-space: nowrap; 
+      width: calc(100% - 65.56% - 10px); 
+      box-sizing: border-box; 
+  }
+
+    .container1sub{
+      width: 300px; 
+    }
+    
+    .subtitlesubForSubs {
+
+    white-space: nowrap;   /* Запретить перенос текста */
+   
+    
+
+/* Семейный бюджет */
+
+position: absolute;
+width: 151px;
+height: 20px;
+left: 20px;
+
+top: 52px;  
+margin: 0px;
+/* platform/txt */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+/* black */
+color: #0E0E0E;
+
+
+    
+     
+    }
+    
+    .hashtagssubForSubcribes {
+
+display: flex; 
+flex-direction: row; 
+align-items: flex-start; 
+padding: 0px; 
+gap: 10px; 
+ 
+position: absolute; 
+
+height: 20px; 
+ 
+/* #воспитание */ 
+ 
+/* platform/txt */ 
+font-family: 'SF Pro Display'; 
+font-style: normal; 
+font-weight: 400; 
+font-size: 16px; 
+line-height: 126%; 
+/* or 20px */ 
+ 
+/* fourth */ 
+color: #FF7510; 
+ 
+left: 20px; 
+right: 70%;  
+top: 84px;  
+/* Inside auto layout */ 
+flex: none; 
+order: 2; 
+flex-grow: 0; 
+ 
+
+}
+
+
+.hastags1sub{
+ /* #образование */
+
+ 
+height: 20px;
+
+/* platform/txt */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+/* fourth */
+color: #FF7510;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+    
+    .timesubForSub{
+ /* 34 мин. */
+
+position: absolute;
+width: 61px;
+height: 20px;
+left: 20px;
+top: 116px;
+
+/* platform/txt */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+/* subt */
+color: #6D6D6D;
+
+
+    }
+    
+    .picturesubForSub{
+    /* image 293 */
+    
+    position: absolute;
+    width: 264px;
+    height: 264px;
+    right: 3px;
+    top: 3px;
+    z-index: 100;
+    
+    border-radius: 40px;
+    
+    
+    }
+     
+    .picturesub1ForSub{
+      /* image 293 */
+      
+      position: absolute;
+      width: 264px;
+      height: 264px;
+      right: 30px;
+      top: 3px;
+      z-index: 99;
+      
+      border-radius: 40px;
+      
+      
+      }
+    
+    .containersubForSubscribes{
+    
+    /* author */
+    
+    position: absolute;
+    width: 137px;
+    height: 40px;
+    left: 20px;
+    bottom: 70px;
+    /* top: 137px; */
+    
+    
+    }
+    
+    .text1subForSubscribes { 
+      position: absolute; 
+      left: 36.5%; 
+      right: -5.11%; 
+      top: 5%; 
+      bottom: 45%; 
+  
+      /* platform/txt */ 
+      font-family: 'Inter'; 
+      font-style: normal; 
+      font-weight: 400; 
+      font-size: 16px; 
+      line-height: 126%; 
+  
+      /* black */ 
+      color: #0E0E0E; 
+  
+      /* Запрещаем перенос */
+      white-space: nowrap;  
+      
+  }
+  
+  .text2subForSubscribes { 
+      position: absolute; 
+      left: 36.5%; 
+      right: 1.46%; 
+      top: 55%; 
+      bottom: 7.5%; 
+  
+      font-family: 'SF Pro Display'; 
+      font-style: normal; 
+      font-weight: 400; 
+      font-size: 12px; 
+      line-height: 126%; 
+  
+      /* black */ 
+      color: #0E0E0E; 
+  
+      /* Запрещаем перенос */
+      white-space: nowrap;  
+
+      
+  }
+    
+  .iconsubForSubscr{
+    height: 40px;
+    width: 40px;
+  }
+   
+    
+    .btnnsubforSubscribes{
+      margin-top:210px;
+      margin-left: 20px;
+    }
+
+    .categoryhastags { 
+      position: absolute;  
+      height: 24px;  
+      left: 20px; 
+      right: 53.7%;  
+      top: 84px;  
+      
+      
+  } 
+  
+    .frame_91subscribes {  
+      display: flex;   
+      flex-direction: row;   
+      align-items: flex-start;   
+      padding: 0px;   
+      gap: 10px;   
+      position: relative;  
+      width: 288px;   
+      height: 20px;   
+    
+       
+ 
+  }  
+  .hastags1forsub {   
+    position: relative;  
+    font-family: 'Inter';    
+    font-style: normal;    
+    font-weight: 400;    
+    font-size: 16px;    
+    line-height: 126%;    
+    color: #FF7510;  
+ 
+ 
+     
+  }  
+  .last-hashtag {  
+    color: transparent; /* Делаем текст прозрачным для показа фона */
+    background: linear-gradient(90deg, rgba(255, 117, 16, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    overflow: hidden;
+  }
+  
+  .hastags1::before { 
+    content: attr(data-text); 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    color: #FF7510;
+ 
+  }
+  
+  .last-hashtag::before { 
+    content: attr(data-text); 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    color: transparent; 
+    background: linear-gradient(90deg, rgba(255, 117, 16, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background-clip: text; 
+    -webkit-background-clip: text; 
+
+  }
+
+.gradient1 { 
+    background: linear-gradient(to right, #FF7510, white); 
+    -webkit-background-clip: text; /* Поддерживается в Chrome и Safari */ 
+    -webkit-text-fill-color: transparent; /* Задает цвет текста прозрачным */ 
+    z-index: 2; /* Убедитесь, что градиент выше */
+} 
+.orange { 
+    color: #FF7510; /* Оранжевый цвет текста для остальных случаев */ 
+}
+
+
+@media (max-width: 1439px) {
+  .zagalovoksubscribes { 
+   top: 20px;
+   margin-top: 0px;
+}
+
+  .sectionsubForSubs{
+    
+    /* width: 37vw; */
+    /* height: 270px; */
+    height: 240px;
+
+    min-width: 300px;
+    
+   
+  }
+
+  .picturesubForSub{
+
+    width: 234px;
+    height: 234px;
+    /* margin-top: 8px;
+
+    margin-right: 8px; */
+    
+    
+    }
+     
+    .picturesub1ForSub{
+    
+      width: 234px;
+      height: 234px;
+      /* margin-top: 8px;
+      margin-right: 16px; */
+ 
+      
+      
+      }
+
+      .vstokuForAuthor{
+ 
+        margin-top: 180px;
+      
+      }
+
+
+      
+    .containersubForSubscribes{
+    
+     top: 137px;
+      
+      }
+      
+
+      .btnnsubforSubscribes{
+        margin-top:180px;
+
+      }
+    
+      .iconsubForSubscr{
+        margin-top: 5px;
+        height: 30px;
+        width: 30px;
+      }
+       
+      .subtitlesubForSubs {
+      top: 49px;}
+
+
+      .hashtagssubForSubcribes{
+        top: 73px;
+
+      }
+      .timesubForSub{
+        top: 99px;
+      }
+
+      .text1subForSubscribes{
+        left: 40px;
+      }
+      .text2subForSubscribes{
+        left: 40px;
+      }
+}
+
+.smesh_button{
+  /* search_btn */
+
+width: 24px;
+height: 24px;
+margin-left:140px;
+margin-top:-40px;
+
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+@media (max-width: 1279px) {
+
+
+  .picturesub1ForAuthor{
+    display: none;
+  }
+  .sectionsubForSubs{
+    
+    width: calc(100vw - 30px);
+    /* height: 270px; */
+    height: 144px;
+
+    min-width: 300px;
+    
+   
+  }
+  .sectionsubForSubs1{
+    
+    width: calc(100vw - 30px);
+    /* height: 270px; */
+    height: 144px;
+
+    min-width: 300px;
+    
+   
+  }
+
+  .zagalovoksubscribes { 
+   
+   /* Frame 8823 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+height: 65px;
+left: 0px;
+top: 0px;
+margin-top: 11px;
+margin-left: 10px;
+width: 100vw;
+font-size: 14px;
+   
+}
+
+.subtitlesubForSubs {
+
+font-size: 12px; 
+top: 30px;
+left: 0px;
+
+margin-left: 10px;
+}
+
+.hastags1forsub {   
+  
+  font-size: 12px;    
+ }  
+
+ .timesubForSub{
+
+ font-size: 12px;
+ top: 62px;
+ margin-left: 10px;
+ left: 0px;
+
+ 
+ 
+     }
+     .iconsubForSubscr{
+      height: 24px;
+      width: 24px;
+      margin: 0px;
+    }
+
+
+        
+    .text1subForSubscribes { 
+  
+      font-size: 12px; 
+      left: 28px;
+        }
+
+               
+    .text2subForSubscribes { 
+  
+      font-size: 8px; 
+      left: 28px;
+      top: 14px;
+        }
+  
+        .picturesubForSub{
+          /* image 293 */
+          
+          position: absolute;
+          width: 124px;
+          height: 124px;
+          margin-right: 8px;
+          margin-top: 8px;
+          z-index: 102;
+          
+          border-radius: 20px;
+          
+          
+          }
+      .picturesub1ForSub{
+            /* image 293 */
+            
+            position: absolute;
+            width: 124px;
+            height: 124px;
+            margin-right: 8px;
+            margin-top: 8px;
+            z-index: 101;
+            
+            border-radius: 20px;
+            
+            
+            }
+
+   .whiteblocksubribes {
+
+    border-radius: 20px;
+              
+              }
+
+
+
+   .hashtagssubForSubcribes {
+    gap: 4px; 
+    left: 11px; 
+    right: 70%;  
+    top: 46px;  }
+  
+  
+  
+    .frame_91subscribes {  
+ 
+      gap: 4px;}  
+
+       
+      .containersubForSubscribes{
+    
+
+        
+        position: absolute;
+        width: 137px;
+        height: 40px;
+        left: 10px;
+        bottom: 70px;
+        top: 80px;
+        
+        
+        }
+
+  .btnnsubforSubscribes{
+    margin-top:112px;
+    margin-left: 10px;
+        }
+
+
+        .smesh_button{
+          /* search_btn */
+        
+        width: 24px;
+        height: 24px;
+        margin-left:90px;
+        margin-top:-24px;
+        
+        
+        
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        
+        }
+
+        .bgforbtnsub{
+          height: 24px !important;
+          width: 67.5px !important;
+        }
+        
+}

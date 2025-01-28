@@ -1,0 +1,248 @@
+@media (max-width: 1439px) {
+.slider-container{
+
+width: 228px !important;
+height: 496px !important;
+}
+
+.tab-container{
+
+width: 228px !important;
+height: 186px !important;
+
+}
+
+.slider-track {
+    width: 228px !important; /* Сужаем ширину трека */
+  }
+
+  .end-circle,
+  .end-text {
+    left: calc(15px + (var(--slider-value, 0) / 400) * 198px); /* Корректируем позицию динамически */
+  }
+}
+
+
+
+
+.filter-container {
+    position: absolute;
+    width: 131px ;
+    height: 25px;
+    left: 30px;
+    top: 320px;
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 124%;
+    color: #000000;
+}
+
+.filter-title {
+    position: absolute;
+    width: 131px;
+    height: 25px;
+    left: 0px;
+    top: 0px;
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 124%;
+    color: #000000;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    position: absolute;
+    width: 260px;
+    height: 456px;
+    left: 0px;
+    top: 58px;
+}
+
+.sort-section {
+    width: 215px;
+    height: 200px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.sort-title {
+    position: absolute;
+    width: 102px;
+    height: 20px;
+    left: 0px;
+    top: 102px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 126%;
+    color: #000000;
+}
+
+.radio-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 11px;
+    position: absolute;
+    width: 215px;
+    height: 169px;
+    left: 0px;
+    top: 133px;
+}
+
+.category-section {
+    width: 245px;
+    height: 146px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.category-title {
+/* Категории */
+
+position: absolute;
+width: 82px;
+height: 20px;
+left: 0px;
+top: 312px;
+
+/* platform/txt */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+color: #000000;
+}
+
+.tab-container {
+    /* Frame 8846 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: flex-start;
+align-content: flex-start;
+padding: 0px;
+gap: 10px;
+
+position: absolute;
+width: 245px;
+height: 110px;
+left: 0px;
+top: 344px;
+}
+
+.tab-button {
+    flex-grow: 1;
+    min-width: 100px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.radio-button-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.radio-label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 134%;
+    color: #0E0E0E;
+}
+
+.quantity-slider {
+    position: relative;
+    width: 260px;
+    height: 70px;
+}
+
+.quantity-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.slider-track {
+    position: absolute;
+    top: 46px;
+    left: 0;
+    width: 260px;
+    height: 2px;
+    background-color: #9e9e9e;
+}
+
+.slider-progress {
+    position: absolute;
+    height: 2px;
+    background-color: #69ff12;
+    top: 0;
+    left: 15px;
+}
+
+.hidden-slider {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    opacity: 0;
+}
+
+.start-circle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 42px;
+    left: 5px;
+    background: #69ff12;
+    border-radius: 50%;
+}
+
+.end-circle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 42px;
+    background: #69ff12;
+    border-radius: 50%;
+}
+
+.start-text, .end-text  {
+    position: absolute;
+    top: 54px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #000000;
+}
+
+.start-text {
+    left: 0px;
+}
+
+.end-text {
+    left: 0px;
+    transition: left 0.1s ease-in-out;
+}

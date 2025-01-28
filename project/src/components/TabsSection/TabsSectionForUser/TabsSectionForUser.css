@@ -1,0 +1,86 @@
+.tabforuser{
+    /* Frame 6 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+/* left: 280px; */
+position: relative;
+left: 140px;
+
+    /* margin-top: 48%;  */
+
+}
+.tab2foruser{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: space-between;
+margin-left: 140px;
+gap:20px;
+}
+.bgforbtn3{
+
+
+background: #69FF12;
+flex: none;
+order: 0;
+flex-grow: 0; 
+}
+
+.image-button-class{
+    padding: 0px;
+}
+
+.simple-button-class{
+    padding: 9px 20px 10px;
+}
+
+@media (max-width: 1439px) {
+    .tab2foruser{
+        display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 130px;
+    gap:20px;
+    }
+    .tabforuser{
+        /* Frame 6 */
+    
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    /* left: 280px; */
+    position: relative;
+    left: 120px;
+    
+        /* margin-top: 48%;  */
+    
+    }
+
+
+}
+@media (max-width: 1280px) {
+
+
+    .tabforuser{
+
+    margin-left: -135px;
+    width: calc(100vw - 30px);
+
+    }
+
+    .tab2foruser{
+        margin-left: 15px;
+        gap: 8px;
+    }
+
+    
+ }

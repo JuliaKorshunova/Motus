@@ -1,0 +1,346 @@
+.header1 {
+    position: fixed; /* Изменяем на fixed для крепления к верхней части окна */
+    /* width: 1440px; */
+    height: 90px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    z-index: 1000; /* Увеличивает порядок наложения, чтобы хедер был сверху других элементов */
+    display: flex;
+    
+    /* align-items: center; Центрируем элементы по вертикали */
+
+    padding: 0; /* Убедитесь, что нет дополнительных отступов */
+    position: absolute; /* Для контекста позиционирования дочерних элементов */
+/*    
+    justify-content: space-between; */
+    width: 100%;
+    /* padding: 0 30px; */
+    gap: 170px;
+
+
+
+  flex-direction: row;
+
+    
+    }
+/*     
+    @media (min-width: 1440px) {
+        .header { 
+            width: 100%; 
+        }
+    } 
+  */
+.menu {   
+    right: 0px;
+    display: flex;   
+    align-items: center; /* Центрируем элементы по вертикали */   
+    justify-content: flex-end; /* Элементы привязаны к правой стороне */   
+  
+    position: absolute; /* Устанавливаем относительное позиционирование для дочерних элементов */   
+    margin-right: 30px;
+    margin-top: 33px;
+   width: 422px;
+    /* right: 0px; */
+}   
+ 
+.menu .active {  
+    color: #FF0074;  
+}  
+ 
+.frame4{
+    /* Frame 4 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+padding: 0px;
+gap: 30px;
+
+
+width: 352px;
+right: 100px;
+top: 51.5%;
+bottom: 28.5%;
+
+
+}
+ 
+.usr___btn {   
+    margin-left: 31px; /* Отступ слева от кнопки */  
+    margin-top: 8px;
+}  
+ 
+.logo{
+    /* лого */
+    
+    position: relative;
+    width: 140px;
+    height: 60px;
+    left: 30px;
+    top: 30px;
+    
+      }
+
+    .logo2{
+        width: 140px;
+        height: 60px;
+        border-radius: 20px;
+    }
+
+
+    .motusforheader{/* Motus */
+
+        position: absolute;
+        width: 105px;
+        height: 45px;
+        left: 17px;
+        top:5px;
+        
+        font-family: 'Dryhten';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 45px;
+        
+        /* white */
+        color: #FFFFFF;
+        
+        }
+      
+ 
+.search { 
+    /* Search */
+
+/* position: absolute; */
+width: 40vw;
+height: 40px;
+min-width: 540px;
+/* left: 310px; */
+top: 40px;
+position: relative;
+
+
+display: flex; /* Активируем Flexbox */
+justify-content: space-between; /* Это выравнивает элементы по краям */
+align-items: center; /* Выровнять по центру по вертикали */
+
+}   
+ 
+.search-container {
+   position: relative;
+    display: flex; /* Flexbox для управления внутренними элементами */
+}
+
+ 
+.rectangle_15 {   
+    position: absolute;   
+    left: 0;   
+    right: 0;   
+    top: 0;   
+    bottom: 0;   
+    background: #69FF12;   
+    border: none;   
+    display: flex; /* Также можно сделать его flex-контейнером, если требуется */
+  
+}   
+ 
+.rectangle_16header {   
+    position: absolute;   
+    left: 0;   
+    right: 0;   
+    top: 0;   
+    bottom: 0;   
+    background: #FFFFFF;   
+    border-radius: 13px;   
+    border: none;   
+    padding: 20px;  
+    font-family: 'Inter';  
+    font-style: normal;  
+    font-weight: 400;  
+    font-size: 16px;  
+    line-height: 126%;  
+    color: #6D6D6D;  
+}  
+ 
+.rectangle_16:focus {  
+    outline: none;   
+}  
+ 
+.rectangle_16::placeholder {  
+    color: #6D6D6D;  
+}  
+ 
+.search_btn {  
+    background-color: #69FF12; /* Цвет кнопки поиска */  
+    width: 40px;  
+    height: 40px;  
+    position: absolute;  
+    right: 0;  
+    top: 0;  
+}  
+ 
+a {  
+    text-decoration: none;  
+} 
+ 
+.gl {  
+    font-family: 'Stolzl';  
+    font-weight: 400;  
+    font-size: 16px;  
+    color: #0E0E0E;  
+} 
+ 
+.sub {  
+    font-family: 'Stolzl';  
+    font-weight: 400;  
+    font-size: 16px;  
+    color: #0E0E0E;  
+} 
+ 
+.libr {  
+    font-family: 'Stolzl';  
+    font-weight: 400;  
+    font-size: 16px;  
+    color: #0E0E0E;  
+}
+
+.search_btn {
+    background-color: #69FF12; /* Цвет фона кнопки */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем обводку */
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Курсор в виде указателя */
+    padding: 10px; /* Отступы */
+    margin-left: 10px; /* Отступ слева от поля ввода */
+}
+
+.search_btn:hover {
+    background-color: #57D60B; /* Цвет при наведении */
+}
+
+.bgforbtnn{
+
+    background: #69FF12;
+    flex: none;
+    order: 0;
+    flex-grow: 0; 
+    width: 40px;
+    position: absolute;
+    }
+
+
+.test{
+   right: 0;
+   width: 40px;
+   margin-left: auto; /* Отодвигаем .test к правому краю */
+
+}
+
+
+@media (max-width: 1279px) {
+
+
+    .logo2{
+        width: 60px;
+        height: 32px;
+        border-radius: 10px;
+    }
+
+    .logo{
+        /* лого */
+
+     
+        width: 60px;
+        height: 32px;
+        left: 16px;
+        top: 56px;
+
+
+    }
+
+    .search { 
+        /* Search */
+    
+    /* position: absolute; */
+    width: calc(100vw - 10px - 16px - 60px - 10px);
+    height: 32px;
+
+    top: 0px;
+    position: relative;
+    min-width: 50px;
+    
+    display: flex; /* Активируем Flexbox */
+    justify-content: space-between; /* Это выравнивает элементы по краям */
+    align-items: center; /* Выровнять по центру по вертикали */
+    
+    }   
+    .menu {
+        display: none; /* Скрываем меню */
+    }
+
+    .header1 {
+        position: fixed; /* Изменяем на fixed для крепления к верхней части окна */
+        /* width: 1440px; */
+        height: 90px;
+        left: 0px;
+        top: 0px;
+        background: #FFFFFF;
+        z-index: 1000; /* Увеличивает порядок наложения, чтобы хедер был сверху других элементов */
+        display: flex;
+        
+        /* align-items: center; Центрируем элементы по вертикали */
+    
+        padding: 0; /* Убедитесь, что нет дополнительных отступов */
+        position: absolute; /* Для контекста позиционирования дочерних элементов */
+    /*    
+        justify-content: space-between; */
+        width: 100%;
+        /* padding: 0 30px; */
+        gap: 20px;
+    
+    
+    
+      flex-direction: row;
+    
+        
+        }
+
+        .rectangle_16header {   
+            height: 32px;  
+            padding: 0px;
+            border-radius: 10px;
+            font-size: 12px;
+            padding-left: 10px;
+        }  
+
+    .image-class{
+        width: 16px;
+        height: 16px;
+    }
+
+    .bgforbtnn{
+        width: auto;
+    }
+    .test{
+        width: 32px;
+    }
+    .search-container {
+        height: 32px;
+        top: 56px;
+     }
+     
+
+     
+    .motusforheader{/* Motus */
+
+       top: -5px;
+       left: 5px;
+        font-size: 20px;
+    
+        
+        }
+    
+    }

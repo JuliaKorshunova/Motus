@@ -1,0 +1,298 @@
+/* 
+  
+.modal-overlays{
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  overflow: hidden; 
+}
+
+.modal-contents {
+  position: relative; 
+  background: white;
+  border-radius: 40px;
+  width: 83vw;
+  margin-top: 40px;
+  height: calc(100vh - 150px);
+  overflow-y: auto;
+  z-index: 1001;
+  box-sizing: border-box;
+}  */
+
+
+
+.modal-overlays {
+  position: fixed; /* Фон остается фиксированным */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); /* Полупрозрачный фон */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 2000;
+  overflow-y: auto;
+
+}
+
+.modal-contents {
+  position: relative; /* Теперь модальное окно относительно родителя */
+  background: white;
+  border-radius: 40px;
+  width: 83vw;
+  top: 100px;
+  height: 1200px;
+  overflow: hidden; /* Важно: скрываем overflow, чтобы предотвратить полосу прокрутки на overlay */
+  z-index: 1001;
+  /* padding: 20px; */
+  box-sizing: border-box;
+  
+} 
+
+
+  .modal-overlay {
+    position: fixed; /* Фон остается фиксированным */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Полупрозрачный фон */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Добавлено для центрирования по вертикали */
+    z-index: 2000;
+  
+  }
+  body.modal-open {
+    /* overflow: hidden; */
+}
+
+.empty-block {
+  height: 890px; /* Задайте высоту */
+  width: 200px; /* Задайте ширину */
+  background-color: lightgray; /* Или другой цвет */
+  border: 1px solid gray; /* Граница (необязательно) */
+
+}
+.checkbox-label{
+    
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+/* black */
+color: #0E0E0E;
+}
+  .checkbox-container {
+    display: flex; /* Используем flexbox для размещения элементов в строку */
+    align-items: center; /* Выравнивание по центру по вертикали */
+}
+
+.checkbox-input {
+    display: none; /* Скрываем стандартный чекбокс */
+}
+
+.custom-checkbox {
+    width: 20px; /* Ширина чекбокса */
+    height: 20px; /* Высота чекбокса */
+    background-color: #ffffff; /* Цвет фона */
+    border-radius: 6px; /* Закругление углов */
+    position: relative; /* Для позиционирования внутреннего элемента */
+    cursor: pointer; /* Курсор указывает на возможность клика */
+    margin-right: 10px; /* Отступ между чекбоксом и текстом */
+    z-index: 1100;
+}
+
+.checkbox-input:checked + .custom-checkbox {
+    background-color: #ffffff; /* Цвет фона при checked */
+}
+
+/* Позиционирование галочки*/
+.checkbox-input:checked + .custom-checkbox::after {
+    content: ''; /* Создание внутренняя метка */
+    position: absolute;
+    left: 50%; /* Центрируем по горизонтали */
+    top: 50%; /* Центрируем по вертикали */
+    width: 5px; /* Ширина галочки */
+    height: 14px; /* Высота галочки */
+   
+    border: solid #69FF12; /* Цвет галочки */
+    border-width: 0 2px 2px 0; /* Форматирование галочки */
+    transform: translate(-45%, -55%) rotate(45deg); /* Поворачиваем и центрируем галочку */
+}
+.blockforcheckbox {
+    height: 20px; /* Высота блока */
+    width: 20px; /* Ширина блока */
+    background: #FF0074; /* Цвет фона */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 50; /* Позиция слева */
+    top: 660; /* Позиция сверху */
+    z-index: 1095; /* Задний план */
+}
+.bgforbtnexit{
+    height: 39px;
+ width: auto;
+    background: #FF0F0F;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 0px;
+}
+
+.btnnForRegPodcaster1{
+    margin-top: 20; /* Увеличьте значение по мере необходимости */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  .bgforbtnsave{
+
+    height: 39px;
+    
+    display: table-cell; 
+    background: #FF0074;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 0px;
+  }
+  .test1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  
+    .inputplustext{
+      display: grid;
+      grid-template-columns: 1fr; /* Одну колонку */
+      gap: 8px; /* Отступ между элементами */
+    }
+    ._pink {
+      z-index: 3;
+      background-color: #FF0074; /* изменяем цвет именно для div*/
+    }
+    ._red {
+
+      background-color: #FF0F0F; /* изменяем цвет именно для div*/
+ 
+    }
+      
+    ._green {
+
+      background-color: #69FF12; /* изменяем цвет именно для div*/
+     
+    }
+   
+  ._pink {
+    background: #FF0074;
+
+}
+
+ 
+    @media (max-width: 1279px) {
+      ._passwordblack {
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        height: 23.4px;
+        width: calc(100% - 15px);
+    }
+      ._passwordpink {
+
+        background-color: #FF0074; /* изменяем цвет именно для div*/
+      }
+      ._passwordred {
+  
+        background-color: #FF0F0F; /* изменяем цвет именно для div*/
+      }
+        
+      ._passwordgreen {
+  
+        background-color: #69FF12; /* изменяем цвет именно для div*/
+      }
+   
+      .modal-contents{
+        /* position: fixed; */
+        background: white;
+        border-radius: 20px;
+        width: 99vw;
+        height: calc(100vh - 200px);
+      
+        z-index: 1001;
+        
+  
+      
+      }
+      .bgforbtnexit{
+     
+     
+        display: flex;
+        justify-content: center; /* Центрирование по горизонтали */
+        align-items: center; /* Центрирование по вертикали */
+        background-color: #FF0F0F;
+        height: 22.5px;
+        width: auto;
+    }
+    
+ 
+      .bgforbtnsave{
+        display: flex;
+        justify-content: center; /* Центрирование по горизонтали */
+        align-items: center; /* Центрирование по вертикали */
+        background-color: #FF0074;;
+        height: 22.5px;
+        width: auto;
+    
+      }
+
+      .custom-checkbox {
+        width: 16px; /* Ширина чекбокса */
+        height: 16px; /* Высота чекбокса */
+        border-radius: 6px; /* Закругление углов */
+        
+    }
+    
+
+    /* Позиционирование галочки*/
+    .checkbox-input:checked + .custom-checkbox::after {
+   
+        width: 3px; /* Ширина галочки */
+        height: 10px; /* Высота галочки */
+    }
+    .blockforcheckbox {
+        height: 15px; /* Высота блока */
+        width: 16px; /* Ширина блока */
+
+    }
+    .checkbox-label{
+
+      font-size: 12px;
+
+      }
+      .test1{
+        position: absolute; /* Делаем абсолютное позиционирование */
+        bottom: 0; /* Прижимаем к нижней части */
+        left: 0; /* Опционально, прижимаем к левому краю */
+        right: 0; /* Опционально, растягиваем по ширине родителя*/
+        padding-bottom: 40px; /* добавляем небольшой padding bottom */
+        padding-left: 16px;
+        display: flex; /* Включаем flexbox */
+        align-items: flex-end; /* Выравниваем элементы по низу */
+     
+      }
+
+    }

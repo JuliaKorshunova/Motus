@@ -1,0 +1,673 @@
+@font-face {
+    font-family: 'Inter-MediumItalic';
+    src: url('src/fonts/Inter-MediumItalic.otf') format('truetype');
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url('src/fonts/SF-Pro-Display-Light.otf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Stolzl';
+    src: url('src/fonts/stolzl_regular.otf') format('truetype');
+  }
+
+.podpiski{
+  cursor: pointer;
+}
+.obedinenieforpodcaster{
+  /* overflow-x: hidden; */
+  display: grid; /* Включаем Grid */
+  grid-template-columns: 1fr; /* Одна колонка */
+  gap: 31px; 
+  position: relative;
+/* left: 21.25%;  */
+/* min-width: 76.39%; */
+width: 76vw;
+min-width: 900px;
+
+}
+.sforpodcaster {
+position: relative;
+
+height: auto;
+
+ /* 260px */
+
+}
+.profillepodcaster{
+  /* Профиль */
+  
+  position: relative;
+  
+  height: 60px;
+  width: 21.18%; /* 305px */
+  
+  margin-top: 0px;
+  /* platform/h1 */
+  font-family: 'Stolzl';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  color: #000000;
+  margin-bottom: 0px;
+  
+  }
+
+.whiteblockpodcaster{
+    position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+overflow-x: hidden;
+overflow-y: hidden;
+/* white */
+background: #FFFFFF;
+border-radius: 40px;
+}
+
+.pinkblock{
+
+/* profile */
+/* Rectangle 11 */
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* main */
+background: #FF0074;
+
+}
+
+.thefforpodcasterprofile{
+    /* Александра Митрошина */
+
+margin: 0px;
+font-family: 'Inter-MediumItalic';
+font-style: italic;
+font-weight: 500;
+font-size: 30px;
+
+line-height: 134%;
+/* or 40px */
+
+/* black */
+color: #0E0E0E;
+
+}
+
+
+
+.thesecforpodcaster{/* По моим видео ты станешь блогером и начнешь зарабатывать. Подпишись🤟🏻 */
+
+left: 30px;
+right: 48.45%;
+/* top: 20.62%; */
+bottom: 67.69%;
+/* top:5px; */
+margin: 0px;
+margin-top: 5px;
+/* platform/txt */
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+/* black */
+color: #0E0E0E;
+ }
+
+ .ssylkapodcaster{
+    /* vk.com/user */
+
+position: relative;
+
+/* margin-left: 8px; */
+
+width: 100px;
+height: 100px;
+/* platform/txt */
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+/* subt */
+color: #6D6D6D;
+display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 7px;
+
+
+ }
+ .im1podcaster {
+  /* link */
+
+position: relative;
+width: 24px;
+height: 24px;
+
+/* margin-right: 8px; */}
+
+ .seroeforpodcaster{
+    /* display:inline-block; */
+    gap:6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    left: 1.39%; /* 20px */
+    right: 67.24%; /* 967px */
+    bottom: 17.88%; /* 143px */
+   margin: 0px;
+   top: 9px;
+   height: 20px;
+    /* position: absolute; */
+ 
+
+ 
+ }
+ .button2{
+        top:2.5%;
+ }
+
+ .groupofbtnforpodcaster{
+
+  padding: 0px;
+  gap: 10px; /* 10px в процентах, если нужно, можно пересчитать */
+
+  width: 27.64%; /* 397px */
+  
+  left: 1.39%; /* 20px */
+  top: 200px; /* 200px */
+  /* Frame 8796 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+position: absolute;
+
+height: 40px;
+
+ }
+
+  .bgforbtnpodcaster{
+width: auto;
+height: 40px;
+
+
+background: #FF0074;
+flex: none;
+order: 0;
+flex-grow: 0;
+
+ } 
+
+ 
+ .bgforbtn2p{
+  width: auto;
+  height: 40px;
+  
+  
+  background: #FF99C7;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  
+   } 
+
+
+   .pocastdis{
+    display: flex;
+flex-direction: row;
+align-items: center;
+width: 800px;
+   }
+  
+   .pocastdis p {
+
+    white-space: nowrap;
+    /* Чтобы стать подкастером необходимо набрать 100 подписчиков */
+
+width: auto;
+height: auto;
+display: flex;
+flex-direction: row;
+align-items: center;
+/* margin-right: 242px; */
+
+/* platform/txt */
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+/* main */
+color: #FF0074;
+
+
+/* Inside auto layout */
+
+order: 2;
+flex-grow: 0;
+margin-left: 10px;
+
+}
+
+.countofsubpodcaster{
+  /* Frame 10 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+justify-content: space-between;
+position: absolute;
+/* width: 241px; */
+width: auto;
+height: 19px;
+right: 30px;
+top: 30px;
+
+}
+
+
+.countofsubpodcaster p {
+  /* 256 подписок */
+  /* white-space: nowrap; */
+/* width: 150px; */
+height: 19px;
+width: auto;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 134%;
+/* identical to box height, or 19px */
+
+/* black */
+color: #0E0E0E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+
+.plus{
+  right: 0;
+}
+.kos{
+  width: 260px;
+  height: 260px;
+}
+
+
+.personforpodcaster{
+  
+/* image 293 */
+
+position: relative;
+margin-top: 100px;
+
+}
+.obedineniesphotopodcaster{
+  /* top: 19.875%; */
+  position: relative;
+  display: flex;
+flex-direction: row;
+align-items: center;
+gap: 20px;
+overflow-x: hidden; 
+overflow-y: hidden;
+
+
+}
+.obedinen2podcaster{
+   
+    display: flex;            /* Включаем Flexbox */
+    flex-direction: column;  /* Располагаем элементы в столбец */
+    gap: 30px;   
+
+}
+
+.obedinenwithbutton{
+    
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rowforpodcater{
+ margin-left: 20px;
+ margin-top: 19px;
+  display: flex;
+flex-direction: row;
+align-items: center;
+gap: 10px;
+}
+
+.usernameforpodacterprofile{
+
+/* platform/h4 */
+font-family: 'Stolzl';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 124%;
+/* identical to box height, or 20px */
+margin-top: 2px;
+/* subt */
+color: #6D6D6D;
+
+
+}
+
+.commentspodcaster{
+  display: flex;
+   justify-content: space-between;
+    align-items: center;
+     margin-bottom: 30px;
+    }
+
+
+    .kolonka{
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      margin-left: 20px;
+    }
+
+
+    @media (min-width: 1279px)   {
+      .imgpod{
+          display: none;
+      }
+   }
+
+  @media (min-width: 1439px) {
+ 
+  }
+@media (max-width: 1439px) {
+      .kolonka{
+        margin: 0px;
+      }
+
+     .sforpodcaster {
+      position: relative;
+      
+      height: 230px;
+      overflow-y: none;
+      
+      }
+      .personforpod{
+  
+        /* image 293 */
+        height: 230px;
+        width: 230px;
+        position: relative;
+        margin-top: 91px;
+        margin-left: 30px;
+    
+        }
+      .imgforpod{
+        height: 230px;
+        width: 230px;
+       
+      }
+      .obedinenieforpodcaster{
+     
+        width: 76vw;
+        min-width: 820px;
+      overflow-y: hidden;
+      
+      }
+      
+    .thesecforpodcaster{
+
+   
+   left: 20px;
+    margin: 0px;
+      /* top: 65px; */
+   position: relative;
+        /* white-space: nowrap; */
+      
+   
+    }
+    .mar{
+      margin-left: -30px;
+    }
+    
+    .seroeforpodcaster{
+    position: relative;
+     margin: 0px;
+     /* top: 9px; */
+     /* margin-top: 15px; */
+     height: 8px;
+  
+    }
+
+
+    .groupofbtnforpodcaster{
+
+      top: 166px; 
+     }
+    
+}
+@media (min-width: 1279px) {
+  .countofsubsecond {
+    display: none;
+  }
+  .obedineniesphotopodcaster-container{
+    display: none;
+  }
+
+
+
+}
+
+@media (max-width: 1279px) {
+  .countofsubpodcaster {
+    display: none;
+  }
+
+.profillepodcaster{
+  /* Профиль */
+  
+  position: relative;
+  
+  height: 40px;
+  width: 21.18%; /* 305px */
+  
+  margin-top: 0px;
+  /* platform/h1 */
+  font-family: 'Stolzl';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 60px;
+  color: #000000;
+  margin-bottom: 0px;
+  margin-top: -20px;
+
+  
+  }
+  .personforpodcaster{
+  
+
+    display: none;
+  
+    
+    }
+    .obedinenieforpodcaster{
+      /* overflow-x: hidden; */
+      display: grid; /* Включаем Grid */
+      grid-template-columns: 1fr; /* Одна колонка */
+      gap: 13px; 
+      position: relative;
+    /* left: 21.25%;  */
+    /* min-width: 76.39%; */
+    width: calc(100vw - 30px);
+    /* min-width: 326px; */
+    min-width: 50px;
+    
+    }
+
+    .obedineniesphotopodcaster{
+      /* top: 19.875%; */
+      position: relative;
+      display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    overflow-x: hidden; 
+    overflow-y: hidden;
+    /* left: 200px; */
+    
+    }
+
+    .thefforpodcasterprofile{
+
+     font-size: 20px; }
+     
+
+     .rowforpodcater{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-left: 81px;
+      margin-top: 11px;
+
+     }
+
+     .headphones{
+      display: none;
+     }
+     .usernameforpodacterprofile{
+      font-size: 12px;
+      margin: 0px;
+     }
+
+
+     .countofsubsecond{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    justify-content: space-between;
+    width: auto;
+    height: 19px;
+    right: 30px;
+    top: 30px;
+    
+    }
+  
+    .countofsubsecond p {
+ 
+    height: 19px;
+    width: auto;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 134%;
+    color: #0E0E0E;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+    }
+
+    .thesecforpodcaster{
+      top: 0px;
+      font-size: 12px;
+      width: calc(100vw - 50px);
+      position: relative;
+    }
+    .sforpodcaster{
+      height: 200px;
+    }
+    .kolonka{
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .seroeforpodcaster{
+      position: relative;
+    
+      height: 16px;
+      margin-top: -10px;
+      left: 15px;
+
+    }
+    .ssylkapodcaster{
+      font-size: 12px;
+    }
+    .im1podcaster{
+      width: 16px;
+      height: 16px;
+    }
+
+    .groupofbtnforpodcaster{
+      top: 150px;
+      left: 15px;
+      position: absolute;
+    }
+    .bgforbtnpodcaster{
+      height: 24px;
+    }
+
+    .whiteblockpodcaster{
+      border-radius: 20px;
+    }
+
+    .commentspodcaster{
+         margin-bottom: 16px;
+        }
+
+        .obedinen2podcaster{
+   
+          display: flex;            /* Включаем Flexbox */
+          flex-direction: column;  /* Располагаем элементы в столбец */
+          gap: 30px; 
+          width: calc(100vw - 30px);  
+      
+      }
+
+
+      .imgpod
+      {
+        position: relative;
+        left: 25px;
+       top: 145px;
+        z-index: 1000;
+        height: 51px;
+        width: 51px;
+        border-radius: 7px;
+      }
+    
+}
+
+

@@ -1,0 +1,37 @@
+.vmplaylist{
+    /* left: 500px; */
+    margin-right: 30px;
+    right: 30px;
+    width: 76vw;
+    position: relative;
+    display: flex;            /* Включаем Flexbox */
+    flex-direction: column;  /* Располагаем элементы в столбец */
+    margin-left: 30px;
+    /* gap: 50px;    */
+}
+
+@media (max-width: 1439px) {
+    .vmplaylist{
+
+    margin-left: 0px;
+    gap: 20px;
+
+    }
+    
+
+}
+
+@media (max-width: 1279px) {
+    .vmplaylist{
+        right: 30px;
+        position: relative;
+        display: flex;            /* Включаем Flexbox */
+        flex-direction: column;  /* Располагаем элементы в столбец */
+        left: -280px;
+        width: calc(100vw - 30px );
+       
+        /* gap: 50px; */
+    }
+    
+
+}

@@ -1,0 +1,135 @@
+.button-container-for-lestening{
+    display: flex;           /* Включаем flexbox */
+    align-items: center;     /* Центрируем кнопку по вертикали (если это нужно) */
+    margin-top: -38.5px;       /* Отступ сверху, если требуется */
+    width: 100%;            /* Ширина контейнера на 100% */
+    margin-left: 426px;
+
+}
+
+.text__for__age_empty{
+    /* 18+ */
+
+position: absolute;
+width: 34px;
+height: 25px;
+left: 715px;
+top: 377px;
+
+/* platform/h3 */
+font-family: 'Stolzl';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 124%;
+/* identical to box height, or 25px */
+
+/* main */
+color: #FF0074;
+
+
+}
+
+.frame_9_EMPTY{
+         /* Категории */
+  
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 0px;
+  gap: 0px 10px;
+  
+  position: absolute;
+  width: 260px;
+  height: 40px;
+  left: 0px;
+
+}
+
+.ChavronLeft{
+ margin-left: 1px; /* Настройте, чтобы изображение было ближе к тексту */
+
+}
+.bread_crumbs1_empty{
+/* Мои подписки */
+
+
+height: 15px;
+
+/* platform/subt */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 126%;
+/* or 15px */
+
+/* subt */
+color: #6D6D6D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.bread_crumbs2_empty{
+/* Как стать богатым за 5 минут не выходя из дома */
+
+width: 293px;
+height: 15px;
+
+/* platform/subt */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 126%;
+/* or 15px */
+
+/* subt */
+color: #6D6D6D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+}
+
+.text_for_podcast{
+    /* Выпусков еще нет. */
+
+position: absolute;
+width: 279px;
+height: 40px;
+left: calc(50% - 279px/2 + 139.5px);
+top: 569px;
+
+/* platform/h2 */
+font-family: 'Inter';
+font-style: italic;
+font-weight: 500;
+font-size: 30px;
+line-height: 134%;
+/* or 40px */
+
+/* black */
+color: #0E0E0E;
+
+
+}
+
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../fonts/inter-regular.otf') format('opentype');
+    font-weight: normal;  /* Установите вес шрифта */
+    font-style: normal;   /* Установите стиль шрифта */
+  }
+

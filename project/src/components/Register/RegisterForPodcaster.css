@@ -1,0 +1,94 @@
+._rectangle15_33{
+    /* Rectangle 15 */
+
+position: absolute;
+left: 0;
+right: 0;
+
+bottom: 0;
+top: 270px;
+
+/* black */
+background: #0E0E0E;
+
+width: 540px;
+height: 70px;
+}
+
+
+._rectangle15_mave{
+        /* Rectangle 15 */
+
+position: absolute;
+left: 0;
+right: 0;
+
+bottom: 0;
+top: 200px;
+
+/* black */
+background: #0E0E0E;
+
+width: 540px;
+height: 40px;
+}
+
+.frame5_11{
+/* Frame 5 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 8px 20px 7px;
+gap: 5px;
+
+position: absolute;
+width: 266px;
+height: 40px;
+left: 0px;
+top: 350px;
+
+border-radius: 13px;
+}
+
+
+.frame5_21{
+/* Frame 5 */
+  
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 20px 7px;
+  gap: 5px;
+  
+  position: absolute;
+  width: 266px;
+  height: 40px;
+  left: 0px;
+  top: 400px;
+  
+  border-radius: 13px;
+}
+
+._rectangle15_444{
+   
+position: absolute;
+left: 0;
+right: 0;
+
+bottom: 0;
+top: 470px;
+
+/* black */
+background: #0E0E0E;
+
+width: 540px;
+height: 40px; 
+}
+
+
+.btnnForRegPodcaster{
+    margin-top: 555px; /* Увеличьте значение по мере необходимости */
+}

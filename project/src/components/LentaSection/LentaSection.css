@@ -1,0 +1,44 @@
+.obforlenta{
+
+  left: 200px;
+  right: 30px;
+  position: relative;
+  display: flex;            /* Включаем Flexbox */
+  flex-direction: column;  /* Располагаем элементы в столбец */
+  gap: 30px;   
+  
+}
+
+
+@media (max-width: 1439px) {
+  .obforlenta{
+
+    left: 175px;
+    right: 30px;
+    position: relative;
+    display: flex;            /* Включаем Flexbox */
+    flex-direction: column;  /* Располагаем элементы в столбец */
+    gap: 30px;   
+    /* width: 100vw; */
+    
+  }
+
+
+@media (max-width: 1279px) {
+  .obforlenta{
+
+    left: -8px;
+    right: 30px;
+    position: relative;
+    display: flex;            /* Включаем Flexbox */
+    flex-direction: column;  /* Располагаем элементы в столбец */
+    gap: 30px;   
+    width: 100vw;
+    
+  }
+
+}
+
+
+
+}

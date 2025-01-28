@@ -1,0 +1,227 @@
+@font-face {
+    font-family: 'Inter-MediumItalic';
+    src: url('src/fonts/Inter-MediumItalic.otf') format('truetype');
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url('src/fonts/SF-Pro-Display-Light.otf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Stolzl';
+    src: url('src/fonts/stolzl_regular.otf') format('truetype');
+  }
+
+
+
+
+
+ .button2{
+        top:2.5%;
+ }
+
+ .groupofbtnforOP{
+
+  padding: 0px;
+  gap: 10px; /* 10px в процентах, если нужно, можно пересчитать */
+
+  top: 200px; /* 200px */
+position: absolute;
+align-items: center;
+padding: 0px;
+margin-left: 0px;
+
+ }
+
+.bgforbtna{
+    background: #FF0074;
+}
+ .groupofbtni{
+margin-top: 200px;
+margin-left: 20px;
+gap: 10px;
+  width: 246px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap; /* Чтобы предотвратить перенос строк */
+
+ }
+
+ 
+
+   .pocastdis{
+    display: flex;
+flex-direction: row;
+align-items: center;
+width: 800px;
+   }
+   .forpodcastother{
+    margin-top: -40px;
+
+  }
+   .pocastdis p {
+
+    white-space: nowrap;
+    /* Чтобы стать подкастером необходимо набрать 100 подписчиков */
+
+width: auto;
+height: auto;
+display: flex;
+flex-direction: row;
+align-items: center;
+/* margin-right: 242px; */
+
+/* platform/txt */
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+/* main */
+color: #FF0074;
+
+
+/* Inside auto layout */
+
+order: 2;
+flex-grow: 0;
+margin-left: 10px;
+
+}
+
+
+
+
+.kos{
+  width: 260px;
+  height: 260px;
+}
+
+
+
+.profileotherpodcaster{
+  /* Профиль */
+  
+  position: relative;
+  
+  height: 60px;
+  width: 21.18%; /* 305px */
+  
+  margin-top: 0px;
+  /* platform/h1 */
+  font-family: 'Stolzl';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  color: #000000;
+  margin-bottom: 0px;
+  
+  }
+
+  .forp{
+    margin-top: -30px;
+  }
+
+
+@media (max-width: 1439px) {
+
+
+   .personforOP{
+
+     /* image 293 */
+     height: 230px;
+     width: 230px;
+     position: relative;
+     margin-top: 91px;
+     margin-left: 30px;
+     
+ 
+     }
+   .imgforOP{
+     height: 230px;
+     width: 230px;
+    
+   }
+ 
+ .groupofbtnforOP{
+
+
+   top: 160px;
+   margin-left: 20px;
+  }
+
+  .forpodcastother{
+    margin-top: -40px;
+    margin-left: -30px;
+  }
+ 
+}
+
+@media (min-width: 1279px)   {
+  .imgpod{
+      display: none;
+  }
+  .headphones2{
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 1279px) {
+  .headphones{
+    display: none;
+  }
+
+  .imgforOP{
+    display: none;
+}
+
+
+      .forl{
+        margin-top: -24px;
+      }
+
+      .forp{
+        margin-top: -30px;
+      }
+
+      .profileotherpodcaster{
+        /* Профиль */
+        
+        position: relative;
+        
+        height: 40px;
+        width: 21.18%; /* 305px */
+        
+        margin-top: 0px;
+        /* platform/h1 */
+        font-family: 'Stolzl';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 60px;
+        color: #000000;
+        margin-bottom: 0px;
+        margin-top: -20px;
+      
+        
+        }
+    .groupofbtnforOP{
+      margin-left: 10px;
+    }
+    .rowforheadphones{
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+    }
+
+    .headphones2{
+      width: 16px;
+      height: 16px;
+      margin-top: 5px;
+    }
+}

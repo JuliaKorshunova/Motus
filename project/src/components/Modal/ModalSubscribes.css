@@ -1,0 +1,154 @@
+
+.modal-overlay2 {
+  position: fixed; /* Фон остается фиксированным */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); /* Полупрозрачный фон */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 2000;
+  overflow-y: auto;
+
+}
+
+.modal-content2 {
+  position: relative; /* Теперь модальное окно относительно родителя */
+  background: white;
+  border-radius: 40px;
+  width: 83vw;
+  top: 120px;
+  height: auto;
+  overflow: hidden; /* Важно: скрываем overflow, чтобы предотвратить полосу прокрутки на overlay */
+  z-index: 1001;
+  /* padding: 20px; */
+  box-sizing: border-box;
+} 
+
+.thefirstrowsub {
+  display: flex;
+  width: 100%;
+  align-items: center; /* Центрирование по вертикали */
+  margin-top: 49px;
+  z-index: 2005;
+}
+
+.newpod {
+  font-family: 'Stolzl';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  margin-left: 49px; /* Отступ слева от текста */
+  margin-right: auto; /* Используется для заполнения свободного пространства */
+  color: #0E0E0E;
+}
+
+.close {
+  margin-top: 20px;
+  margin-right: 50px; /* Отступ справа от изображения */
+  /* Используйте здесь для указания размера изображения, если нужно */
+}
+
+.forauthorssection{
+  margin-left: -227px;
+  margin-top: 30px;
+  width: calc(89vw  - 10px);
+}
+
+.countofsubcribes{
+  display: flex;
+  flex-direction: row;
+}
+.countofsubcribes2{
+
+
+/* platform/h3 */
+font-family: 'Stolzl';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 124%;
+/* identical to box height, or 25px */
+margin-right: auto;
+margin-top: 2px;
+/* subt */
+color: #6D6D6D;
+
+
+}
+.newpod1 {
+  font-family: 'Stolzl';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  margin-left: 49px; /* Отступ слева от текста */
+  margin-right: 20px; /* Используется для заполнения свободного пространства */
+  color: #0E0E0E;
+}
+
+@media (max-width: 1279px) {
+  .modal-content2 {
+
+    border-radius: 20px;
+    width: 99vw;
+    top: 100px;
+  
+    
+  }
+  .newpod1 {
+  
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 60px;
+    margin-left: 16px; /* Отступ слева от текста */
+    margin-right: 8px; /* Используется для заполнения свободного пространства */
+    color: #0E0E0E;
+    z-index: 1200;
+   
+  }
+  .close{
+    z-index: 1200;
+  }
+
+  .countofsubcribes2{
+
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 124%;
+    margin-top: 5px;
+    color: #6D6D6D;
+    z-index: 1200;
+
+
+  }
+  .thefirstrowsub{
+ 
+    position: fixed;
+    width: calc(100vw - 8px);
+    margin-top: 0px;
+  }
+  .wbforsub{
+    position: absolute;
+    width: 99vw;
+    height: 50px;
+    background-color: white;
+    z-index: 1100;
+    border-radius: 20px 20px 0 0;
+    margin-top: -12px;
+  }
+  .forauthorssection{
+    margin-top: 50px;
+  }
+  .whiteblocksub{
+    border-radius: 20px;
+  }
+
+}

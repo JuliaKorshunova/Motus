@@ -1,0 +1,24 @@
+
+.card-containersub {
+    display: grid; /* Используем Grid для расположения карточек */
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    gap: 20px; /* Устанавливаем расстояние между элементами */
+ 
+    
+    margin-left: 280px;
+ 
+}
+
+@media (max-width: 1279px) {
+
+    .card-containersub {
+     
+        margin-left: -16px;
+        margin-right: 16px ;
+        display: grid; /* Используем Grid для расположения карточек */
+        grid-template-columns: repeat(1, 1fr); /* 2 колонки */
+        gap: 8px; /* Устанавливаем расстояние между элементами */
+     
+    }
+
+}

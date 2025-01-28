@@ -1,0 +1,476 @@
+@font-face {
+    font-family: 'Inter-MediumItalic';
+    src: url('src/fonts/Inter-MediumItalic.otf') format('truetype');
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url('src/fonts/SF-Pro-Display-Light.otf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Stolzl';
+    src: url('src/fonts/stolzl_regular.otf') format('truetype');
+  }
+  
+  .sectionsubForPodcast{
+    
+    width: 37,5vw;
+    /* height: 270px; */
+    height: 270px;
+    top: 0px;
+    margin-left: 0px;
+    min-width: 540px;
+    
+   
+  }
+  .cardsub {
+    background: white; /* Цвет фона карточки */
+    width: 100%; /* Занимает всю ширину доступного пространства */
+    display: flex; /* Используем Flexbox для размещения элементов */
+    flex-direction: column; /* Вертикальное направление размещения */
+    overflow: hidden; /* Скрываем лишние части */
+    position: relative;
+    height: 100%;
+     
+  }
+  
+  .blackblocksub{
+      /* position: absolute; */
+      left: 0%;
+      right: 0%;
+      top: 0%;
+      bottom: 0%;
+      background: #0E0E0E;
+      position: absolute;
+      }
+      
+      .whiteblocksub {
+      
+      
+      position: absolute;
+      left: 0%;
+      right: 0%;
+      top: 0%;
+      bottom: 0%;
+      
+      background: #FFFFFF;
+      border-radius: 40px;
+      
+      }
+      
+    .bgforbtnsub{
+      width: 109.5px;
+      height: 40px;
+      
+      
+      background: #FF0074;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      padding: 0px;
+  
+   } 
+      
+
+  
+      
+  .zagalovoksub{
+  
+        white-space: nowrap;   /* Запретить перенос текста */
+       
+       
+  /* Деньги пришли */
+  
+  position: absolute;
+  width: 165px;
+  height: 25px;
+  left: 20px;
+  top: 20px;
+  margin: 0px;
+  /* platform/h2 */
+  font-family: 'Stolzl';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 124%;
+  /* identical to box height, or 25px */
+  
+  /* black */
+  color: #0E0E0E;
+  
+  
+      }
+  
+      .container1sub{
+        width: 300px; 
+      }
+      
+      .subtitlesub {
+  
+      white-space: nowrap;   /* Запретить перенос текста */
+     
+      
+  
+  /* Семейный бюджет */
+  
+  position: absolute;
+  width: 151px;
+  height: 20px;
+  left: 20px;
+  /* top: 54px; */
+  top: 54px;
+  margin: 0px;
+  /* platform/txt */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 126%;
+  /* or 20px */
+  
+  /* black */
+  color: #0E0E0E;
+  
+  
+      
+       
+      }
+      
+      .hashtagssub {
+  /* Категории */ 
+       
+  
+   
+  /* Frame 9 */ 
+   
+  /* Auto layout */ 
+  display: flex; 
+  flex-direction: row; 
+  align-items: flex-start; 
+  padding: 0px; 
+  gap: 10px; 
+   
+  position: absolute; 
+  
+  height: 20px; 
+   
+  /* #воспитание */ 
+   
+  /* platform/txt */ 
+  font-family: 'SF Pro Display'; 
+  font-style: normal; 
+  font-weight: 400; 
+  font-size: 16px; 
+  line-height: 126%; 
+  /* or 20px */ 
+   
+  /* fourth */ 
+  color: #FF7510; 
+   
+  left: 20px; 
+  right: 70%;  
+  top: 84px;  
+  /* Inside auto layout */ 
+  flex: none; 
+  order: 2; 
+  flex-grow: 0; 
+   
+  
+  }
+  
+  
+  .hastags1sub{
+   /* #образование */
+  
+   
+  height: 20px;
+  
+  /* platform/txt */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 126%;
+  /* or 20px */
+  
+  /* fourth */
+  color: #FF7510;
+  
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  
+  }
+      
+      .timesub{
+   /* 34 мин. */
+  
+  position: absolute;
+  width: 61px;
+  height: 20px;
+  left: 20px;
+  top: 114px;
+  
+  /* platform/txt */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 126%;
+  /* or 20px */
+  
+  /* subt */
+  color: #6D6D6D;
+  
+  
+      }
+      
+      .picturesubForPodcast{
+      /* image 293 */
+      
+      position: absolute;
+      width: 264px;
+      height: 264px;
+      right: 3px;
+      top: 3px;
+      z-index: 100;
+      
+      border-radius: 40px;
+      
+      
+      }
+
+
+      
+       
+      .picturesub1ForPodcast{
+        /* image 293 */
+        
+        position: absolute;
+        width: 264px;
+        height: 264px;
+        right: 30px;
+        top: 3px;
+        z-index: 99;
+        
+        border-radius: 40px;
+        
+        
+        }
+      
+      .containersub{
+      
+      /* author */
+      
+      position: absolute;
+      width: 137px;
+      height: 40px;
+      left: 20px;
+      bottom: 70px;
+      
+      
+      
+      }
+      
+      .text1sub { 
+        position: absolute; 
+        left: 36.5%; 
+        right: -5.11%; 
+        top: 5%; 
+        bottom: 45%; 
+    
+        /* platform/txt */ 
+        font-family: 'Inter'; 
+        font-style: normal; 
+        font-weight: 400; 
+        font-size: 16px; 
+        line-height: 126%; 
+    
+        /* black */ 
+        color: #0E0E0E; 
+    
+        /* Запрещаем перенос */
+        white-space: nowrap;  
+        
+    }
+    
+    .text2sub { 
+        position: absolute; 
+        left: 36.5%; 
+        right: 1.46%; 
+        top: 55%; 
+        bottom: 7.5%; 
+    
+        font-family: 'SF Pro Display'; 
+        font-style: normal; 
+        font-weight: 400; 
+        font-size: 12px; 
+        line-height: 126%; 
+    
+        /* black */ 
+        color: #0E0E0E; 
+    
+        /* Запрещаем перенос */
+        white-space: nowrap;  
+  
+        
+    }
+      
+     
+      
+    .btnnpod {
+      /* Существующие стили */
+      /* margin-top: 210px; */
+      /* margin-left: 20px; */
+  
+
+      
+  }
+  
+      .categoryhastags { 
+        position: absolute;  
+        height: 24px;  
+        left: 20px; 
+        right: 53.7%;  
+        top: 84px;  
+        
+        
+    } 
+    
+      .frame_91 {  
+        display: flex;   
+        flex-direction: row;   
+        align-items: flex-start;   
+        padding: 0px;   
+        gap: 10px;   
+        position: relative;  
+        width: 288px;   
+        height: 20px;   
+      
+         
+   
+    }  
+    .hastags1 {   
+      position: relative;  
+      font-family: 'Inter';    
+      font-style: normal;    
+      font-weight: 400;    
+      font-size: 16px;    
+      line-height: 126%;    
+      color: #FF7510;  
+   
+   
+       
+    }  
+    .last-hashtag {  
+      color: transparent; /* Делаем текст прозрачным для показа фона */
+      background: linear-gradient(90deg, rgba(255, 117, 16, 1) 0%, rgba(255, 255, 255, 0) 100%);
+      background-clip: text; 
+      -webkit-background-clip: text; 
+      overflow: hidden;
+    }
+    
+    .hastags1::before { 
+      content: attr(data-text); 
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      color: #FF7510;
+   
+    }
+    
+    .last-hashtag::before { 
+      content: attr(data-text); 
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      color: transparent; 
+      background: linear-gradient(90deg, rgba(255, 117, 16, 1) 0%, rgba(255, 255, 255, 0) 100%);
+      background-clip: text; 
+      -webkit-background-clip: text; 
+  
+    }
+  
+  .gradient { 
+      background: linear-gradient(to right, #FF7510, white); 
+      -webkit-background-clip: text; /* Поддерживается в Chrome и Safari */ 
+      -webkit-text-fill-color: transparent; /* Задает цвет текста прозрачным */ 
+      z-index: 2; /* Убедитесь, что градиент выше */
+  } 
+  .orange { 
+      color: #FF7510; /* Оранжевый цвет текста для остальных случаев */ 
+  }
+  .vstokuForPodcast{
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    gap: 10px;
+    margin-top: 210px;
+    margin-left: 20px;
+    padding: 0px; 
+  }
+  .vm {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    gap: 5px;
+    position: relative;
+}
+
+.views1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #0E0E0E;
+    white-space: nowrap; /* Предотвращает перенос текста */
+
+    bottom: 0; /* С фиксированным позиционированием куда-то вниз */
+}
+
+
+
+
+@media (max-width: 1439px) {
+  .sectionsubForPodcast{
+    
+    width: 37vw;
+    /* height: 270px; */
+    height: 240px;
+
+    min-width: 400px;
+    
+   
+  }
+
+  .picturesubForPodcast{
+
+    width: 234px;
+    height: 234px;
+    
+    
+    }
+     
+    .picturesub1ForPodcast{
+    
+      width: 234px;
+      height: 234px;
+ 
+      
+      
+      }
+
+      .vstokuForPodcast{
+ 
+        margin-top: 180px;
+      
+      }
+}
+
+@media (max-width: 1279px){
+  .kn{
+    margin-top: 112px;
+    margin-left: -12px;
+  }
+}

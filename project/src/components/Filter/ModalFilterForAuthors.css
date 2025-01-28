@@ -1,0 +1,32 @@
+.category-label-a{
+    position: absolute;
+        width: 82px;
+        height: 20px;
+        left: 0px;
+        top: 302px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 126%;
+        color: #000000;
+}
+
+.tab-wrapper111-a{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+        padding: 0px;
+        gap: 10px;
+        position: absolute;
+        width: 245px;
+        height: 110px;
+        left: 0px;
+        top: 330px;
+}
+
+.btnnsubforReset-a {
+    margin-top: 360px;
+}

@@ -1,0 +1,600 @@
+.home_for_card_container {
+    display: grid; /* Включаем Grid */
+    grid-template-columns: 1fr; /* Одна колонка */
+    gap: 30px;  
+    position: absolute; 
+    min-width: 1100px; 
+    height: auto; 
+    min-height: 140px; 
+    right: 0px;
+    left:0px;
+    top:50px;
+    right: 30px;
+}
+.releasephotoanddes2 {
+    margin-left: 20px;
+    position: relative;
+    margin-top: 149px;
+}
+.nazvhash {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 0px;
+    gap: 0px 10px;
+    margin-right: 20px;
+}
+.hastagss {   
+    position: relative;  
+    font-family: 'Inter';    
+    font-style: normal;    
+    font-weight: 400;    
+    font-size: 16px;    
+    line-height: 126%;    
+    color: #FF7510;  
+    
+    
+    
+    }  
+.r1{
+    display: flex;
+      flex-direction: column;
+}
+.text__for__age2{
+    position: absolute;
+    width: 34px;
+    height: 25px;
+    /* left: 600px; */
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 124%;
+    color: #FF0074;
+}
+.textMain{
+
+        width: calc(100% - 30px);
+        height: 120px;
+        font-family: 'Stolzl';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 60px;
+        color: #0E0E0E;
+        align-self: stretch;
+        flex-grow: 0;
+        position: relative;
+}
+.frame_8815 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 5px;
+    position: absolute;
+    width: 404px;
+    height: 15px;
+    left: 278px;
+    top: -32px;
+}
+.fixx{
+    
+        position: relative;
+        margin: 0;
+        padding: 0;
+        transition: all 0.8s ease-in-out;
+
+}
+.topisanie {
+    display: flex;
+    padding: 0;
+    position: relative;
+    flex-direction: row;
+    gap: 10px;
+}
+.knop{
+    margin-bottom: 20px;
+}
+.frame_8786{
+ 
+        width: 1104px;
+        height: 40px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        position: relative;
+}
+.frame_hash {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 0px;
+    gap: 0px 10px;
+    /* position: absolute; */
+    width: 260px;
+    height: 40px;
+    left: 0px;
+    top: 434px;
+}
+.nazvhashpod {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 0px;
+    gap: 0px 10px;
+    margin-right: 20px;
+    height: auto;
+    width: auto; */
+}
+
+.frame_hash1 {
+    display: flex
+;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 0px;
+    gap: 0px 8px;
+    margin-top: 12px;
+   
+}
+.frame_8793{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: -469px;
+    margin-left: 272px;
+}
+.button-containerpod{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    order: 3;
+   
+}
+.knop{
+    order: 3;
+}
+
+.text__for__age1{
+font-family: 'Stolzl';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 124%;
+color: #FF0074;
+flex: none;
+order: 2;
+flex-grow: 0;
+
+}
+
+.t1{
+    order: 1;
+}
+
+.forflex{
+    /* display: flex;
+    flex-direction: row;
+    gap: 10px; */
+}
+
+.lessons{
+    margin-left: 276px;
+}
+.imgpodborka{
+    width: 264px;
+    height: 264px;
+    border-radius: 40px;
+
+}
+.text__for__name_pod{
+    /* Название подкаста */
+
+position: absolute;
+width: 230px;
+height: 20px;
+left: 280px;
+top: 54px;
+
+/* platform/txt */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+/* black */
+color: #0E0E0E;
+
+
+    
+}
+
+.content-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    
+}
+
+.text__for__description__release {
+    position: relative;
+    top: 0px;
+    margin-right: 30px;
+    /* width: calc(100vw - 100px); */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 126%;
+    color: #0E0E0E;
+    order: 4;
+}
+@media (max-width: 1439px) {
+
+
+        .gray-line{
+            width: 233px;
+        }
+    .releasephotopodborka{
+        /* Фото */
+
+        height: 230px;
+        width: 230px;
+    }
+    .frame__8793{
+        /* Frame 8793 */
+        
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 15px;
+        
+        position: absolute;
+
+        
+        left: 306px;
+        top: 148px;
+
+        height: 175px;
+        min-width: 976px;
+        width: 75vw;
+
+        margin-left: -30px;
+        
+         
+        }
+
+
+        .frame_8786{
+            /* Frame 8786 */
+            
+            height: 40px;
+            min-width: 976px;
+            width: 75vw;
+            
+            /* Inside auto layout */
+            flex: none;
+            order: 1;
+            align-self: stretch;
+            flex-grow: 0;
+            position: relative;
+
+            
+        }
+
+        .button-container{
+            margin-left: 270px;
+
+        }
+
+
+        .text__for__age{
+    margin-top:-30px;
+    margin-left:-30px;
+        
+        
+          }
+
+
+          .frame_9{
+            top:400px;
+          }
+
+
+          .home_for_card_container{
+            margin-left:-30px;
+          }
+
+      .frame_8793{
+        margin-top: -443px;
+        margin-left: 246px;
+      }
+      .frame_8815{
+        left: 246px;
+      }
+
+}
+@media (min-width: 1279px) {
+    .textMain2{
+        display: none;
+    }
+    .button-containerpod2{
+        display: none;
+    }
+    .tabformobile{
+        display: none;
+    }
+    .text__for__age2{
+        display: none;
+    }
+ 
+}
+@media (max-width: 1279px) {
+    .knop{
+        display: none;
+     }
+    .button-containerpod{
+        display: none;
+    }
+    .textMain{
+        display: none;
+    }
+    .home_for_card_container2{
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .whitepodborka {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        background-color: #ffffff;
+        width: 100%;
+        height: auto;
+        /* justify-content: space-between; */
+        border-radius: 20px;
+        padding: 16px 16px 16px 16px;
+        flex: 1; /* Заставляем занимать всё пространство */
+    }
+    .releasephotoanddes3 {
+        display: flex;
+        align-items: center; /* Выравниваем элементы по верхнему краю */
+        justify-content: center;
+        background-color: #FF0074;
+        position: relative;
+        /* width: calc(100vw - 32px); */
+        height: auto;  /* Удаляем высоту, чтобы контент влиял на размер блока */
+        margin-top: 149px;
+        
+    }
+    .releasephotoanddes2{
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+    .fixx{
+            display: flex;
+            align-items: center; /* Выравниваем элементы по верхнему краю */
+            justify-content: center;
+    }
+    .centerpod{
+        display: flex;
+        align-items: center; /* Выравниваем элементы по верхнему краю */
+        justify-content: center;
+        flex-direction: column;
+        gap: 9px;
+    }
+    .releasephotopodborka{
+        /* Фото */
+
+        height: 194px;
+        width: 194px; 
+        margin-top: 0px;
+    }
+    .lessons{
+        display: none;
+    }
+    .textMain2{
+        font-size: 26px;
+        text-align: center;
+        font-family: 'Stolzl';
+        font-style: normal;
+        font-weight: 400;
+        color: #0E0E0E;
+        align-self: stretch;
+        flex-grow: 0;
+       
+    }
+    .textMain3{
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        align-items: center; /* Выравниваем элементы по верхнему краю */
+        justify-content: center;
+    }
+    .group_8794{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .frame_8793 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        gap: 15px;
+        margin-left: 1000px;
+        margin-top: 250px;
+        width: 100vw;
+
+
+    }
+    .frame_8786{
+        display: none;
+    }
+    .frame_8815 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 5px;
+        position: absolute;
+        left: 0px;
+        top: -24px;
+    }
+    /* .nazvhash{
+        display: none;
+    } */
+
+    .hashtags1{
+        font-size: 12px;
+    }
+    .topisanie{
+        display: none;
+    }
+   
+    .button-containerpod2{
+        display: flex;
+        position: relative;
+        margin-bottom: 0px;
+    }
+    .bgg{
+        height: 24px;
+    }
+    .text__for__age2{
+    
+       /* position: relative;
+       left: 0px;
+       margin-left: -100px;
+       z-index: 1000; */
+       right: 21px;
+       top: 21px;
+      
+
+    }
+    .text__for__age1{
+        display: none;
+    }
+
+    .group_8794{
+        display: none;
+       
+    }
+    .tabformobile{
+        margin-top: 16px;
+    }
+
+    .text__for__description{
+        position: relative;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 134%;
+        margin-top: 12px;
+        width: 100%;
+
+
+    }
+    .hastagss{
+        font-size: 12px;
+    }
+    .frame_hash1{
+        gap: 8px;
+        /* position: relative; */
+        
+    }
+    .nazvhashpod{
+        display: none;
+    }
+    .nazvhashpod1{
+    display: flex;
+       position: relative;
+    }
+    .flex-container {
+        flex: 1;
+        display: flex; /* Устанавливаем flex для контейнера */
+        flex-direction: column; /* Важно: для размещения элементов друг под другом */
+        /* width: 100%;      Можно добавить, если вам нужна полная ширина */
+    }
+    
+    .text__for__description1 {
+        /* position: relative; */
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 134%;
+        margin-top: 12px;
+        width: 100%;
+    }
+    .topisanie1 {
+        display: flex;
+        padding: 0;
+        position: relative;
+        flex-direction: row;
+        gap: 8px;
+    }
+    .ellpod{
+        width: 24px;
+        height: 24px;
+        margin-top: 2px;
+    }
+    .nazv1{
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 134%;
+        color: #0E0E0E;
+
+
+    }
+    .nazv2{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 126%;
+        color: #0E0E0E;
+        width: 100%;
+    }
+
+    .linepod{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        margin-top: 12px;
+        align-items: center;
+        
+    }
+    .bgg{
+        width: auto;
+        height: 24px;
+    }
+    .bgg2{
+        width: auto;
+        height: 24px;
+    }
+    .content-wrapper{
+        gap: 0px;
+    }
+}

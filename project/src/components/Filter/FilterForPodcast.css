@@ -1,0 +1,658 @@
+.filter-wrapper {
+    /* Фильтрация */
+
+    position: absolute;
+    width: 131px;
+    height: 25px;
+    left: 30px;
+    top: 320px;
+
+    /* platform/h3 */
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 124%;
+    /* identical to box height, or 25px */
+
+    color: #000000;
+}
+
+.filter-header {
+    /* Фильтрация */
+
+    position: absolute;
+    width: 131px;
+    height: 25px;
+    left: 0px;
+    top: 0px;
+
+    /* platform/h3 */
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 124%;
+    /* identical to box height, or 25px */
+
+    color: #000000;
+}
+
+.slider-wrapper {
+    /* Frame 8794 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+
+    position: absolute;
+    width: 260px;
+    height: 480px;
+    left: 0px;
+    top: 58px;
+}
+
+@media (max-width: 1439px) {
+    .slider-wrapper {
+        /* Frame 8794 */
+    
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 20px;
+    
+        position: absolute;
+        width: 228px;
+        height: 520px;
+        left: 0px;
+        top: 58px;
+    }
+
+    .filter-duration{
+        /* Продолжительность */
+
+    width: 228px !important;
+    height: 70px !important;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    }
+
+    .tab-wrapper111{
+        /* Категории */
+
+    width: 228px !important;
+    height: 186px !important;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    }
+
+    .scrollBar {
+        width: 228px !important; /* Устанавливаем новую ширину */
+      }
+    
+      .ElipseGreen_2,
+      .end-time-text {
+        left: calc(15px + (var(--slider-value, 0) / 180) * 213px); /* Корректируем позицию */
+      }
+
+  }
+
+.sort-wrapper {
+    /* Упорядочить */
+
+    width: 215px;
+    height: 200px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.sort-label {
+    /* Упорядочить */
+
+    position: absolute;
+    width: 102px;
+    height: 20px;
+    left: 0px;
+    top: 102px;
+
+    /* platform/txt */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 126%;
+    /* or 20px */
+
+    color: #000000;
+}
+
+.radio-buttons-container {
+    /* Frame 8788 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 11px;
+
+    position: absolute;
+    width: 215px;
+    height: 169px;
+    left: 0px;
+    top: 133px;
+}
+
+.category-wrapper {
+    /* Категории */
+
+    width: 245px;
+    height: 146px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.category-label {
+/* Категории */
+
+position: absolute;
+width: 82px;
+height: 20px;
+left: 0px;
+top: 286px;
+
+/* platform/txt */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+color: #000000;
+}
+
+.tab-wrapper111 {
+       /* Frame 8846 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: flex-start;
+align-content: flex-start;
+padding: 0px;
+gap: 10px;
+
+position: absolute;
+width: 245px;
+height: 110px;
+left: 0px;
+top: 318px;
+}
+
+.ButtonTabGreenForFilter {
+    flex-grow: 1;  /* Кнопки будут растягиваться, чтобы заполнять контейнер */
+    min-width: 100px;  /* Минимальная ширина кнопок */
+    max-width: 100%;  /* Кнопки не будут превышать ширину контейнера */
+    text-align: center;  /* Выравнивание текста по центру */
+}
+
+.frame-small {
+    /* Frame 8787 */
+
+    width: 10px;
+    height: 11px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.radio-button-item {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Отступ между радиокнопкой и текстом */
+}
+
+.radio-label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px; /* Уменьшили размер текста */
+    line-height: 134%;
+    color: #0E0E0E;
+}
+
+.filter-duration {
+    position: relative;
+    width: 260px;
+    height: 70px;
+}
+
+/* Текст метки "Продолжительность" */
+.duration-text-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+/* Серый трек */
+.track-background {
+    position: absolute;
+    top: 46px;
+    left: 0;
+    width: 260px;
+    height: 2px;
+    background-color: #9e9e9e;
+}
+
+/* Зелёный прогресс (динамическая ширина) */
+.track-progress {
+    position: absolute;
+    height: 2px;
+    background-color: #69ff12;
+    top: 0;
+    left: 15px;
+}
+
+/* Скрытый ползунок */
+.hidden-slider-input {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    opacity: 0; /* скрываем стандартный элемент */
+}
+
+/* Начальный кружок */
+.start-circle-indicator {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 42px;
+    left: 5px;
+    background: #69ff12;
+    border-radius: 50%;
+}
+
+/* Динамический конечный кружок */
+.end-circle-indicator {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 42px;
+    background: #69ff12;
+    border-radius: 50%;
+}
+
+/* Тексты с количеством */
+.start-time-text,
+.end-time-text {
+    position: absolute;
+    top: 54px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #000000;
+}
+
+.start-time-text {
+    left: 0px;
+}
+
+.end-time-text {
+    left: 0px; /* начальная позиция текста */
+    transition: left 0.1s ease-in-out; /* плавное движение */
+}
+
+.filter-wrapper .btnThrowOff {
+    display: none;
+  }
+
+
+
+@media (max-width: 1279px) {
+    
+    .filter-wrapper {
+        /* Фильтрация */
+
+position: absolute;
+width: 92px;
+height: 17px;
+
+top: 139px;
+
+/* mobile/h3 */
+font-family: 'Stolzl';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 124%;
+/* or 17px */
+
+color: #000000;
+
+
+    }
+    
+    .filter-header {
+        /* Фильтрация */
+    
+        position: absolute;
+        width: 92px;
+        height: 17px;
+        left: 0px;
+        top: 0px;
+    
+        /* platform/h3 */
+        font-family: 'Stolzl';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 124%;
+        /* identical to box height, or 25px */
+    
+        color: #000000;
+    }
+    
+    .slider-wrapper {
+        /* Frame 8794 */
+    
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 20px;
+    
+        position: absolute;
+        width: 228px;
+        height: 364px;
+        left: 0px;
+        top: 58px;
+    }
+
+    .filter-duration{
+        /* Продолжительность */
+
+    width: 228px !important;
+    height: 48px !important;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    }
+
+    .tab-wrapper111{
+        /* Категории */
+
+    width: 228px !important;
+    height: 186px !important;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    }
+
+    .scrollBar {
+        width: 228px !important; /* Устанавливаем новую ширину */
+      }
+    
+      .ElipseGreen_2,
+      .end-time-text {
+        left: calc(15px + (var(--slider-value, 0) / 180) * 213px); /* Корректируем позицию */
+      }
+
+
+    .sort-wrapper {
+        /* Упорядочить */
+    
+        width: 215px;
+        height: 200px;
+    
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    
+    .sort-label {
+        /* Упорядочить */
+    
+        position: absolute;
+        width: 102px;
+        height: 20px;
+        left: 0px;
+        top: 102px;
+    
+        /* platform/txt */
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 126%;
+        /* or 20px */
+    
+        color: #000000;
+    }
+    
+    .radio-buttons-container {
+        /* Frame 8788 */
+    
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 11px;
+    
+        position: absolute;
+        width: 215px;
+        height: 169px;
+        left: 0px;
+        top: 133px;
+    }
+    
+    .category-wrapper {
+        /* Категории */
+    
+        width: 245px;
+        height: 146px;
+    
+        /* Inside auto layout */
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+    }
+    
+    .category-label {
+    /* Категории */
+    
+    position: absolute;
+    width: 82px;
+    height: 20px;
+    left: 0px;
+    top: 286px;
+    
+    /* platform/txt */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 126%;
+    /* or 20px */
+    
+    color: #000000;
+    }
+    
+    .tab-wrapper111 {
+           /* Frame 8846 */
+    
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 0px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 245px;
+    height: 110px;
+    left: 0px;
+    top: 318px;
+    }
+    
+    .ButtonTabGreenForFilter {
+        flex-grow: 1;  /* Кнопки будут растягиваться, чтобы заполнять контейнер */
+        min-width: 100px;  /* Минимальная ширина кнопок */
+        max-width: 100%;  /* Кнопки не будут превышать ширину контейнера */
+        text-align: center;  /* Выравнивание текста по центру */
+    }
+    
+    .frame-small {
+        /* Frame 8787 */
+    
+        width: 10px;
+        height: 11px;
+    
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    
+    .radio-button-item {
+        display: flex;
+        align-items: center;
+        gap: 5px; /* Отступ между радиокнопкой и текстом */
+    }
+    
+    .radio-label {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px; /* Уменьшили размер текста */
+        line-height: 134%;
+        color: #0E0E0E;
+    }
+    
+    .filter-duration {
+        position: relative;
+        width: 260px;
+        height: 70px;
+    }
+    
+    /* Текст метки "Продолжительность" */
+    .duration-text-label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: 'Inter', sans-serif;
+        font-size: 12px;
+        color: #000000;
+    }
+    
+    /* Серый трек */
+    .track-background {
+        position: absolute;
+        top: 46px;
+        left: 0;
+        width: 260px;
+        height: 2px;
+        background-color: #9e9e9e;
+    }
+    
+    /* Зелёный прогресс (динамическая ширина) */
+    .track-progress {
+        position: absolute;
+        height: 2px;
+        background-color: #69ff12;
+        top: 0;
+        left: 15px;
+    }
+    
+    /* Скрытый ползунок */
+    .hidden-slider-input {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        height: 10px;
+        opacity: 0; /* скрываем стандартный элемент */
+    }
+    
+    /* Начальный кружок */
+    .start-circle-indicator {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: 42px;
+        left: 5px;
+        background: #69ff12;
+        border-radius: 50%;
+    }
+    
+    /* Динамический конечный кружок */
+    .end-circle-indicator {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: 42px;
+        background: #69ff12;
+        border-radius: 50%;
+    }
+    
+    /* Тексты с количеством */
+    .start-time-text,
+    .end-time-text {
+        position: absolute;
+        top: 54px;
+        font-family: 'Inter', sans-serif;
+        font-size: 12px;
+        color: #000000;
+    }
+    
+    .start-time-text {
+        left: 0px;
+    }
+    
+    .end-time-text {
+        left: 0px; /* начальная позиция текста */
+        transition: left 0.1s ease-in-out; /* плавное движение */
+    }
+    
+  }
+
+  

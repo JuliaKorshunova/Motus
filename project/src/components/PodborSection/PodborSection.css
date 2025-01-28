@@ -1,0 +1,26 @@
+.vm1 {
+    position: relative; /* Убедитесь, что позиционирование установлено */
+    right: 30px;
+    display: flex;            /* Включаем Flexbox */
+    flex-direction: column;  /* Располагаем элементы в столбец */
+    left: 280px;
+    width: calc(100% - 280px );
+   
+    /* gap: 50px; */
+}
+
+@media (max-width: 1279px) {
+
+    .vm1 {
+     
+        margin-left: -296px;
+        margin-right: 16px;
+        display: grid; /* Используем Grid для расположения карточек */
+        grid-template-columns: repeat(1, 1fr); /* 2 колонки */
+        gap: 8px; /* Устанавливаем расстояние между элементами */
+        width: calc(100vw - 30px);
+     
+    }
+
+}
+

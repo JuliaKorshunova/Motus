@@ -1,0 +1,1249 @@
+.modal-overlay {
+  position: fixed; /* Фон остается фиксированным */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); /* Полупрозрачный фон */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Добавлено для центрирования по вертикали */
+  z-index: 2000;
+}
+ .modal-overlayd {
+  position: fixed;
+  top: 0;
+ 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: calc(100vh);
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 2000;
+ 
+} 
+.modal-content {
+  position: relative; /* Изменено на relative */
+  background: white;
+  border-radius: 40px;
+  width: 64vw;
+  max-height: calc(100vh - 200px); /* Предотвращает перекрытие нижней части экрана */
+  overflow-y: auto; /* Добавлено для прокрутки внутри модального окна */
+  z-index: 1001;
+  margin: 0 auto; /* Центрирование по горизонтали */
+  padding: 20px;
+}
+
+.modal-content1 {
+  position: fixed;
+  background: white;
+  border-radius: 40px;
+  width: 64vw;
+  height: 520px;
+  z-index: 1001;
+  margin-top: 100px;
+
+}
+.thefirstrow {
+  display: flex;
+  width: 100%;
+  align-items: center; /* Центрирование по вертикали */
+  margin-top: 49px;
+  z-index: 2005;
+}
+
+.newpod {
+  font-family: 'Stolzl';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  margin-left: 49px; /* Отступ слева от текста */
+  margin-right: auto; /* Используется для заполнения свободного пространства */
+  color: #0E0E0E;
+}
+
+.close {
+  margin-top: 16px;
+  margin-right: 50px; /* Отступ справа от изображения */
+  /* Используйте здесь для указания размера изображения, если нужно */
+}
+
+
+._rectangle15_33{
+  /* Rectangle 15 */
+position: absolute;
+left: 0;
+right: 0;
+
+bottom: 0;
+top: 270px;
+
+/* black */
+background: #0E0E0E;
+
+
+}
+
+
+._rectangle15_mave{
+      /* Rectangle 15 */
+
+left: 0;
+right: 0;
+position: absolute;
+bottom: 0;
+top: 200px;
+
+/* black */
+background: #0E0E0E;
+
+width: 540px;
+height: 40px;
+}
+
+.frame5_11{
+/* Frame 5 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 8px 20px 7px;
+gap: 5px;
+
+position: absolute;
+width: 266px;
+height: 40px;
+left: 0px;
+top: 350px;
+
+border-radius: 13px;
+}
+
+
+.frame5_21{
+/* Frame 5 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 8px 20px 7px;
+gap: 5px;
+
+
+width: 266px;
+height: 40px;
+left: 0px;
+top: 400px;
+
+border-radius: 13px;
+}
+
+._rectangle15_444{
+ 
+  position: absolute;
+left: 0;
+right: 0;
+
+bottom: 0;
+top: 470px;
+
+/* black */
+background: #0E0E0E;
+
+width: 540px;
+height: 40px; 
+}
+
+
+.btnnForRegPodcaster{
+  margin-top: 20; /* Увеличьте значение по мере необходимости */
+}
+
+.text_for_login{
+
+width: 194px;
+height: 60px;
+
+top: 149px;
+
+/* platform/h1 */
+font-family: 'Stolzl';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 60px;
+
+/* black */
+color: #0E0E0E;
+
+}
+
+.text_for_register{
+  /* Регистрация */
+
+width: 409px;
+height: 60px;
+left: 520px;
+top: 149px;
+
+/* platform/h1 */
+font-family: 'Stolzl';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 60px;
+
+/* subt */
+color: #6D6D6D;
+
+
+}
+
+
+
+
+._rectangle15{
+/* Rectangle 15 */
+
+  border: none;  
+  width: calc(100% - 50px);
+  height: 40px;
+}
+
+._rectangle15_1{
+box-sizing: border-box;
+background: #0E0E0E;
+width: calc(100% - 50px);
+height: 40px;
+
+}
+._rectangle15_7{
+  box-sizing: border-box;
+  background: #0E0E0E;
+  width: calc(100% - 50px);
+  height: 40px;
+  
+  }
+  ._rectangle15_8{
+    box-sizing: border-box;
+    background: #0E0E0E;
+    width: calc(100% - 50px);
+    height: 40px;
+    
+    }
+
+    ._rectangle15_9{
+      box-sizing: border-box;
+      background: #0E0E0E;
+      width: calc(100% - 50px);
+      height: 40px;
+      
+      }
+    
+
+._rectangle15_1green{
+  /* Rectangle 15 */
+
+
+/* black */
+background: #69FF12;
+width: calc(50%);
+height: 40px;
+
+}
+._rectangle15_2{
+  /* Rectangle 15 */
+
+/* black */
+background: #0E0E0E;
+width: calc(50%);
+height: 40px;
+}
+
+._rectangle15_2green{
+  /* Rectangle 15 */
+
+
+/* black */
+background: #69FF12;
+width: calc(50%);
+height: 40px;
+
+}
+._rectangle15_4green{
+
+  background: #69FF12;
+  width: calc(50%);
+  height: 40px;
+  
+  }
+._rectangle15_3{
+  /* Rectangle 15 */
+
+
+/* black */
+background: #0E0E0E;
+
+width: calc(50%);
+height: 40px;
+}
+._rectangle15_3green{
+
+background: #69FF12;
+width: calc(50%);
+height: 40px;
+
+}
+._bl{
+
+  background: #000000;
+  width: calc(50%);
+  height: 40px;
+  
+  }
+
+._rectangle15_3pink{
+
+background: #FF0074;
+width: calc(50%);
+height: 40px;
+
+}
+
+._rectangle15_4{
+  /* Rectangle 15 */
+
+
+/* black */
+background: #0E0E0E;
+width: calc(50%);
+
+height: 40px;
+}
+._rectangle15_4green{
+/* black */
+width: calc(50%);
+
+height: 40px;
+background: #69FF12;
+
+
+}
+._rectangle15_5{
+
+background: #0E0E0E;
+width: calc(50%);
+
+height: 40px;
+}
+._rectangle15_6{
+
+background: #0E0E0E;
+width: calc(70%);
+
+height: 40px;
+}
+._rectangle15_5green{
+  /* Rectangle 15 */
+
+
+/* black */
+background: #69FF12;
+width: calc(100% - 50px);
+height: 40px;
+
+}
+._rectangle16::placeholder {  
+
+  left: 0;    
+  right: 0;    
+  top: 0;    
+  bottom: 0;    
+  background:none;    
+   
+  border: none;    
+  
+  font-family: 'Inter';   
+  font-style: normal;   
+  font-weight: 400;   
+  font-size: 16px;   
+  line-height: 126%;   
+  color: #6D6D6D; 
+ 
+}
+._rectangle16 {  
+     
+   width: calc(100% - 22px);
+   padding-left: 20px;
+   /* margin-top: -0.5px; */
+ 
+   padding-top: 0px;
+   /* padding-bottom: 1.5px; */
+   height: calc(100% - 0px);   
+    background: #FFFFFF;    
+    border-radius: 13px;    
+    border: none;    
+    font-family: 'Inter';   
+    font-style: normal;   
+    font-weight: 400;   
+    font-size: 16px;   
+    line-height: 126%;   
+    color: #000000; 
+ 
+}
+.selectlist{
+  z-index: 3000;
+}
+._rectangle16_p {  
+
+   background: #FFFFFF;    
+   border-radius: 13px;    
+   border: none;    
+   font-family: 'Inter';   
+   font-style: normal;   
+   font-weight: 400;   
+   font-size: 16px;   
+   line-height: 126%;   
+   color: #000000; 
+   height: auto;
+   text-align: left;
+   padding: 10px; /* padding, чтобы текст не прилипал к границе*/
+   padding-left: 20px;
+     white-space: pre-wrap;
+   overflow-wrap: break-word;
+     width: calc(100%); /* Чтобы textarea занимала всю ширину контейнера */
+     resize: none;
+   overflow: hidden;
+}
+._rectangle16_p2 {  
+
+  background: #FFFFFF;    
+  border-radius: 13px;    
+  border: none;    
+  font-family: 'Inter';   
+  font-style: normal;   
+  font-weight: 400;   
+  font-size: 16px;   
+  line-height: 126%;   
+  color: #000000; 
+  height: auto;
+  text-align: left;
+  padding: 10px; /* padding, чтобы текст не прилипал к границе*/
+    white-space: pre-wrap;
+  overflow-wrap: break-word;
+    width: calc(100% - 20px); /* Чтобы textarea занимала всю ширину контейнера */
+    resize: none;
+  overflow: hidden;
+}
+._rectangle_err {  
+
+  background: #FFE5E5;    
+}
+._rectangle15_2_p{
+background: #0E0E0E;
+display: flex; /* Используем flexbox */
+width: calc(100% - 50px);
+
+}
+._bk{
+  background: #0E0E0E;
+  width: calc(100% - 50px);
+  display: flex;
+}
+._textareablack{
+  background: #0E0E0E;
+  width: calc(50%);
+  display: flex;
+  height: 72px;
+}
+
+._pink {
+
+   background-color: #FF0074; /* изменяем цвет именно для div*/
+}
+._green {
+
+  background-color: #69FF12; /* изменяем цвет именно для div*/
+}
+._red {
+
+  background-color: #FF0F0F; /* изменяем цвет именно для div*/
+}
+._blpass1 {
+  background: #000000;
+  width: calc(50%);
+  height: 40px;
+}
+   
+._blSelect {
+  background: #000000;
+  width: calc(50%);
+  height: 40px;
+}
+  ._bl{
+
+    background: #000000;
+    width: calc(50%);
+    height: 40px;
+    
+    }
+    ._blacknewpod{
+
+      background: #000000;
+      width: calc(100% - 50px);
+      height: 40px;
+      
+      }
+      ._blacknewpod2 {
+        background: #000000;
+        width: calc(50%);
+        height: 40px;
+     
+    }
+ ._greennewpod{
+
+   background: #69FF12;
+  width: calc(100% - 50px);
+  height: 40px;
+        
+   }
+    ._blackforbepod{
+
+      background: #000000;
+      width: calc(50%);
+      height: 40px;
+      
+      }
+._rectangle16:focus,
+._rectangle16:hover {
+    outline: none; /* Убирает обводку */
+    border: none; /* Убедитесь, что обводка не добавляется */
+}
+
+/* Убираем обводку при фокусе */
+._rectangle16:focus { 
+    outline: none; /* Убираем стандартную обводку */
+} 
+._rectangle16_p:focus,
+._rectangle16_p:hover {
+    outline: none; /* Убирает обводку */
+    border: none; /* Убедитесь, что обводка не добавляется */
+}
+
+/* Убираем обводку при фокусе */
+._rectangle16_p:focus { 
+    outline: none; /* Убираем стандартную обводку */
+} 
+._rectangle16_p2:focus,
+._rectangle16_p2:hover {
+    outline: none; /* Убирает обводку */
+    border: none; /* Убедитесь, что обводка не добавляется */
+}
+
+/* Убираем обводку при фокусе */
+._rectangle16_p2:focus { 
+    outline: none; /* Убираем стандартную обводку */
+}
+.Group8830{
+
+
+left: -36.1px;
+top: 466.91px;
+
+opacity: 0.3;
+transform: rotate(-18.08deg);
+
+}
+
+.frame8821{
+  /* Frame 8821 */
+
+width: 356px;
+height: 10px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+}
+
+.text_for_forget_password{
+
+width: 184px;
+height: 15px;
+left: 20px;
+top: 110px;
+
+/* platform/subt */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 126%;
+/* or 15px */
+
+/* black */
+color: #0E0E0E;
+
+
+}
+
+.orange-text {
+  color: #FF7510; /* Или используйте другой цвет по вашему выбору */
+}
+
+.btnnForLogin {
+  margin-top: 140px; /* Увеличьте значение по мере необходимости */
+}
+
+.parent1{
+  position: relative;
+}
+
+.group8830 {
+ 
+  right: 0;                   /* Прикрепляем к правому краю */
+  top: 0;                     /* Можете настроить по желанию */
+  width: auto;                /* Позволяет изображению иметь автоматическую ширину */
+ 
+}
+
+.bgforbtn6{
+
+  height: 40px;
+  
+  display: table-cell; 
+  background: #FF0074;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  padding: 0px;
+}
+
+
+
+/* form{
+  height: 500px;
+
+} */
+.input1{
+  width: 100%;
+  height: 40px;
+}
+.obedinforinput{
+  display: grid;
+    grid-template-columns: 1fr; /* Одну колонку */
+    gap: 20px; /* Отступ между элементами */
+    margin-top: 31px;
+    margin-left: 50px;
+    /* width: 100%; */
+}
+
+.text_for_mistake{
+  /* Текст ошибки */
+
+ 
+ /* platform/subt */
+ font-family: 'Inter';
+ font-style: normal;
+ font-weight: 500;
+ font-size: 12px;
+ line-height: 126%;
+ /* or 15px */
+ margin-top: 8px;
+ /* margin-bottom: 8px; */
+ /* error */
+ color: #FF0F0F;
+ position: relative;
+
+    
+ }
+ .rectangle-container-error{
+
+  background: #FF0F0F;
+  
+  }
+  
+.rectangle-error{
+  /* Rectangle 16 */
+  
+  background: #FFE5E5;
+  
+  border-radius: 13px;
+  
+  }
+  .text_for_download{
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 134%;
+/* or 21px */
+text-align: center;
+
+/* links */
+color: #FF7510;
+
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.frame5_1{
+  /* Frame 5 */
+  
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 5px;
+  
+  margin-left: 20px;
+  width: 266px;
+  height: 40px;
+
+  
+  border-radius: 13px;
+    
+  }
+
+  .inputplustext{
+    display: grid;
+    grid-template-columns: 1fr; /* Одну колонку */
+    gap: 8px; /* Отступ между элементами */
+  }
+  
+  
+  
+.modal-overlayNP{
+  position: fixed; /* Фон остается фиксированным */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); /* Полупрозрачный фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  overflow: hidden; /* Важно: скрываем overflow, чтобы предотвратить полосу прокрутки на overlay */
+}
+
+.modal-contentNP {
+  position: relative; /* Теперь модальное окно относительно родителя */
+  background: white;
+  border-radius: 40px;
+  width: 64vw;
+  margin-top: -120px;
+  height: calc(100vh - 350px);
+  overflow-y: auto;
+  z-index: 1001;
+  /* padding: 20px; */
+  box-sizing: border-box;
+  overflow-x: hidden;
+} 
+
+.modal-contentBP {
+  position: relative; /* Теперь модальное окно относительно родителя */
+  background: white;
+  border-radius: 40px;
+  width: 64vw;
+  margin-top: 0px;
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+  z-index: 1001;
+  /* padding: 20px; */
+  box-sizing: border-box;
+  overflow-x: hidden;
+} 
+.modal-contentNewPod {
+  position: relative; /* Теперь модальное окно относительно родителя */
+  background: white;
+  border-radius: 40px;
+  width: 64vw;
+  top: -100px;
+  height: calc(100vh - 400px);
+  overflow-y: auto;
+  z-index: 1001;
+  /* padding: 20px; */
+  box-sizing: border-box;
+  overflow-x: hidden;
+} 
+.modal-contentEdit {
+  position: relative; /* Теперь модальное окно относительно родителя */
+  background: white;
+  border-radius: 40px;
+  width: 64vw;
+  top: -180px;
+  height: calc(100vh - 400px);
+  overflow-y: auto;
+  z-index: 1001;
+  /* padding: 20px; */
+  box-sizing: border-box;
+  overflow-x: hidden;
+} 
+.modal-contentrel{
+  position: relative; /* Теперь модальное окно относительно родителя */
+  background: white;
+  border-radius: 40px;
+  width: 64vw;
+  margin-top: -300px;
+  height: calc(100vh - 500px);
+  overflow-y: auto;
+  z-index: 1001;
+  /* padding: 20px; */
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+}
+
+.modal-overlayNewPodborka {
+  position: fixed; /* Фон остается фиксированным */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); /* Полупрозрачный фон */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 2000;
+  overflow-y: auto;
+
+}
+.modal-contentNewPodborka{
+  position: relative; /* Теперь модальное окно относительно родителя */
+  background: white;
+  border-radius: 40px;
+  width: 83vw;
+  top: 100px;
+  height: auto;
+  overflow: hidden; /* Важно: скрываем overflow, чтобы предотвратить полосу прокрутки на overlay */
+  z-index: 1001;
+  /* padding: 20px; */
+  box-sizing: border-box;
+  
+} 
+
+
+.btnnForRegPodcaster2{
+  margin-top: 0px;
+}
+
+  @media (max-width: 1279px) {
+
+
+    .modal-contentNewPodborka{
+      /* position: fixed; */
+      background: white;
+      border-radius: 20px;
+      width: 99vw;
+      height: auto;
+    
+      z-index: 1001;}
+    .bgforbtn6{
+      height: 24px;
+    }
+    .modal-contentrel{
+      position: relative; /* Теперь модальное окно относительно родителя */
+      background: white;
+      border-radius: 20px;
+      width: 99vw;
+      margin-top: -300px;
+      height: calc(100vh - 500px);
+      overflow-y: auto;
+      z-index: 1001;
+      /* padding: 20px; */
+      box-sizing: border-box;
+      overflow-x: hidden;
+    
+    }
+
+    .btnnForRegPodcaster{
+      position: absolute; /* Делаем абсолютное позиционирование */
+      bottom: 0; /* Прижимаем к нижней части */
+      left: 0; /* Опционально, прижимаем к левому краю */
+      right: 0; /* Опционально, растягиваем по ширине родителя*/
+      padding-bottom: 40px; /* добавляем небольшой padding bottom */
+      padding-left: 16px;
+      display: flex; /* Включаем flexbox */
+      align-items: flex-end; /* Выравниваем элементы по низу */
+
+    }
+    .btnnForRegPodcaster2{
+      position: absolute; /* Делаем абсолютное позиционирование */
+      bottom: 0; /* Прижимаем к нижней части */
+      left: 0; /* Опционально, прижимаем к левому краю */
+      right: 0; /* Опционально, растягиваем по ширине родителя*/
+      padding-bottom: 40px; /* добавляем небольшой padding bottom */
+      padding-left: 16px;
+      display: flex; /* Включаем flexbox */
+      align-items: flex-end; /* Выравниваем элементы по низу */
+    }
+    .btnnForBePodcaster2{
+      position: absolute; /* Делаем абсолютное позиционирование */
+      bottom: 0; /* Прижимаем к нижней части */
+      left: 0; /* Опционально, прижимаем к левому краю */
+      right: 0; /* Опционально, растягиваем по ширине родителя*/
+      padding-bottom: 40px; /* добавляем небольшой padding bottom */
+      padding-left: 16px;
+      display: flex; /* Включаем flexbox */
+      align-items: flex-end; /* Выравниваем элементы по низу */
+    }
+
+    .modal-contentNewPod {
+      border-radius: 20px;
+      width: 99vw;
+      top: 0px;
+      margin-top: -10px;
+      height: calc(100vh - 200px);
+      overflow-y: auto;
+      overflow-x: hidden;
+    } 
+    .modal-contentEdit {
+      border-radius: 20px;
+      width: 99vw;
+      top: 0px;
+      margin-top: -10px;
+      height: calc(100vh - 200px);
+      overflow-y: auto;
+      overflow-x: hidden;
+    } 
+
+
+    .modal-contentBP {
+      border-radius: 20px;
+      width: 99vw;
+      margin-top: -50px;
+      height: calc(100vh - 250px);
+      overflow-y: auto;
+      overflow-x: hidden;
+    } 
+
+.modal-contentNP {
+  border-radius: 20px;
+  width: 99vw;
+  margin-top: -10px;
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+  overflow-x: hidden;
+} 
+
+    .modal-content1 {
+      position: absolute; /* Позиционирование изменено на absolute */
+      background: white;
+      border-radius: 20px;
+      width: 99vw;
+      height: 600px;
+      z-index: 1001;
+      top: 293px; /* Отступ сверху для модального окна */
+     
+      transform: translateY(-50%); /* Сдвигаем вверх на половину высоты модалки */
+    }
+    .modal-content {
+      position: absolute; /* Позиционирование изменено на absolute */
+      background: white;
+      border-radius: 20px;
+      width: 99vw;
+      height: 600px;
+      z-index: 1001;
+      margin-top: 5px; /* Отступ сверху для модального окна */
+      top: 50%; /* Центрируем по вертикали */
+      transform: translateY(-50%); /* Сдвигаем вверх на половину высоты модалки */
+    }
+    
+    
+    .thefirstrow{
+      margin-top: 0px;
+    }
+    .newpod {
+      font-family: 'Stolzl';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 60px;
+      margin-left: 16px; /* Отступ слева от текста */
+      margin-right: auto; /* Используется для заполнения свободного пространства */
+      color: #0E0E0E;
+    }
+    .close{
+      height: 18px;
+      width: 18px;
+      margin-top: 0px;
+      margin-right: 16px;
+    }
+    .obedinforinput{
+      margin-left: 19px;
+      margin-top: 0px;
+      gap: 8px;
+    }
+    
+    .frame5_1{
+      margin-left: 8px;
+    }
+    .add{
+      width: 16px;
+      height: 16px;
+    }
+    .text_for_download{
+      font-size: 12px;
+    }
+    .btnnForRegPodcaster{
+      margin-top: 356px;
+    }
+    ._rectangle16::placeholder {  
+
+      left: 0;    
+      right: 0;    
+      top: 0;    
+      bottom: 0;    
+   
+      font-size: 12px;   
+      line-height: 126%;   
+      color: #6D6D6D; 
+     
+    }
+ 
+    ._rectangle15_1{
+      display: flex;
+      justify-content: center; /* Центрирование по горизонтали */
+      align-items: center; /* Центрирование по вертикали */
+      height: 23.5px;
+      width: calc(100vw - 70px);
+    }
+    
+ 
+    .rectangle-container-error{
+
+      }
+      ._rectangle16 {  
+
+        justify-content: center; /* Центрирование по горизонтали */
+        align-items: center; /* Центрирование по вертикали */
+        height: 24px;
+        font-size: 12px;   
+        line-height: 126%;   
+        border-radius: 7px;
+        padding-left: 8px;
+        width: calc(100% - 0px);
+        }
+        .rectangle-error{
+          /* Rectangle 16 */
+          
+          background: #FFE5E5;
+          padding-bottom: 0px;
+          height: 24px;
+          font-size: 12px;   
+          line-height: 126%;   
+          border-radius: 7px;
+          padding-left: 8px;
+          width: calc(100vw - 53px);
+        
+          
+          }
+
+        ._rectangle16_p2 {  
+          height: 23.4px;
+          font-size: 12px;   
+          line-height: 126%;   
+          border-radius: 7px;
+          padding: 0px;
+          padding-left: 8px;
+          
+        width: calc(100%); /* Чтобы textarea занимала всю ширину контейнера */
+          
+        }
+      
+    ._rectangle15_1green{
+      display: flex;
+      justify-content: center; /* Центрирование по горизонтали */
+      /* align-items: center; */
+      height: 23.4px;
+      width: calc(100% - 15px );
+    }
+    ._rectangle15_4green{
+      display: flex;
+      justify-content: center; /* Центрирование по горизонтали */
+      align-items: center; /* Центрирование по вертикали */
+      height: 23.4px;
+      width: calc(100% - 15px );
+    
+    }
+    ._bl{
+      display: flex;
+      justify-content: center; /* Центрирование по горизонтали */
+      align-items: center; /* Центрирование по вертикали */
+      height: 23.4px;
+      width: calc(100% - 15px );
+    }
+    ._blpass1{
+      display: flex;
+      justify-content: center; /* Центрирование по горизонтали */
+      align-items: center; /* Центрирование по вертикали */
+      height: 23.4px;
+      width: calc(100% - 15px );
+    }
+    ._blSelect {
+      height: 23.4px;
+      width: calc(100% - 15px );
+    }
+    ._textareablack{
+      display: flex;
+      justify-content: center; /* Центрирование по горизонтали */
+      align-items: center; /* Центрирование по вертикали */
+      width: calc(100% - 15px );
+    }
+    ._blacknewpod2 {
+      display: flex;
+      justify-content: center; /* Центрирование по горизонтали */
+      align-items: center; /* Центрирование по вертикали */
+      height: 23.4px;
+      width: calc(100% - 15px );
+   
+  }
+    ._blacknewpod{
+      width: calc(100% - 16px);
+      display: flex;
+      justify-content: center; /* Центрирование по горизонтали */
+      align-items: center; /* Центрирование по вертикали */
+      height: 23.4px;
+      
+      }
+      ._greennewpod{
+        width: calc(100% - 16px);
+        display: flex;
+        justify-content: center; /* Центрирование по горизонтали */
+        align-items: center; /* Центрирование по вертикали */
+        height: 23.4px;
+        
+        }
+    ._blackforbepod{
+      display: flex;
+      justify-content: center; /* Центрирование по горизонтали */
+      height: 23.4px;
+      background: #000000;
+      width: calc(50%);
+    
+      
+      }
+    ._rectangle15_2green{
+      display: flex;
+      justify-content: center; /* Центрирование по горизонтали */
+      align-items: center; /* Центрирование по вертикали */
+      height: 23.4px;
+      width: calc(100% - 15px );
+      /* width: calc(100vw - 43px); */
+    }
+    ._rectangle15_3green{
+      display: flex;
+      justify-content: center; /* Центрирование по горизонтали */
+      align-items: center; /* Центрирование по вертикали */
+      height: 23.4px;
+      width: calc(100% - 15px );
+      /* width: calc(100vw - 43px); */
+    }
+    ._rectangle15_3pink{
+      display: flex;
+      justify-content: center; /* Центрирование по горизонтали */
+      align-items: center; /* Центрирование по вертикали */
+      height: 23.4px;
+      width: calc(100% - 15px );
+      /* width: calc(100vw - 43px); */
+    }
+    
+    ._rectangle15_4green{
+      display: flex;
+      justify-content: center; /* Центрирование по горизонтали */
+ 
+      height: 23.3px;
+      /* width: calc(100vw - 43px); */
+    }
+    ._rectangle15_5{
+      display: flex;
+      justify-content: center; /* Центрирование по горизонтали */
+      align-items: center; /* Центрирование по вертикали */
+      height: 23.2px;
+      /* width: calc(100vw - 43px); */
+    }
+    ._rectangle15_6{
+
+      display: flex;
+      justify-content: center; /* Центрирование по горизонтали */
+      align-items: center; /* Центрирование по вертикали */
+      height: 23.2px;
+      }
+    .text_for_mistake{
+      margin-top: 0px;
+      font-size: 10px;
+    }
+    ._bk{
+ 
+    background: #0E0E0E;
+    width: calc(100vw - 42px);
+    height: 70.5px;
+    }
+    
+    ._pink {
+
+      background-color: #FF0074; /* изменяем цвет именно для div*/
+    }
+    ._red {
+
+      background-color: #FF0F0F; /* изменяем цвет именно для div*/
+    }
+      
+    ._green {
+
+      background-color: #69FF12; /* изменяем цвет именно для div*/
+    }
+    ._rectangle16_p {  
+      font-size: 12px;   
+      line-height: 126%;   
+      border-radius: 7px;
+      padding-left: 8px;
+      width: calc(100vw - 53px);
+    
+     
+     
+    }
+
+    ._rectangle15_7{
+      display: flex;
+      justify-content: center; /* Центрирование по горизонтали */
+      align-items: center; /* Центрирование по вертикали */
+      height: 23.5px;
+      width: calc(100vw - 70px);
+      
+      }
+      ._rectangle15_8{
+        display: flex;
+      justify-content: center; /* Центрирование по горизонтали */
+      align-items: center; /* Центрирование по вертикали */
+      height: 23.5px;
+      width: calc(100vw - 70px);
+        
+        }
+    
+      ._rectangle15_9{
+        display: flex;
+        justify-content: center; /* Центрирование по горизонтали */
+        align-items: center; /* Центрирование по вертикали */
+        height: 23.5px;
+        width: calc(100vw - 70px);
+        
+          }
+
+
+      .btnnForRegPodcaster{
+        margin-top: 280px;
+      }
+  }
