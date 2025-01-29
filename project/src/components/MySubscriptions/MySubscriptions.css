@@ -53,20 +53,36 @@
   position: absolute;
   width: 332px;
   left: 310px;
+
+  top: 240px;
  
   }
   
  
   
   
-  .obedinen11{
-    margin-top: 240px;
-    margin-left: 20px;
-    margin-right: 30px;
+  .obedinen11-sub{
+   justify-content: flex-start;
+   position: absolute;
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 16px;
+   left: 15px;
+   top: 107px;
+   overflow-x: hidden;
+   width: 100vw;
 
   }
 
-  .filter_button {
+  .obedinen-sub{
+         display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: calc(100vw - 30px);
+    }
+
+
+  .filter_button-sub {
    /* Скрываем по умолчанию */
    display: none;
 }
@@ -132,7 +148,7 @@ white-space: nowrap;  /* Чтобы текст писался в одну стр
 }
 
 
-.filter_button{
+.filter_button-sub{
 /* search_btn */
 display: block; /* Включаем отображение */
 position: absolute;

@@ -54,7 +54,10 @@ export default function MySubscriptions() {
                 <div className="subtitle11"> — [səbˈskrɪpʃ(ə)ns] (en.) подписки</div>
             </div>
             <div className="tab"></div>
-            <div className="obedinen11">
+            <div className="obedinen11-sub">
+
+            <div className="obedinen-sub">
+                
                 <TabsSectionForSubscriptions Active1={tab} onChange={(current) => setTab(current)} />
 
                 {tab === 'pod' && (
@@ -78,7 +81,7 @@ export default function MySubscriptions() {
             </div>
 
             {/* Кнопка для открытия модального окна */}
-            <div className="filter_button">
+            <div className="filter_button-sub">
                 <SecondImgButton
                     isImg={true}
                     isActive={false}
@@ -88,6 +91,8 @@ export default function MySubscriptions() {
                 >
                     <img className="image-class" src={filterImg} alt="Изображение кнопки" />
                 </SecondImgButton>
+            </div>
+
             </div>
 
             {/* Модальные окна */}

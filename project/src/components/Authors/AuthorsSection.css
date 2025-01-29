@@ -12,12 +12,13 @@
 
 @media (max-width: 1279px) {
     .author-card{
-        right: 30px;
+        left: -284px;
         position: relative;
         display: flex;            /* Включаем Flexbox */
         flex-direction: column;  /* Располагаем элементы в столбец */
         gap: 8px;
         width: calc(100vw - 30px );
+        right: -16px;
        
         /* gap: 50px; */
     }
