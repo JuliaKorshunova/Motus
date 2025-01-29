@@ -118,13 +118,13 @@ export default function RegisterForPodcaster(props) {
                    
                 {/* Условное отображение ошибки для имени пользователя */}   
                 {errorUsername && (   
-                    <div className="text_for_mistake">{errorUsername}</div>   
+                    <div className="text_for_mistake-user">{errorUsername}</div>   
                 )}   
                  
-                 <div className={`_rectangle15_2_black ${errorNickname ? 'rectangle-container-error' : ''}`}>      
+                 <div className={`_rectangle15_2_black ${errorNickname ? 'rectangle-container-error-user' : ''}`}>      
                 <input 
                 type="text"   
-                className={`_rectangle16_white ${errorNickname ? 'rectangle-error' : ''}`}   
+                className={`_rectangle16_white ${errorNickname ? 'rectangle-error-user' : ''}`}   
                 placeholder="Ник"   
                 value={nickname}   
                 onChange={handleNicknameChange}   
@@ -135,7 +135,7 @@ export default function RegisterForPodcaster(props) {
 
                 {/* Условное отображение ошибки для ника */}    
                 {errorNickname && (    
-                <div className="text_for_mistake">{errorNickname}</div>    
+                <div className="text_for_mistake-user">{errorNickname}</div>    
                 )}  
 
 
@@ -175,7 +175,7 @@ export default function RegisterForPodcaster(props) {
                         )}       
                     </div>      
 
-                <div className='btnnForRegPodcaster'>     
+                <div className='btnnForRegPodcaster-pod'>     
                     {props.testDeisabled === true ? (     
                         <div className='pocastdis'>     
                             <MainButton2 disabled={true}>Создать акаунт</MainButton2>    

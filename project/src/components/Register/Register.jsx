@@ -129,24 +129,24 @@ export default function Register(props) {
                    
                 {/* Условное отображение ошибки для имени пользователя */}   
                 {errorUsername && (   
-                    <div className="text_for_mistake">{errorUsername}</div>   
+                    <div className="text_for_mistake-user">{errorUsername}</div>   
                 )}   
                  
-                 <div className={`_rectangle15_2_black ${errorNickname ? 'rectangle-container-error' : ''}`}>      
-                <input 
-                type="text"   
-                className={`_rectangle16_white ${errorNickname ? 'rectangle-error' : ''}`}   
-                placeholder="Ник"   
-                value={nickname}   
-                onChange={handleNicknameChange}   
-                onBlur={handleNicknameBlur} 
-                required   
-                />      
+                 <div className={`_rectangle15_2_black ${errorNickname ? 'rectangle-container-error-user' : ''}`}>      
+                    <input 
+                    type="text"   
+                    className={`_rectangle16_white ${errorNickname ? 'rectangle-error-user' : ''}`}   
+                    placeholder="Ник"   
+                    value={nickname}   
+                    onChange={handleNicknameChange}   
+                    onBlur={handleNicknameBlur} 
+                    required   
+                    />      
                 </div>
 
                 {/* Условное отображение ошибки для ника */}    
                 {errorNickname && (    
-                <div className="text_for_mistake">{errorNickname}</div>    
+                <div className="text_for_mistake-user">{errorNickname}</div>    
                 )}   
   
                 <div className="_rectangle15_3_black">     
@@ -181,7 +181,7 @@ export default function Register(props) {
                         )}       
                     </div>      
 
-                <div className='btnnForReg'>     
+                <div className='btnnForReg-user'>     
                     {props.testDeisabled === true ? (     
                         <div className='pocastdis'>     
                             <MainButton2 disabled={true}>Создать акаунт</MainButton2>    

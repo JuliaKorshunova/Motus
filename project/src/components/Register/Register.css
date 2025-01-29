@@ -93,7 +93,7 @@ top: 131px;
 background: #0E0E0E;
 
 width: 540px;
-height: 40px;
+height: 43px;
 }
 
 ._rectangle15_3_black{
@@ -114,7 +114,7 @@ height: 70px;
 
 }
 
-.text_for_mistake{
+.text_for_mistake-user{
  /* Текст ошибки */
 
 position: absolute;
@@ -237,12 +237,12 @@ color: #6D6D6D;
 
 }
 
-.btnnForReg{
+.btnnForReg-user{
 
     margin-top: 500px; /* Увеличьте значение по мере необходимости */
 }
 
-.rectangle-container-error{
+.rectangle-container-error-user{
 /* Rectangle 15 */
 
 /* error */
@@ -250,14 +250,16 @@ background: #FF0F0F;
 
 }
 
-.rectangle-error{
-/* Rectangle 16 */
-
-background: #FFE5E5;
-
-border-radius: 13px;
-
+.rectangle-error-user {
+    background-color: #FFE5E5 !important; /* Светло-красный фон */
+    border: 1px solid #FFE5E5 !important; /* Красная рамка */
+    outline: none; /* Убираем стандартную обводку */
+    
+    
 }
+
+
+
 
 .bgforbtn6{
     width: 163px;
