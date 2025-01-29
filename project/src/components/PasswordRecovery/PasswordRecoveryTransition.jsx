@@ -35,17 +35,17 @@ export default function PasswordRecoveryTransition(props) {
             </div>  
               
             <div className="frame_8820">     
-                <div className="_rectangle15_15">     
+                <div className="_rectangle15_15_black">     
                     <input 
                         type="email" 
-                        className='_rectangle16' 
+                        className='_rectangle16_white' 
                         placeholder="Почта" 
                         defaultValue={email} // Устанавливаем значение
                         required 
                     />     
                 </div>    
-                <div className="_rectangle15_1">     
-                    <input type="password" className='_rectangle16' placeholder="Новый пароль" required />    
+                <div className="_rectangle15_1_black">     
+                    <input type="password" className='_rectangle16_white' placeholder="Новый пароль" required />    
                 </div>
  
                 <div className='btnnForRecoveryPasswordTransition'>    

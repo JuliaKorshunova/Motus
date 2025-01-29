@@ -1,4 +1,4 @@
-.text_for_login{
+.text_for_login-zag{
     /* Вход / */
 
 position: absolute;
@@ -83,7 +83,7 @@ top: 240px;
 }
 
 
-._rectangle15{
+._rectangle15_black{
 /* Rectangle 15 */
 
 
@@ -102,7 +102,7 @@ top: 240px;
 
 }
 
-._rectangle15_1{
+._rectangle15_1_black{
     /* Rectangle 15 */
 
 position: absolute;
@@ -120,7 +120,7 @@ height: 40px;
 
 }
 
-._rectangle16 {  
+._rectangle16_white {  
     position: absolute;    
     left: 0;    
     right: 0;    

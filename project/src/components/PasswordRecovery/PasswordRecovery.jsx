@@ -45,10 +45,10 @@ export default function PasswordRecovery(props) {
             </div>  
               
             <div className="frame_8820">   
-                <div className="_rectangle15">   
+                <div className="_rectangle15_black">   
                 <input 
                         type="email" 
-                        className='_rectangle16' 
+                        className='_rectangle16_white' 
                         placeholder="Почта" 
                         required 
                         value={email} 

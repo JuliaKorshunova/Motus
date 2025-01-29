@@ -20,7 +20,7 @@ export default function Login(props) {
         <HeaderForLR/>
         <div className="parent1"> 
         </div>
-            <div className="text_for_login">Вход /</div>
+            <div className="text_for_login-zag">Вход /</div>
             <Link to="/register"> {/* Используем Link вместо div */}
                 <div className="text_for_register">Регистрация</div> 
             </Link>
@@ -29,11 +29,11 @@ export default function Login(props) {
 
 
 
-                <div className="_rectangle15"> 
-                    <input type="email" className='_rectangle16' placeholder="Почта" required /> 
+                <div className="_rectangle15_black"> 
+                    <input type="email" className='_rectangle16_white' placeholder="Почта" required /> 
                 </div> 
-                <div className="_rectangle15_1"> 
-                    <input type="password" className='_rectangle16' placeholder="Пароль" required /> 
+                <div className="_rectangle15_1_black"> 
+                    <input type="password" className='_rectangle16_white' placeholder="Пароль" required /> 
                 </div> 
                      
                 <div className="frame8821">   

@@ -113,13 +113,13 @@ export default function Register(props) {
         </div>    
                
             <div className="_frame_8820">     
-                <div className="_rectangle15">     
-                    <input type="email" className='_rectangle16' placeholder="Почта" required />     
+                <div className="_rectangle15_black">     
+                    <input type="email" className='_rectangle16_white' placeholder="Почта" required />     
                 </div>     
-                <div className="_rectangle15_1">     
+                <div className="_rectangle15_1_black">     
                     <input    
                         type="text"    
-                        className='_rectangle16'    
+                        className='_rectangle16_white'    
                         placeholder="Имя пользователя"    
                         value={username}    
                         onChange={handleUsernameChange}    
@@ -132,10 +132,10 @@ export default function Register(props) {
                     <div className="text_for_mistake">{errorUsername}</div>   
                 )}   
                  
-                 <div className={`_rectangle15_2 ${errorNickname ? 'rectangle-container-error' : ''}`}>      
+                 <div className={`_rectangle15_2_black ${errorNickname ? 'rectangle-container-error' : ''}`}>      
                 <input 
                 type="text"   
-                className={`_rectangle16 ${errorNickname ? 'rectangle-error' : ''}`}   
+                className={`_rectangle16_white ${errorNickname ? 'rectangle-error' : ''}`}   
                 placeholder="Ник"   
                 value={nickname}   
                 onChange={handleNicknameChange}   
@@ -149,8 +149,8 @@ export default function Register(props) {
                 <div className="text_for_mistake">{errorNickname}</div>    
                 )}   
   
-                <div className="_rectangle15_3">     
-                    <input type="text" className='_rectangle16' placeholder="Описание профиля" required />     
+                <div className="_rectangle15_3_black">     
+                    <input type="text" className='_rectangle16_white' placeholder="Описание профиля" required />     
                 </div>    
 
                 <div className="frame5_1">    
@@ -167,10 +167,10 @@ export default function Register(props) {
                     </div>    
                 </div> 
 
-                <div className="_rectangle15_4">         
+                <div className="_rectangle15_4_black">         
                         <input    
                             type="password"    
-                            className="_rectangle16" 
+                            className="_rectangle16_white" 
                             placeholder="Пароль"    
                             value={password}    
                             onChange={handlePasswordChange}    
