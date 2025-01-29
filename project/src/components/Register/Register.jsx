@@ -153,16 +153,16 @@ export default function Register(props) {
                     <input type="text" className='_rectangle16_white' placeholder="Описание профиля" required />     
                 </div>    
 
-                <div className="frame5_1">    
-                    <img src={add} alt="" className="add"/>    
-                    <div className="text_for_download">    
+                <div className="frame5_1_desk">    
+                    <img src={add} alt="" className="add_desk"/>    
+                    <div className="text_for_download_desk">    
                         Загрузить фото профиля    
                     </div>    
                 </div>   
 
-                <div className="frame5_2">    
-                    <img src={add} alt="" className="add"/>    
-                    <div className="text_for_link">    
+                <div className="frame5_2_desk">    
+                    <img src={add} alt="" className="add_desk"/>    
+                    <div className="text_for_link_desk">    
                         Прикрепить ссылку    
                     </div>    
                 </div> 

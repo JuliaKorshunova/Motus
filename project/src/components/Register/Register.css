@@ -138,109 +138,48 @@ white-space: nowrap; /* Добавлено для предотвращения �
    
 }
 
-.frame5_1{
-/* Frame 5 */
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 8px 20px 7px;
-gap: 5px;
-
-position: absolute;
-width: 266px;
-height: 40px;
-left: -20px;
-top: 290px;
-
-border-radius: 13px;
+.frame5_1_desk,
+.frame5_2_desk {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; /* Выравниваем элементы влево */
+    padding: 8px 15px; /* Добавляем левый отступ */
+    gap: 10px; /* Оптимальный отступ между иконкой и текстом */
   
+    position: absolute;
+    width: 266px;
+    height: 40px;
+    border-radius: 13px;
 }
 
-.frame5_2{
-/* Frame 5 */
-  
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 8px 20px 7px;
-  gap: 5px;
-  
-  position: absolute;
-  width: 266px;
-  height: 40px;
-  left: 0px;
-  top: 340px;
-  
-  border-radius: 13px;
-    
-  }
-
-.add{
-    /* add */
-
-width: 14.58px;
-height: 14.58px;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
+.frame5_1_desk {
+    top: 290px;
 }
 
-.text_for_download{
-    /* Поиск */
-
-width: 196px;
-height: 21px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 134%;
-/* or 21px */
-text-align: center;
-
-/* links */
-color: #FF7510;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
-
+.frame5_2_desk {
+    top: 340px;
 }
 
-.text_for_link{
-    /* Поиск */
+/* Иконка + */
+.add_desk {
+    width: 14.58px;
+    height: 14.58px;
+    flex-shrink: 0; /* Запрещает уменьшение иконки */
+}
 
-width: 158px;
-height: 21px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 134%;
-/* or 21px */
-text-align: center;
-
-/* links */
-color: #FF7510;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
+/* Текст */
+.text_for_download_desk,
+.text_for_link_desk {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 134%;
+    text-align: left; /* Текст всегда начинается с левого края */
+    color: #FF7510;
+    white-space: nowrap; /* Запрещает перенос текста */
+    flex-shrink: 0; /* Запрещает сжатие текста */
 }
 
 ._rectangle15_4_black{
