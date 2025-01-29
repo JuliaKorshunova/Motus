@@ -27,6 +27,8 @@ line-height: 60px;
 /* black */
 color: #0E0E0E;
 
+left: 300px;
+
 
 }
 
@@ -149,7 +151,7 @@ gap: 5px;
 position: absolute;
 width: 266px;
 height: 40px;
-left: 0px;
+left: -20px;
 top: 290px;
 
 border-radius: 13px;

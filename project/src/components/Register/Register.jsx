@@ -1,8 +1,7 @@
 import React, { useState } from "react"; // Убедись, что useState импортирован
 import './Register.css'
-import fractalforReg from '/Group26.png'
 import MainButton2 from '../Button/MainButton2';
-import add from '/Vector15.svg'
+import add from '/add.svg';
 
 
 export default function Register(props) {    
@@ -110,7 +109,7 @@ export default function Register(props) {
 
         <form onSubmit={handleSubmit}>  
         <div className="parent">      
-        <img src={fractalforReg} alt="" className="group26"/>      
+             
         </div>    
                
             <div className="_frame_8820">     

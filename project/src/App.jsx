@@ -24,7 +24,10 @@ import PageRegister from './components/Register/PageRegister'
 import PodcasterCheck from './components/Podcaster/PodcasterCheck/PodcasterCheck'
 import HomeAuthorized from './components/Home/HomeAuthorized'
 import ThePageOfPodborka from './components/ThePageofPodborka/ThePageOfPodborka'
-
+import Login from './components/Login/Login'
+import PasswordRecovery from './components/PasswordRecovery/PasswordRecovery';
+import PasswordRecoveryTransition from './components/PasswordRecovery/PasswordRecoveryTransition';
+import PasswordRecoveryForEmail from './components/PasswordRecovery/PasswordRecoveryForEmail';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -39,7 +42,7 @@ function App() {
                   {/* Указание маршрута по умолчанию с path="/" */}
                 <Route path="/" element={<HomeAuthorized />} />
                 <Route path="/auth" element={<Auth />} />
-                <Route path="/reg" element={<PageRegister />} />
+                <Route path="/register" element={<PageRegister />} />
                 <Route path="/podcastEmpty" element={<Release />} />
                 <Route path="/release" element={<ThePageOfPodcast />} />
                 <Route path="/podcaster" element={<PodcasterCheck/>} />
@@ -51,6 +54,11 @@ function App() {
                 <Route path="/main" element={<HomeAuthorized />} />
                 {/* <Route path="/podcastEmpty" element={<PodcastEmpty />} /> */}
                 <Route path="/podborka" element={<ThePageOfPodborka/>} />
+                <Route path="/login" element={<Login />} /> {/* Добавляем маршрут для входа */}
+                <Route path="/reset-password" element={<PasswordRecovery/>} />
+                <Route path="/reset-password-transition" element={<PasswordRecoveryTransition />} />
+                <Route path="/reset-password-for-email" element={<PasswordRecoveryForEmail />} />
+            
             </Routes>
 
                   

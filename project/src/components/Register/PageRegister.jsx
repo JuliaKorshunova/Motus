@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import HeaderForLR from "../header/HeaderForLog";
+import HeaderForLR from "../Header/HeaderForLog";
 import TabsSectionForRegister from '../TabsSection/TabSectionForRegister/TabsSectionForRegister';
 import Register from "../Register/Register";
 import RegisterForPodcaster from "../Register/RegisterForPodcaster";

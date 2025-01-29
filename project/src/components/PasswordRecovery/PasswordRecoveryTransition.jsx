@@ -1,9 +1,8 @@
 import React, { useState } from "react"; 
 import { useLocation } from 'react-router-dom'; 
 import './PasswordRecoveryTransition.css'; 
-import fractal from './../../img/Group8830.png'; 
 import MainButton2 from '../Button/MainButton2'; 
-import HeaderForLR from "../header/HederForLR"; 
+import HeaderForLR from "../Header/HeaderForLog"; 
 import { useNavigate } from 'react-router-dom'; // Импортировать хук навигации
 
 export default function PasswordRecoveryTransition(props) {  
@@ -28,7 +27,7 @@ export default function PasswordRecoveryTransition(props) {
         <>   
             <HeaderForLR/>  
             <div className="parent1">   
-                <img src={fractal} alt="" className="group8830"/>   
+               
             </div>  
  
             <div className="text_for_recovery">  

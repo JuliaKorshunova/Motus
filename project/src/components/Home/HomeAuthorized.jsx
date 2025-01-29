@@ -29,7 +29,12 @@ import MainButtonBig from '../Button/MainButtonBig/MainButtonBig';
 import ButtonTabGreen from '../Button/ButtonTab/ButtonTabGreen';
 import ButtonTabOrange from '../Button/ButtonTab/ButtonTabOrange';
 import ButtonTabPink from '../Button/ButtonTab/ButtonTabPink';
+import { useNavigate } from 'react-router-dom';
 export default function HomeAuthorized  () {
+    const navigate = useNavigate();
+  
+    const handleRegisterClick = () => navigate('/register');
+    const handleLoginClick = () => navigate('/login');
 
     const [isAnimating, setIsAnimating] = useState(false);
     const [isChecked, setIsChecked] = useState(false);
@@ -481,25 +486,42 @@ export default function HomeAuthorized  () {
               <div className='forBtnReg'>
                     {isHoveredR === true ? (
                       <div className='bgforbtnoformlenie'>
-                        <MainButtonBig onMouseEnter={handleMouseEnterR} onMouseLeave={handleMouseLeaveR}     >
+                        <MainButtonBig 
+                        onMouseEnter={handleMouseEnterR} 
+                        onMouseLeave={handleMouseLeaveR}   
+                        onClick={handleRegisterClick}  >
                           Зарегистрироваться
                         </MainButtonBig>
-                      </div>) : (
-                      <MainButtonBig  onMouseEnter={handleMouseEnterR}  onMouseLeave={handleMouseLeaveR} >
+                      </div>
+                      ) : (
+                      <MainButtonBig  
+                      onMouseEnter={handleMouseEnterR}  
+                      onMouseLeave={handleMouseLeaveR} 
+                      onClick={handleRegisterClick}>
                            Зарегистрироваться
-                      </MainButtonBig>)}
+                      </MainButtonBig>
+                    )}
                     </div>
                     
               <div className='forBtnExit'>
-                    {isHoveredE === false ? (
+                    {isHoveredE === false ? 
+                    (
                       <div className='bgforbtnoformlenie'>
-                        <SecondButton onMouseEnter={handleMouseEnterE} onMouseLeave={handleMouseLeaveE}     >
+                        <SecondButton 
+                        onMouseEnter={handleMouseEnterE} 
+                        onMouseLeave={handleMouseLeaveE}     
+                        onClick={handleLoginClick}>
                           Войти
                         </SecondButton>
-                      </div>) : (
-                      <SecondButton  onMouseEnter={handleMouseEnterE}  onMouseLeave={handleMouseLeaveE} >
+                      </div>
+                      ) : (
+                      <SecondButton  
+                      onMouseEnter={handleMouseEnterE}  
+                      onMouseLeave={handleMouseLeaveE}
+                      onClick={handleLoginClick} >
                            Войти
-                      </SecondButton>)}
+                      </SecondButton>
+                    )}
                     </div>
 
 

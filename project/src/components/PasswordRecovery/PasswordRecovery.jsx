@@ -1,8 +1,7 @@
 import React, { useState } from "react";  
 import './PasswordRecovery.css' 
-import fractal from './../../img/Group8830.png' 
 import MainButton2 from '../Button/MainButton2'; 
-import HeaderForLR from "../header/HederForLR"; 
+import HeaderForLR from "../Header/HeaderForLog"; 
 import PasswordRecoveryTransition from "./PasswordRecoveryTransition"; 
 import { useNavigate } from 'react-router-dom';
 
@@ -21,21 +20,24 @@ export default function PasswordRecovery(props) {
     };   
 
     const handlePasswordSubmit = () => { 
-        setIsTransitioning(true); 
-
-        // Переход на другую страницу, с передачей email
-        navigate('/reset-password-for-email', { state: { email } });
-    }; 
+        if (!email) return; // Проверяем, чтобы email не был пустым
+    
+        localStorage.setItem('email', email); // Сохраняем email в localStorage
+    
+        navigate('/reset-password-for-email', { state: { email } }); // Передаем в state
+    };
 
     if (isTransitioning) { 
         return <PasswordRecoveryTransition />; 
     } 
 
+    
+
     return (   
         <>   
             <HeaderForLR/>  
             <div className="parent1">   
-                <img src={fractal} alt="" className="group8830"/>   
+                
             </div>  
  
             <div className="text_for_recovery">  
@@ -49,13 +51,13 @@ export default function PasswordRecovery(props) {
                         className='_rectangle16' 
                         placeholder="Почта" 
                         required 
-                        value={email} // Установить значение инпута
-                        onChange={(e) => setEmail(e.target.value)} // Обновление состояния почты
-                    />   
+                        value={email} 
+                        onChange={(e) => setEmail(e.target.value)} 
+                    />  
                 </div>   
  
                 <div className='btnnForRecoveryPassword'>    
-                    {props.testDeisbled === true ? (    
+                    {props.testDisabled === true ? (    
                         <div className='pocastdis'>    
                             <MainButton2 disabled={true}>Отправить пароль</MainButton2>    
                         </div>    
