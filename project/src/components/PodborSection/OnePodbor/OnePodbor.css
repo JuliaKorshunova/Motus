@@ -557,7 +557,7 @@ flex-grow: 0; */
 
   .obedinenie1forpodporka{
 
-    width: calc(100vw - 16px);
+    width: calc(100vw - 30px);
     height: 100px !important;
     margin-bottom: 50px !important;
 
@@ -568,7 +568,7 @@ flex-grow: 0; */
     .sForPodborka{
       position: relative !important;
       height: 144px !important;
-      width: calc(100vw - 16px);
+      width: calc(100vw - 30px);
       min-width: 328px;
     }
 

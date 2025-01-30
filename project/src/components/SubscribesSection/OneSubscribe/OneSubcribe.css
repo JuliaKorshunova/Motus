@@ -497,7 +497,7 @@ flex-grow: 0;
   .cardsub {
         position: relative !important;
         height: 144px !important;
-        width: calc(100vw - 16px);
+        width: calc(100vw - 30px);
         min-width: 328px;
      
   }
@@ -506,7 +506,7 @@ flex-grow: 0;
   }
   .sectionsubForSubs{
     
-    width: calc(100vw - 16px);
+    width: calc(100vw - 30px);
     /* height: 270px; */
     height: 144px;
 
@@ -516,7 +516,7 @@ flex-grow: 0;
   }
   .sectionsubForSubs1{
     
-    width: calc(100vw - 16px);
+    width: calc(100vw - 30px);
     /* height: 270px; */
     height: 144px;
 
