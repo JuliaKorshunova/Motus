@@ -31,3 +31,83 @@ left: 310px;
 top: 240px;
 z-index: 1999;
 }
+
+.text_for_reg1 {
+    position: absolute;
+    width: 449px;
+    height: 60px;
+    top: 149px;
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #0E0E0E;
+    left: 300px;
+}
+.text_for_log1 {
+    position: absolute;
+    width: 155px;
+    height: 60px;
+    left: 780px;
+    top: 149px;
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #6D6D6D;
+}
+
+@media (max-width: 1279px) {
+    .union{
+        order: 2;
+        margin-top: 8px;
+    }
+    .text_for_reg1{
+        font-size: 26px;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0; 
+        width: auto;
+        line-height: 1;
+        
+    }
+    .text_for_log1{
+        font-size: 26px;
+        position: relative;   
+        top: 0;
+        left: 0;
+        right: 0; 
+    width: auto; 
+    line-height: 1;
+
+}
+
+    .centerforreg{
+        display: flex;
+        flex-direction: row;
+        width: 268px;
+        text-align: center;
+        justify-content: center;
+        margin-top: 107px;
+        order: 1;
+   
+
+    }
+    .centerforreg{
+        height: 24px;
+        margin-bottom: 13px;
+}
+    .ccennter{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        /* text-align: center; */
+        justify-content: center;
+    }
+
+
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import * as style1 from './PageRegister.css'
 import HeaderForLR from "../Header/HeaderForLog";
 import TabsSectionForRegister from '../TabsSection/TabSectionForRegister/TabsSectionForRegister';
 import Register from "../Register/Register";
@@ -11,16 +12,23 @@ export default function PageRegister() {
     return (
         <>
             <HeaderForLR />
-            <div className='obedinen11'>  
+
+            <div className='ccennter'>
+            <div className='union'>  
                     <TabsSectionForRegister Active1={tab} onChange={(current) => setTab(current)} />  
                     {tab === 'pod' && <RegisterForPodcaster />}  
                    
                     {tab === 'user' && <Register />}  
         </div>
-            <div className="text_for_reg">Регистрация /</div>
+        <div className='centerforreg'>
+
+     
+            <div className="text_for_reg1">Регистрация /</div>
             <Link to="/login">
-                <div className="text_for_log">Вход</div>
-            </Link>
+                <div className="text_for_log1">Вход</div>
+            </Link> 
+              </div>
+              </div>
         </>
     );
 }

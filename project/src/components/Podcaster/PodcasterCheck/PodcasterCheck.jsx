@@ -96,7 +96,7 @@ export default function PodcasterCheck() {
   
            <>
                 {podcasterData.map((pod, index) => (
-          <><HeaderForLog></HeaderForLog><img className='imgpod' src={podcast}></img><div className='conteiner'>
+          <><Header></Header><img className='imgpod' src={podcast}></img><div className='conteiner'>
                     <div className='obedinen'>
                       <div className='obedineniesphotopodcaster'>
                         <div className='personforpodcaster'>

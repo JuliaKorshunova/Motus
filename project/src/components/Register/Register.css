@@ -79,8 +79,8 @@ top: 310px;
 
 }
 
-._rectangle15_2_black{
-/* Rectangle 15 */
+/* ._rectangle15_2_black{
+
 
 position: absolute;
 left: 0;
@@ -89,24 +89,20 @@ right: 0;
 bottom: 0;
 top: 131px;
 
-/* black */
 background: #0E0E0E;
 
 width: 540px;
-height: 43px;
-}
+height: 40px;
+} */
 
 ._rectangle15_3_black{
-/* Rectangle 15 */
 
-position: absolute;
 left: 0;
 right: 0;
 
 bottom: 0;
 top: 201px;
 
-/* black */
 background: #0E0E0E;
 
 width: 540px;
@@ -147,7 +143,6 @@ white-space: nowrap; /* Добавлено для предотвращения �
     padding: 8px 15px; /* Добавляем левый отступ */
     gap: 10px; /* Оптимальный отступ между иконкой и текстом */
   
-    position: absolute;
     width: 266px;
     height: 40px;
     border-radius: 13px;
@@ -178,12 +173,12 @@ white-space: nowrap; /* Добавлено для предотвращения �
     line-height: 134%;
     text-align: left; /* Текст всегда начинается с левого края */
     color: #FF7510;
-    white-space: nowrap; /* Запрещает перенос текста */
-    flex-shrink: 0; /* Запрещает сжатие текста */
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
-._rectangle15_4_black{
-/* Rectangle 15 */
+/* ._rectangle15_4_black{
+
 
 position: absolute;
 left: 0;
@@ -192,13 +187,12 @@ right: 0;
 bottom: 0;
 top: 411px;
 
-/* black */
 background: #0E0E0E;
 
 width: 540px;
 height: 40px;
 
-}
+} */
 
 ._frame8821{
     /* Frame 8821 */
@@ -239,7 +233,7 @@ color: #6D6D6D;
 
 .btnnForReg-user{
 
-    margin-top: 500px; /* Увеличьте значение по мере необходимости */
+    margin-top: 0px; /* Увеличьте значение по мере необходимости */
 }
 
 .rectangle-container-error-user{
@@ -286,4 +280,337 @@ background: #FF0F0F;
     margin-right: 0;       /* Убедитесь, что нет отступов справа */
 }
 
+._rectangle16_white1 {
+    /* position: absolute; */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #FFFFFF;
+    border-radius: 13px;
+    border: none;
+    padding: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 126%;
+    color: #6D6D6D;
+    box-sizing: border-box;
+    height: 40px;
+}
+._rectangle16_white2 {  
 
+    /* position: absolute; */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #FFFFFF;
+    border-radius: 13px;
+    border: none;
+    padding: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 126%;
+    color: #6D6D6D;
+    box-sizing: border-box;
+    height: 70px;
+    }
+
+._rectangle15_black1 {
+    /* position: absolute; */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #0E0E0E;
+    border: none;
+    width: 540px;
+    height: 40px;
+}
+/* ._rectangle15_1_black1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #0E0E0E;
+    border: none;
+    width: 540px;
+    height: 40px;
+} */
+
+._blacknewpod3 {
+    background: #000000;
+    /* width: calc(50%); */
+    width: 540px;
+    height: 40px;
+}
+._blacknewpod4{
+    background: #000000;
+    /* width: calc(50%); */
+    width: 540px;
+    height: 70px;
+}
+
+._rectangle161:focus, ._rectangle161:hover {
+    outline: none;
+    border: none;
+}
+
+  
+._rectangle161 {
+    width: calc(100% - 22px);
+    padding-left: 20px;
+    margin-top: -0.5px;
+    padding-top: 0px;
+    /* padding-bottom: 1.5px; */
+    height: calc(100% - 0px);
+    background: #ffffff;
+    border-radius: 13px;
+    border: none;
+    height: 70px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 126%;
+    color: #000000;
+}
+
+.rectangle-error1 {
+    background: #FFE5E5;
+
+   
+        width: calc(100% - 22px);
+        padding-left: 20px;
+        /* margin-top: -0.5px; */
+        padding-top: 0px;
+        /* padding-bottom: 1.5px; */
+        height: calc(100% - 0px);
+
+        border-radius: 13px;
+        border: none;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 126%;
+        color: #000000;
+}
+
+.rectangle-error161 {
+    background: #FFE5E5;
+
+   
+        width: calc(100% - 22px);
+        padding-left: 20px;
+        /* margin-top: -0.5px; */
+        padding-top: 0px;
+        /* padding-bottom: 1.5px; */
+        height: calc(70px);
+
+        border-radius: 13px;
+        border: none;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 126%;
+        color: #000000;
+}
+
+._pink1 {
+    order: 1;
+    background-color: #FF0074; /* изменяем цвет именно для div*/
+  }
+  ._red1 {
+    order: 0;
+    background-color: #FF0F0F; /* изменяем цвет именно для div*/
+  }
+    
+  ._green1 {
+order: 2;
+    background-color: #69FF12; /* изменяем цвет именно для div*/
+  }
+@media (max-width: 1279px) {
+
+    ._rectangle161 {
+        background: #ffffff;
+        padding-bottom: 0px;
+        height: 74px;
+        font-size: 12px;
+        margin-top: 0.5px;
+        line-height: 126%;
+        border-radius: 7px;
+       
+        width: calc(100%);
+        padding: 0;
+      padding-left: 8px;
+      padding-top: 4px;
+    }
+
+    .rectangle-error161 {
+        background: #FFE5E5;
+        padding-bottom: 0px;
+        height: 74px;
+        font-size: 12px;
+        margin-top: 0.5px;
+        line-height: 126%;
+        border-radius: 7px;
+    
+        width: calc(100%);
+        padding: 0;  
+        padding-left: 8px;
+        padding-top: 4px;
+    }
+
+    ._blacknewpod3 {
+        display: flex
+;
+        justify-content: center;
+        align-items: center;
+        height: 23.4px;
+        width: calc(100% - 15px);
+    }
+    ._blacknewpod4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 78px;
+        width: calc(100% - 15px);
+    }
+    ._frame_8820{
+        position: relative;
+        top: 16px;
+        left: 0px;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    ._rectangle15_black1 {
+        display: flex;
+        justify-content: center; /* Центрирование по горизонтали */
+        align-items: center; /* Центрирование по вертикали */
+        height: 23.5px;
+        width: calc(100vw - 70px);
+        top: 16px;
+    }
+    ._rectangle15_1_black1{
+        display: flex;
+        justify-content: center; /* Центрирование по горизонтали */
+        align-items: center; /* Центрирование по вертикали */
+        height: 23.5px;
+        width: calc(100vw - 70px);
+  
+        top: 48px;
+      }
+
+      ._rectangle15_2_black{
+        display: flex;
+        justify-content: center; /* Центрирование по горизонтали */
+        align-items: center; /* Центрирование по вертикали */
+        height: 23.5px;
+        width: calc(100vw - 70px);
+        top: 80px;
+        }
+
+        ._rectangle15_3_black{
+            display: flex;
+            justify-content: center; /* Центрирование по горизонтали */
+            align-items: center; /* Центрирование по вертикали */
+            height: 80px;
+            width: calc(100vw - 70px);
+            top: 112px;
+            
+            }
+
+
+            ._rectangle15_4_black {
+                display: flex;
+                justify-content: center; /* Центрирование по горизонтали */
+                align-items: center; /* Центрирование по вертикали */
+                height: 23.5px;
+                width: calc(100vw - 70px);
+            }
+        ._rectangle16_white1 {  
+
+            justify-content: center; /* Центрирование по горизонтали */
+            align-items: center; /* Центрирование по вертикали */
+            height: 24px;
+            font-size: 12px;   
+            line-height: 126%;   
+            border-radius: 7px;
+            padding-left: 8px;
+            width: calc(100% - 0px);
+            padding: 0px;
+            padding-left: 8px;
+            }
+            ._rectangle16_white2 {  
+
+                justify-content: center; /* Центрирование по горизонтали */
+                align-items: center; /* Центрирование по вертикали */
+                height: 80px;
+                font-size: 12px;   
+                line-height: 126%;   
+                border-radius: 7px;
+                padding-left: 8px;
+                width: calc(100% - 0px);
+                padding: 0px;
+                padding-left: 8px;
+                }
+
+        .add_desk{
+            height: 9px;
+            width: 9px;
+        }
+
+        .text_for_download_desk{
+            font-size: 12px;
+        }
+
+        .text_for_link_desk{
+            font-size: 12px;
+        }
+        .frame5_1_desk{
+            padding: 0;
+            height: auto;
+            gap: 8px;
+        }
+        .frame5_2_desk{
+            padding: 0;
+            height: auto;
+            gap: 8px;
+        }
+        .btnnForReg-user{
+            margin-top: 24px;
+        }
+
+        .inputplustext1 {
+            display: grid
+        ;
+            grid-template-columns: 1fr;
+            gap: 8px;
+            width: 100vw;
+        }
+        .red1{
+            width: 100%;
+        }
+
+        .rectangle-error1 {
+            background: #FFE5E5;
+            padding-bottom: 0px;
+            height: 24px;
+            font-size: 12px;
+            line-height: 126%;
+            border-radius: 7px;
+            padding-left: 8px;
+            width: calc(100%);
+        }
+
+
+}
