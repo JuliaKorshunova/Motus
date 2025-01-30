@@ -58,7 +58,7 @@ export default function MySubscriptions() {
 
             <div className="obedinen-sub">
                 
-                <TabsSectionForSubscriptions Active1={tab} onChange={(current) => setTab(current)} />
+                <TabsSectionForSubscriptions Active1={tab} onChange={(current) => setTab(current)} className="sub"/>
 
                 {tab === 'pod' && (
                     <>

@@ -1,3 +1,7 @@
+.sub{
+   top:100px;   
+}
+
 .sub_container {
     /* Group 8786 */
  
@@ -237,6 +241,8 @@ top: -30px;
    .modal-content {
       display: none; /* Скрываем контент модального окна */
    }
+
+   
 }
 
 
