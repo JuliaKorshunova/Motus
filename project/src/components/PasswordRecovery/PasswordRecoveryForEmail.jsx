@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";      
 import './PasswordRecoveryForEmail.css';       
-import MainButton2 from '../Button/MainButton2';    
+import MainButton from '../Button/MainButton';    
 import HeaderForLR from "../Header/HeaderForLog";    
 import { useNavigate, useLocation } from 'react-router-dom';   
+
 
 export default function PasswordRecoveryForEmail() {    
     const navigate = useNavigate();
@@ -39,60 +40,93 @@ export default function PasswordRecoveryForEmail() {
         localStorage.setItem('userData', JSON.stringify({ email, password: newPassword }));      
     };               
 
+        const isButtonDisabled1 =true;
     return (          
         <>          
             <HeaderForLR/>      
             <div className="parent1">           
                
             </div>          
-
-            <div className="text_for_recovery">          
+            <div className='centerforreg2'>
+            <div className="text_for_login-zag">          
                 Восстановление пароля          
             </div>          
 
-            <div className="frame_8820">           
-                <div className="_rectangle15_black">           
-                    <input         
-                        type="email"         
-                        className='_rectangle16_white'         
-                        placeholder="Почта"         
-                        required         
-                        value={email} 
-                        disabled    
-                    />    
-                </div>     
+            <div className="_frame_88201">           
+            
 
                 {/* Текст "Ссылка для восстановления отправлена на почту" */}
-                <div className="text_for_mistakes">
-                    <p>Ссылка для восстановления отправлена на почту</p>
-                </div>
+               
 
-                <div className='btnnForRecoveryPasswordPost'>           
-                    {loading ? (    
-                        <MainButton2 disabled={true}>Отправка...</MainButton2>    
-                    ) : isHovered ? (    
-                        <div className='bgforbtn11'>    
-                            <MainButton2  
-                                onMouseEnter={handleMouseEnter}  
-                                onMouseLeave={handleMouseLeave}  
-                                onClick={handlePasswordSubmit}  
-                                disabled={isDisabled}  // Блокируем кнопку, если пароль не введен
-                            >    
-                                Отправить пароль    
-                            </MainButton2>    
-                        </div> 
-                    ) : (
-                        <MainButton2  
-                            onMouseEnter={handleMouseEnter}  
-                            onMouseLeave={handleMouseLeave}  
-                            onClick={handlePasswordSubmit}  
-                            disabled={isDisabled}  // Блокируем кнопку, если пароль не введен
-                        >    
-                            Отправить пароль
-                        </MainButton2>   
-                    )}           
-                </div>         
-            </div>         
+                  <form onSubmit={handlePasswordSubmit}>  
+                              
+                        
+                            <div className='inputplustext1'>
+                                      <div className='_blacknewpod6' > 
+
+
+                                       
+                                    <input 
+                                      
+                                        // className={`_rectangle16 ${error ? 'rectangle-error1' : ''}`}    
+                                        type="email"         
+                                        className='_rectangle16'         
+                                        placeholder="Почта"         
+                                        required         
+                                        value={email} 
+                                        disabled  
+                                    />     
+                                     </div>  
+                              
+                                      </div> 
+
+                                      <div className="text_for_mistakes">
+                                            <p>Ссылка для восстановления отправлена на почту</p>
+                                        </div>
+                                        
+                                        
+                                 <div className='btnnForReg-user1'>     
+                                     {/* <div className='test1'> */}
+                                                    <div className='btnnForRegPodcaster1'>     
+                                                        {isButtonDisabled1 === true ? (     
+                                                   
+                                                                <MainButton disabled={isButtonDisabled1}>Отправить пароль</MainButton>    
+                                                           
+                                                        ) : isHovered ? (    
+                                                            <div className='bgforbtnsave'>    
+                                                                <MainButton
+                                                                    onMouseEnter={handleMouseEnter} 
+                                                                    onMouseLeave={handleMouseLeave} 
+                                                                    disabled={isButtonDisabled1}
+                                                                    onClick={handlePasswordSubmit}
+                                                                >   
+                                                                  Отправить пароль
+                                                                </MainButton>   
+                                                            </div> 
+                                                        ) : (    
+                                                            <MainButton
+                                                                // onClick={props.ispressed} 
+                                                                onMouseEnter={handleMouseEnter} 
+                                                                onMouseLeave={handleMouseLeave} 
+                                                                disabled={isButtonDisabled1}
+                                                                onClick={handlePasswordSubmit}
+                                                            >   
+                                                              Отправить пароль 
+                                                            </MainButton>  
+                                                        )} 
+                                    
+                                    
+                                                       
+                                                    </div> 
+                                                  
+                                                        
+                                 </div> 
+                          
+                            </form>
+  
+            </div>  
+
+            </div>       
         </>         
     );        
 }

@@ -13,7 +13,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 60px;
 line-height: 60px;
-
+white-space: nowrap;
 /* black */
 color: #0E0E0E;
 
@@ -241,6 +241,7 @@ color: #0E0E0E;
         padding: 0;
         height: auto;
         line-height: 1;
+        white-space: nowrap;
         
       
         
@@ -264,6 +265,7 @@ color: #0E0E0E;
     .centerforreg2{
         height: 24px;
         margin-bottom: 13px;
+        margin-left: 40px;
     }
  
     .centerforreg2{
