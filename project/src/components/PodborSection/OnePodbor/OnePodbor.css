@@ -561,6 +561,7 @@ flex-grow: 0; */
     height: 100px !important;
     margin-bottom: 50px !important;
 
+
     
     }
 
@@ -568,6 +569,7 @@ flex-grow: 0; */
       position: relative !important;
       height: 144px !important;
       width: calc(100vw - 30px);
+      min-width: 328px;
     }
 
     .thef1{

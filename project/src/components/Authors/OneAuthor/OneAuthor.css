@@ -399,7 +399,7 @@ text-overflow: ellipsis; /* Если текст не помещается, бу�
 }
 
   .sectionsubForAuthor{
-    width: calc(100vw - 30px - 19px);
+    width: calc(100vw - 30px);
     margin-left: -5px;
     height: 144px;
     min-width: 100px;
