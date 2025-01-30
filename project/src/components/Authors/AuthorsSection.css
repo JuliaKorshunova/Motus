@@ -12,15 +12,11 @@
 
 @media (max-width: 1279px) {
     .author-card{
-        left: -284px;
-        position: relative;
-        display: flex;            /* Включаем Flexbox */
-        flex-direction: column;  /* Располагаем элементы в столбец */
-        gap: 8px;
-        width: calc(100vw - 30px );
-        right: -16px;
-       
-        /* gap: 50px; */
+        margin-left: -12px;
+        margin-right: 16px ;
+        display: grid; /* Используем Grid для расположения карточек */
+        grid-template-columns: repeat(1, 1fr); /* 2 колонки */
+        gap: 8px; /* Устанавливаем расстояние между элементами */
     }
     
 

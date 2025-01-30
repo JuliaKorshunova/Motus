@@ -494,27 +494,33 @@ flex-grow: 0;
 
 @media (max-width: 1279px) {
 
-
+  .cardsub {
+        position: relative !important;
+        height: 144px !important;
+        width: calc(100vw - 16px);
+        min-width: 328px;
+     
+  }
   .picturesub1ForAuthor{
     display: none;
   }
   .sectionsubForSubs{
     
-    width: calc(100vw - 30px);
+    width: calc(100vw - 16px);
     /* height: 270px; */
     height: 144px;
 
-    min-width: 300px;
+
     
    
   }
   .sectionsubForSubs1{
     
-    width: calc(100vw - 30px);
+    width: calc(100vw - 16px);
     /* height: 270px; */
     height: 144px;
 
-    min-width: 300px;
+    min-width: 328px;
     
    
   }

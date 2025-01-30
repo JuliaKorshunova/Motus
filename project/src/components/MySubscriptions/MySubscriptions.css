@@ -1,6 +1,4 @@
-.sub{
-   top:100px;   
-}
+
 
 .sub_container {
     /* Group 8786 */
@@ -79,10 +77,11 @@
   }
 
   .obedinen-sub{
-         display: flex;
+        display: flex;
         flex-direction: column;
         gap: 30px;
         width: calc(100vw - 30px);
+        margin-top: -490px;
     }
 
 
