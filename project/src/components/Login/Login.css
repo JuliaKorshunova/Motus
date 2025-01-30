@@ -227,8 +227,24 @@ color: #0E0E0E;
 
 }
 
+._frame_882012 {
+    display: flex
+;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    position: absolute;
+    width: 540px;
+    height: 530px;
+    left: 310px;
+    top: 240px;
+}
 
 
+.frame8821{
+    margin-left: 20px;
+}
 
 @media (max-width: 1279px) {
     .text_for_login-zag{
@@ -245,6 +261,9 @@ color: #0E0E0E;
         
       
         
+    }
+    .frame8821{
+        margin-left: 16px;
     }
     .text_for_register{
         font-size: 26px;
@@ -265,20 +284,39 @@ color: #0E0E0E;
     .centerforreg2{
         height: 24px;
         margin-bottom: 13px;
-        margin-left: 40px;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        /* margin-left: 40px; */
     }
  
     .centerforreg2{
         display: flex;
         flex-direction: row;
-        width: 268px;
-        text-align: center;
+    
+        /* text-align: center; */
         justify-content: center;
         margin-top: 115px;
         order: 1;
    
 
     }
+
+        ._frame_882012 {
+            margin-top: -10px;
+        }
+
+        ._frame_882012 {
+            position: relative;
+            top: 16px;
+            left: 0px;
+            right: 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-left: 8px;
+        }
+    
 
 }
 

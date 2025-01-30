@@ -65,7 +65,7 @@ export default function PasswordRecoveryTransition(props) {
             
                 console.log('Пароль:', password);     
              
-             
+
               
                 setPassword('');    
       
@@ -99,11 +99,11 @@ export default function PasswordRecoveryTransition(props) {
     
         useEffect(() => {
             // Проверка наличия ошибок
-            const hasError = (errorPassword=='') ;
+            const hasError = (errorPassword !='' || password =='') ;
     
             // Если хотя бы одно поле имеет ошибку — отключаем кнопку
-            setIsButtonDisabled1(!hasError);
-        }, [errorPassword]); // Зависимости для проверки валидации Мы добавили зависимости в массив, чтобы useEffect вызывался каждый раз, когда изменяются состояния ошибок.
+            setIsButtonDisabled1(hasError);
+        }, [errorPassword, password]); // Зависимости для проверки валидации Мы добавили зависимости в массив, чтобы useEffect вызывался каждый раз, когда изменяются состояния ошибок.
     
     return (   
         <>   
@@ -111,14 +111,16 @@ export default function PasswordRecoveryTransition(props) {
             <div className="parent1">   
                
             </div>  
+            <div className='centerforreg2'>
  
             <div className="text_for_login-zag">  
                 Восстановление пароля  
             </div>  
-              
+                    <form onSubmit={handleSubmit}>  
+
             <div className="_frame_88201">  
                 
-                 <form onSubmit={handleSubmit}>  
+           
                                               
                                         
                      <div className='inputplustext1'>
@@ -126,7 +128,7 @@ export default function PasswordRecoveryTransition(props) {
                               <input 
                                                       
                                    type="email" 
-                                  className='_rectangle16_white' 
+                                  className='_rectangle16' 
                                  placeholder="Почта" 
                                  defaultValue={email} // Устанавливаем значение
                                  required 
@@ -142,7 +144,7 @@ export default function PasswordRecoveryTransition(props) {
                 
                                             <div className='inputplustext1'>
           
-              <div className={`  ${errorPassword ? '_red1' : '_blacknewpod3'}  ${(focusedState.input2 && errorPassword.trim()==='') ? '_pink1' : '_blacknewpod3'} ${(isPassNotEmpty && errorPassword.trim()==='' && focusedState.input4==false) ? '_green1' : '_blacknewpod3'}`} >   
+              <div className={`  ${errorPassword ? '_red1' : '_blacknewpod3'}  ${(focusedState.input2 && errorPassword.trim()==='') ? '_pink1' : '_blacknewpod3'} ${(isPassNotEmpty && errorPassword.trim()==='' && focusedState.input2==false) ? '_green1' : '_blacknewpod3'}`} >   
                         <input    
                             type="password"    
                             className={`_rectangle16 ${errorPassword ? 'rectangle-error1' : ''}`}  
@@ -164,7 +166,7 @@ export default function PasswordRecoveryTransition(props) {
 
                      <div className='btnnForReg-user1'>     
                                                     
-                            <div className='btnnForRegPodcaster1'>     
+                         
                                  {isButtonDisabled1 === true ? (     
                                                                    
                               <MainButton disabled={isButtonDisabled1}>Отправить пароль</MainButton>    
@@ -193,13 +195,15 @@ export default function PasswordRecoveryTransition(props) {
                                                     
                                                     
                                                                        
-                                         </div> 
+                                     
                                                                   
                                                                         
                        </div> 
-
+   </div>  
                        </form>                          
-            </div>   
+            </div>
+
+          
         </>   
     );  
 }

@@ -150,7 +150,7 @@ const [errorPassword, setErrorPassword] = useState('');
              
         </div>    
                
-            <div className="_frame_8820">     
+            <div className="_frame_882012">     
             
 
                       <div className='inputplustext1'>

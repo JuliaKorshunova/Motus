@@ -356,7 +356,7 @@ const [errorLink, setErrorLink] = useState('');
 
                 <div className='btnnForReg-user'>     
                     {/* <div className='test1'> */}
-                                   <div className='btnnForRegPodcaster1'>     
+                              
                                        {isButtonDisabled1 === true ? (     
                                              
                                                <MainButton2 disabled={isButtonDisabled1}>Создать аккаунт</MainButton2>    
@@ -384,7 +384,7 @@ const [errorLink, setErrorLink] = useState('');
                    
                    
                                       
-                                   </div> 
+                              
                                  
                                         {/* </div> */}
                 </div> 
