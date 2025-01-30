@@ -70,7 +70,7 @@ export default function TabsSectionForRegister({Active1, onChange}) {
                 
 
 
-    <div className="tab">
+    <div className="tabbb">
     {buttons.map((button) => (
         <div key={button.value} className="zi">
             {/* Проверка на активное состояние */}
@@ -84,7 +84,7 @@ export default function TabsSectionForRegister({Active1, onChange}) {
                     {button.label}
                 </SecondButtonForTabs>
             ) : button.isHovered ? (
-                // Если кнопка наведена, но не активна
+
                 <SecondButtonForTabs
                     isActive={false}
                     onMouseEnter={button.handleMouseEnter}
