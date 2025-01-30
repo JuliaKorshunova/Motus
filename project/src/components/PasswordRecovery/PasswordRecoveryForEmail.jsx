@@ -19,7 +19,7 @@ export default function PasswordRecoveryForEmail() {
         // Запускаем таймер для перехода через 5 секунд
         const timer = setTimeout(() => {
             navigate('/reset-password-transition', { state: { email } });  
-        }, 5000);
+        }, 1000);
 
         return () => clearTimeout(timer); // Очищаем таймер при размонтировании
     }, [navigate, email]);
