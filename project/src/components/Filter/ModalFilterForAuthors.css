@@ -20,11 +20,13 @@
         align-content: flex-start;
         padding: 0px;
         gap: 10px;
-        position: absolute;
+        /* position: absolute; */
         width: 245px;
-        height: 110px;
+        /* height: 110px; */
         left: 0px;
-        top: 330px;
+        /* top:630px; */
+        order: 1;
+        height: auto;
 }
 
 .btnnsubforReset-a {
@@ -53,4 +55,13 @@
 .obedForModal{
     display: flex;
     flex-direction: column;
+    margin-top: 250px;
+    gap: 20px;
+}
+
+.forbtnn2{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    order: 2;
 }

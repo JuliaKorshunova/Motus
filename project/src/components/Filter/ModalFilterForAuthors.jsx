@@ -129,7 +129,7 @@ const ModalFilterForAuthors = ({
                                 <ButtonTabGreenForFilter icon={donetab_for_filter}>Воспитание</ButtonTabGreenForFilter>
                                 <ButtonTabGreenForFilter>...</ButtonTabGreenForFilter>
                             </div>
-
+                    <div className='forbtnn2'>
                             <div className='btnnsubforReset-a'>
                                 {testDeisabled ? (
                                     <div className='pocastdis'>
@@ -156,7 +156,7 @@ const ModalFilterForAuthors = ({
                                 )}
                         </div>
 
-                        <div className='btnnsubforApply'>
+                        <div className='btnnsubforApplly'>
                             {testDeisabled ? (
                                 <div className='pocastdis'>
                                     <MainButton2 disabled>Применить</MainButton2>
@@ -180,6 +180,7 @@ const ModalFilterForAuthors = ({
                                     Применить
                                 </MainButton2>
                             )}
+                        </div>
                         </div>
 
 </div>
