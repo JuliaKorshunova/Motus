@@ -118,6 +118,7 @@ const ModalFilterForAuthors = ({
                         </div>
                         <div className="category-wrapper">
                             <div className="category-label-a">Категории</div>
+                            <div className="obedForModal">
                             <div className="tab-wrapper111-a">
                                 <ButtonTabGreenForFilter icon={donetab_for_filter}>Криминал</ButtonTabGreenForFilter>
                                 <ButtonTabGreenForFilter icon={donetab_for_filter}>Секс</ButtonTabGreenForFilter>
@@ -128,58 +129,63 @@ const ModalFilterForAuthors = ({
                                 <ButtonTabGreenForFilter icon={donetab_for_filter}>Воспитание</ButtonTabGreenForFilter>
                                 <ButtonTabGreenForFilter>...</ButtonTabGreenForFilter>
                             </div>
-                        </div>
-                        <div className='btnnsubforReset-a'>
-    {testDeisabled ? (
-        <div className='pocastdis'>
-            <MainButton2 disabled>Сбросить</MainButton2>
-        </div>
-    ) : isHovered1 ? (
-        <div className='bgforbtnsub-a'>
-            <MainButton2 
-                onMouseEnter={handleMouseEnter1} 
-                onMouseLeave={handleMouseLeave1}
-                disabled={testDeisabled}
-            >
-                Сбросить
-            </MainButton2>
-        </div>
-    ) : (
-        <MainButton2 
-            onMouseEnter={handleMouseEnter1} 
-            onMouseLeave={handleMouseLeave1} 
-            disabled={testDeisabled}
-        >
-            Сбросить
-        </MainButton2>
-    )}
-</div>
 
-<div className='btnnsubforApply'>
-    {testDeisabled ? (
-        <div className='pocastdis'>
-            <MainButton2 disabled>Применить</MainButton2>
-        </div>
-    ) : isHovered2 ? (
-        <div className='bgforbtnsub'>
-            <MainButton2 
-                onMouseEnter={handleMouseEnter2} 
-                onMouseLeave={handleMouseLeave2}
-                disabled={testDeisabled}
-            >
-                Применить
-            </MainButton2>
-        </div>
-    ) : (
-        <MainButton2 
-            onMouseEnter={handleMouseEnter2} 
-            onMouseLeave={handleMouseLeave2} 
-            disabled={testDeisabled}
-        >
-            Применить
-        </MainButton2>
-    )}
+                            <div className='btnnsubforReset-a'>
+                                {testDeisabled ? (
+                                    <div className='pocastdis'>
+                                        <MainButton2 disabled>Сбросить</MainButton2>
+                                    </div>
+                                ) : isHovered1 ? (
+                                    <div className='bgforbtnsub-a'>
+                                        <MainButton2 
+                                            onMouseEnter={handleMouseEnter1} 
+                                            onMouseLeave={handleMouseLeave1}
+                                            disabled={testDeisabled}
+                                        >
+                                            Сбросить
+                                        </MainButton2>
+                                    </div>
+                                ) : (
+                                    <MainButton2 
+                                        onMouseEnter={handleMouseEnter1} 
+                                        onMouseLeave={handleMouseLeave1} 
+                                        disabled={testDeisabled}
+                                    >
+                                        Сбросить
+                                    </MainButton2>
+                                )}
+                        </div>
+
+                        <div className='btnnsubforApply'>
+                            {testDeisabled ? (
+                                <div className='pocastdis'>
+                                    <MainButton2 disabled>Применить</MainButton2>
+                                </div>
+                            ) : isHovered2 ? (
+                                <div className='bgforbtnsub-a1'>
+                                    <MainButton2 
+                                        onMouseEnter={handleMouseEnter2} 
+                                        onMouseLeave={handleMouseLeave2}
+                                        disabled={testDeisabled}
+                                    >
+                                        Применить
+                                    </MainButton2>
+                                </div>
+                            ) : (
+                                <MainButton2 
+                                    onMouseEnter={handleMouseEnter2} 
+                                    onMouseLeave={handleMouseLeave2} 
+                                    disabled={testDeisabled}
+                                >
+                                    Применить
+                                </MainButton2>
+                            )}
+                        </div>
+
 </div>
+                        </div>
+                        
+
 
                         
                     </div>

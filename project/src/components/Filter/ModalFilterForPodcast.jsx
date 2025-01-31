@@ -163,7 +163,7 @@ const ModalFilterForPodcast = ({ isModalOpen, closeModal }) => {
                     </div>
                   )
                     : isHovered2 === true ? (
-                      <div className='bgforbtnsub'>
+                      <div className='bgforbtnsub-a'>
                         <MainButton2 
                         onMouseEnter={handleMouseEnter2} 
                         onMouseLeave={handleMouseLeave2} 
@@ -188,7 +188,7 @@ const ModalFilterForPodcast = ({ isModalOpen, closeModal }) => {
                     </div>
                   )
                     : isHovered1 === true ? (
-                      <div className='bgforbtnsub'>
+                      <div className='bgforbtnsub-a1'>
                         <MainButton2 
                         onMouseEnter={handleMouseEnter1} 
                         onMouseLeave={handleMouseLeave1} 
