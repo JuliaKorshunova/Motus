@@ -1,9 +1,11 @@
 .btnnsubforReset{
     margin-top: 340px;
+    z-index: 1000;
 
 }
 
 .btnnsubforApply{
     margin-top: -44px;
     margin-left: 80px;
+    z-index: 1000;
 }

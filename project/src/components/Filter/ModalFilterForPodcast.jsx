@@ -9,17 +9,11 @@ import MainButton2 from '../Button/MainButton2';
 const ModalFilterForPodcast = ({ isModalOpen, closeModal }) => {
 
 
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
   
   const testDeisabled=false;
 
-  const [isHovered, setIsHovered] = useState(false);
+
+  
   const [selectedOption, setSelectedOption] = useState(null);
   const [sliderValue, setSliderValue] = useState(40); // значение ползунка
   const maxSliderWidth = window.innerWidth <= 1439 ? 228 : 260;
@@ -39,6 +33,17 @@ const ModalFilterForPodcast = ({ isModalOpen, closeModal }) => {
   const handleSliderChange = (e) => {
     setSliderValue(e.target.value);
   };
+
+
+  
+      const [isHovered1, setIsHovered1] = useState(false);
+      const [isHovered2, setIsHovered2] = useState(false);
+  
+      const handleMouseEnter1 = () => setIsHovered1(true);
+      const handleMouseLeave1 = () => setIsHovered1(false);
+  
+      const handleMouseEnter2 = () => setIsHovered2(true);
+      const handleMouseLeave2 = () => setIsHovered2(false);
 
   if (!isModalOpen) return null;
 
@@ -157,18 +162,18 @@ const ModalFilterForPodcast = ({ isModalOpen, closeModal }) => {
                      
                     </div>
                   )
-                    : isHovered === true ? (
+                    : isHovered2 === true ? (
                       <div className='bgforbtnsub'>
                         <MainButton2 
-                        onMouseEnter={handleMouseEnter} 
-                        onMouseLeave={handleMouseLeave} 
+                        onMouseEnter={handleMouseEnter2} 
+                        onMouseLeave={handleMouseLeave2} 
                         disabled={testDeisabled}>
                           Сбросить
                         </MainButton2>
                       </div>) : (
                       <MainButton2 
-                      onMouseEnter={handleMouseEnter} 
-                      onMouseLeave={handleMouseLeave} 
+                      onMouseEnter={handleMouseEnter2} 
+                      onMouseLeave={handleMouseLeave2} 
                       disabled={testDeisabled}>
                         Сбросить
                       </MainButton2>)}
@@ -182,18 +187,18 @@ const ModalFilterForPodcast = ({ isModalOpen, closeModal }) => {
                      
                     </div>
                   )
-                    : isHovered === true ? (
+                    : isHovered1 === true ? (
                       <div className='bgforbtnsub'>
                         <MainButton2 
-                        onMouseEnter={handleMouseEnter} 
-                        onMouseLeave={handleMouseLeave} 
+                        onMouseEnter={handleMouseEnter1} 
+                        onMouseLeave={handleMouseLeave1} 
                         disabled={testDeisabled}>
                           Применить
                         </MainButton2>
                       </div>) : (
                       <MainButton2 
-                      onMouseEnter={handleMouseEnter} 
-                      onMouseLeave={handleMouseLeave} 
+                      onMouseEnter={handleMouseEnter1} 
+                      onMouseLeave={handleMouseLeave1} 
                       disabled={testDeisabled}>
                         Применить
                       </MainButton2>)}

@@ -306,10 +306,10 @@ top: -30px;
    }
 
    .obedinen11l {
-      overflow-x: hidden;
+      /* overflow-x: hidden; */
       width: calc(100vw - 30px);
-      margin-left: 0px;
-      overflow-y: hidden;
+      margin-left: 20px;
+      /* overflow-y: hidden; */
 }
 
 .otstup{
