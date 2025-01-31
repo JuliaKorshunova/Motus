@@ -45,7 +45,7 @@ export default function FilterForPodcast() {
             <div className="duration-text-label">Продолжительность</div>
 
             {/* Серый трек */}
-            <div className="scrollBar">
+            <div className="scrollBar-podcast">
               <div 
                 className="scrollBarGreen" 
                 style={{ width: `${(sliderValue / 180) * 90}%` }} // Динамическая ширина для зеленой полосы
@@ -66,14 +66,14 @@ export default function FilterForPodcast() {
             <img 
               src="/Ellipse197.svg" 
               alt="Start Ellipse" 
-              className="ElipseGreen_1" 
+              className="ElipseGreen_1-podcast" 
             />
 
             {/* Динамический конечный кружок */}
             <img 
               src="/Ellipse197.svg" 
               alt="Moving Ellipse" 
-              className="ElipseGreen_2" 
+              className="ElipseGreen_2-podcast" 
               style={{
                 left: `${15 + (sliderValue / 180) * (maxSliderWidth - 30)}px`,
               }}

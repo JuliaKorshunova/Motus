@@ -142,7 +142,8 @@ const ModalFilterForPodcast = ({ isModalOpen, closeModal }) => {
 
             <div className="category-wrapper">
               <div className="category-label">Категории</div>
-              <div className="tab-wrapper111">
+              <div className="obedForModal-podcast">
+              <div className="tab-wrapper111-a">
                 <ButtonTabGreenForFilter icon={donetab_for_filter}>Криминал</ButtonTabGreenForFilter>
                 <ButtonTabGreenForFilter icon={donetab_for_filter}>Секс</ButtonTabGreenForFilter>
                 <ButtonTabGreenForFilter icon={donetab_for_filter}>Дизайн</ButtonTabGreenForFilter>
@@ -152,8 +153,8 @@ const ModalFilterForPodcast = ({ isModalOpen, closeModal }) => {
                 <ButtonTabGreenForFilter icon={donetab_for_filter}>Воспитание</ButtonTabGreenForFilter>
                 <ButtonTabGreenForFilter>...</ButtonTabGreenForFilter>
               </div>
-            </div>
 
+              <div className="forbtnn2">
             <div className='btnnsubforReset'>
                  {testDeisabled === true ? (
                     <div className='pocastdis'>
@@ -203,6 +204,10 @@ const ModalFilterForPodcast = ({ isModalOpen, closeModal }) => {
                         Применить
                       </MainButton2>)}
               </div>
+              </div>
+              </div>
+            </div>
+            
 
           </div>
         </div>

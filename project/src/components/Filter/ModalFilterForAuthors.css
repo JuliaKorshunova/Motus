@@ -29,9 +29,7 @@
         height: auto;
 }
 
-.btnnsubforReset-a {
-    
-}
+
 
 .bgforbtnsub-a{
     width: 73px;
@@ -55,7 +53,7 @@
 .obedForModal{
     display: flex;
     flex-direction: column;
-    margin-top: 250px;
+    margin-top: 227px;
     gap: 20px;
 }
 

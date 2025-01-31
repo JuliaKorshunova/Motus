@@ -47,13 +47,14 @@ export default function FilterForAuthors() {
 
             {/* Невидимый ползунок */}
             <input 
-              type="range" 
-              min="1" 
-              max="400" 
-              value={sliderValue} 
-              className="hidden-slider" 
-              onChange={handleSliderChange} 
-            />
+  type="range" 
+  min="1" 
+  max="400" 
+  value={sliderValue} 
+  className="hidden-slider" 
+  onChange={handleSliderChange} 
+  
+/>
 
             {/* Фиксированный начальный кружок */}
             <img 
@@ -67,7 +68,7 @@ export default function FilterForAuthors() {
               src="/Ellipse197.svg" 
               alt="Moving Ellipse" 
               className="end-circle" 
-              style={{ left: `${15 + (sliderValue / 400) * 230}px` }} // Позиция второго кружка
+              style={{ left: `${15 + (sliderValue / 400) * 207}px` }} // Позиция второго кружка
             />
 
             {/* Тексты для отображения количества */}
@@ -76,7 +77,7 @@ export default function FilterForAuthors() {
             {/* Перемещающийся текст */}
             <div 
               className="end-text" 
-              style={{ left: `${15 + (sliderValue / 400) * 230}px` }} // Позиция текста изменяется как у второго кружка
+              style={{ left: `${15 + (sliderValue / 400) * 207}px` }} // Позиция текста изменяется как у второго кружка
             >
               {sliderValue}
             </div>

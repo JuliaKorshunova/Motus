@@ -47,11 +47,11 @@ const ModalFilterForPodbor = ({ isModalOpen, closeModal }) => {
                         className="arrow-icon-before" 
                         onClick={closeModal} 
                     />
-                    <div className="filter-title">Фильтрация</div>
+                    <div className="filter-title-podb">Фильтрация</div>
 
-                    <div className="slider-container">
+                    <div className="slider-container-podb">
                         <div className="quantity-slider">
-                            <div className="quantity-label">Количество выпусков</div>
+                            <div className="quantity-label-podb">Количество выпусков</div>
 
                             <div className="slider-track">
                                 <div 
@@ -89,7 +89,7 @@ const ModalFilterForPodbor = ({ isModalOpen, closeModal }) => {
 
                         <div className="sort-section">
                             <div className="sort-title">Упорядочить</div>
-                            <div className="radio-button-container">
+                            <div className="radio-button-container-modal">
                                 {options.map((option) => (
                                     <div key={option.id} className="radio-button-wrapper" style={{ display: 'flex', alignItems: 'center' }}>
                                         <CustomRadioButton
@@ -111,8 +111,9 @@ const ModalFilterForPodbor = ({ isModalOpen, closeModal }) => {
                         </div>
 
                         <div className="category-section">
-                            <div className="category-title">Категории</div>
-                            <div className="tab-container">
+                            <div className="category-title-modal">Категории</div>
+                            <div className="obedForModal-podbor">
+                            <div className="tab-wrapper111-a">
                                 <ButtonTabGreenForFilter icon={donetab_for_filter}>Криминал</ButtonTabGreenForFilter>
                                 <ButtonTabGreenForFilter icon={donetab_for_filter}>Секс</ButtonTabGreenForFilter>
                                 <ButtonTabGreenForFilter icon={donetab_for_filter}>Дизайн</ButtonTabGreenForFilter>
@@ -122,8 +123,7 @@ const ModalFilterForPodbor = ({ isModalOpen, closeModal }) => {
                                 <ButtonTabGreenForFilter icon={donetab_for_filter}>Воспитание</ButtonTabGreenForFilter>
                                 <ButtonTabGreenForFilter>...</ButtonTabGreenForFilter>
                             </div>
-                        </div>
-
+                            <div className="forbtnn2">
                         <div className='btnnsubforResetLibrary'>
                             <MainButton2
                                 onMouseEnter={() => setIsHovered1(true)}
@@ -145,6 +145,14 @@ const ModalFilterForPodbor = ({ isModalOpen, closeModal }) => {
                                 Применить
                             </MainButton2>
                         </div>
+
+                        </div>
+                        </div>
+
+                        </div>
+
+
+                        
                     </div>
                 </div>
             </div>

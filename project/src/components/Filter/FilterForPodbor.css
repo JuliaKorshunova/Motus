@@ -246,3 +246,77 @@ top: 344px;
     left: 0px;
     transition: left 0.1s ease-in-out;
 }
+
+@media (max-width: 1279px) {
+    .quantity-label {
+        /* Продолжительность */
+
+position: absolute;
+width: 122px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+/* mobile/txt */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 134%;
+/* identical to box height, or 16px */
+
+color: #000000;
+
+
+    }
+
+    .sort-title{
+            /* Упорядочить */
+
+    position: absolute;
+    width: 77px;
+    height: 16px;
+    left: 0px;
+    top: 64px;
+
+    /* mobile/txt */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 134%;
+    /* identical to box height, or 16px */
+
+    color: #000000;
+    }
+
+    .slider-track{
+    top: 28px;
+    }
+
+    .start-circle{
+    top: 23px;
+    }
+    .end-circle {
+    top: 23px;
+    }
+    .start-text{
+    top: 34px;
+    }
+    .end-text{
+        top: 34px;
+    }
+    .radio-button-container{
+        display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 11px;
+    position: absolute;
+    width: 215px;
+    height: 169px;
+    left: 0px;
+
+    }
+}
+

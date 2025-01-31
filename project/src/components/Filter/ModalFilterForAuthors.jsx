@@ -56,7 +56,7 @@ const ModalFilterForAuthors = ({
                     <div className="filter-header">Фильтрация</div>
                     <div className="slider-wrapper">
                         <div className="filter-duration">
-                            <div className="duration-text-label">Продолжительность</div>
+                            <div className="duration-text-label">Количество выпусков</div>
                             <div className="scrollBar">
                                 <div 
                                     className="scrollBarGreen" 
@@ -84,14 +84,14 @@ const ModalFilterForAuthors = ({
                                     left: `${15 + (sliderValue / 180) * (maxSliderWidth - 30)}px`,
                                 }}
                             />
-                            <div className="start-time-text">15 мин.</div>
+                            <div className="start-time-text">1</div>
                             <div 
                                 className="end-time-text" 
                                 style={{
                                     left: `${15 + (sliderValue / 180) * (maxSliderWidth - 30)}px`,
                                 }}
                             >
-                                {sliderValue} мин.
+                                {sliderValue} 
                             </div>
                         </div>
                         <div className="frame-small">
