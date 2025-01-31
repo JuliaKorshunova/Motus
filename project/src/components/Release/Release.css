@@ -1036,7 +1036,7 @@ margin-right: 30px;
   display: grid; /* Используем Grid для расположения карточек */
   grid-template-columns: repeat(2, 1fr); /* 2 колонки */
 
-  margin-right: 200px;
+  margin-right: 80px;
   
   
   }
@@ -1083,9 +1083,10 @@ margin-right: 30px;
     left: -10px;
   }
   .obedineniep1{
-    width: calc(100vw - 40px);
+    width: calc(100vw - 57px);
     justify-content: flex-start;
-   margin-bottom: 0px;
+   margin-bottom: 20px;
+   height: auto;
   }
   .thefp{
     font-size: 14px;
@@ -1191,7 +1192,7 @@ flex-grow: 0;
 .rowforbtn{
   display: flex;
   flex-direction: row;
-  width: calc(100vw - 64px);
+  width: calc(100vw - 90px);
   justify-content: space-between;
 }
 .nazv3forhashtag{
@@ -1289,5 +1290,9 @@ display: -webkit-box;
 }
 .rasst{
   gap: 12px;
+}
+
+.sp{
+  height: auto;
 }
 }
