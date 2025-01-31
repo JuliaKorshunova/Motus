@@ -25,17 +25,21 @@ const ModalFilterForAuthors = ({
         { id: 6, label: 'По количеству выпусков', hasArrow: true, arrowDirection: 'up' },
     ];
 
-    const handleMouseEnter = () => {
-        setIsHovered(true);
-      };
-    
-      const handleMouseLeave = () => {
-        setIsHovered(false);
-      };
+    const [isHovered1, setIsHovered1] = useState(false);
+    const [isHovered2, setIsHovered2] = useState(false);
+
+    const handleMouseEnter1 = () => setIsHovered1(true);
+    const handleMouseLeave1 = () => setIsHovered1(false);
+
+    const handleMouseEnter2 = () => setIsHovered2(true);
+    const handleMouseLeave2 = () => setIsHovered2(false);
+
+
+  
       
       const testDeisabled=false;
     
-      const [isHovered, setIsHovered] = useState(false);
+
 
     if (!isModalOpen) return null;
 
@@ -125,55 +129,57 @@ const ModalFilterForAuthors = ({
                                 <ButtonTabGreenForFilter>...</ButtonTabGreenForFilter>
                             </div>
                         </div>
-                <div className='btnnsubforReset-a'>
-                 {testDeisabled === true ? (
-                    <div className='pocastdis'>
-                      <MainButton2 
-                      disabled={true}>Сбросить</MainButton2>
-                     
-                    </div>
-                  )
-                    : isHovered === true ? (
-                      <div className='bgforbtnsub'>
-                        <MainButton2 
-                        onMouseEnter={handleMouseEnter} 
-                        onMouseLeave={handleMouseLeave} 
-                        disabled={testDeisabled}>
-                          Сбросить
-                        </MainButton2>
-                      </div>) : (
-                      <MainButton2 
-                      onMouseEnter={handleMouseEnter} 
-                      onMouseLeave={handleMouseLeave} 
-                      disabled={testDeisabled}>
-                        Сбросить
-                      </MainButton2>)}
-              </div>
+                        <div className='btnnsubforReset-a'>
+    {testDeisabled ? (
+        <div className='pocastdis'>
+            <MainButton2 disabled>Сбросить</MainButton2>
+        </div>
+    ) : isHovered1 ? (
+        <div className='bgforbtnsub'>
+            <MainButton2 
+                onMouseEnter={handleMouseEnter1} 
+                onMouseLeave={handleMouseLeave1}
+                disabled={testDeisabled}
+            >
+                Сбросить
+            </MainButton2>
+        </div>
+    ) : (
+        <MainButton2 
+            onMouseEnter={handleMouseEnter1} 
+            onMouseLeave={handleMouseLeave1} 
+            disabled={testDeisabled}
+        >
+            Сбросить
+        </MainButton2>
+    )}
+</div>
 
-              <div className='btnnsubforApply'>
-                 {testDeisabled === true ? (
-                    <div className='pocastdis'>
-                      <MainButton2 
-                      disabled={true}>Применить</MainButton2>
-                     
-                    </div>
-                  )
-                    : isHovered === true ? (
-                      <div className='bgforbtnsub'>
-                        <MainButton2 
-                        onMouseEnter={handleMouseEnter} 
-                        onMouseLeave={handleMouseLeave} 
-                        disabled={testDeisabled}>
-                          Применить
-                        </MainButton2>
-                      </div>) : (
-                      <MainButton2 
-                      onMouseEnter={handleMouseEnter} 
-                      onMouseLeave={handleMouseLeave} 
-                      disabled={testDeisabled}>
-                        Применить
-                      </MainButton2>)}
-              </div>
+<div className='btnnsubforApply'>
+    {testDeisabled ? (
+        <div className='pocastdis'>
+            <MainButton2 disabled>Применить</MainButton2>
+        </div>
+    ) : isHovered2 ? (
+        <div className='bgforbtnsub'>
+            <MainButton2 
+                onMouseEnter={handleMouseEnter2} 
+                onMouseLeave={handleMouseLeave2}
+                disabled={testDeisabled}
+            >
+                Применить
+            </MainButton2>
+        </div>
+    ) : (
+        <MainButton2 
+            onMouseEnter={handleMouseEnter2} 
+            onMouseLeave={handleMouseLeave2} 
+            disabled={testDeisabled}
+        >
+            Применить
+        </MainButton2>
+    )}
+</div>
 
                         
                     </div>

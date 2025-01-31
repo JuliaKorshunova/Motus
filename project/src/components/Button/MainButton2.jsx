@@ -1,46 +1,55 @@
-import PropsType from 'prop-types' //позволяет проверять то что передается в кнопку в виде пропсов
-import classNames from 'classnames'
-//className={classes}
+import PropTypes from 'prop-types'; // Импортируем PropTypes
+import classNames from 'classnames';
+import { useState } from 'react';
+import classes from './MainButton2.module.css';
 
-import classes from './MainButton2.module.css'
-import { useState } from 'react'
-//className={` ${pressed? classes.pressedmainbtn : classes.defmainbtn} ${isHovered? classes.hovermainbtn: classes.defmainbtn} `} 
-export default function Button2( {onClick, children, pressed, hover, className, typeofbuttton,disabled, onMouseDown1, onMouseEnter, onMouseLeave, ...props }) { //оставшиеся входящие параметры
-  const[isHovered, setIsHovered]=useState(false)
-  const handleMouseOver = () => {
-    setIsHovered(true);
-  };
+export default function Button2({ 
+    onClick = () => {}, 
+    children = 'Default button', 
+    className = '', 
+    disabled = false, 
+    pressed = false, 
+    hover = false, 
+    typeofbutton, // Исправлена опечатка
+    onMouseDown1, 
+    onMouseEnter, 
+    onMouseLeave, 
+    ...props 
+}) {  
+    const [isHovered, setIsHovered] = useState(false);
 
-  const handleMouseOut = () => {
-    setIsHovered(false);
-  };
+    const handleMouseOver = () => setIsHovered(true);
+    const handleMouseOut = () => setIsHovered(false);
 
-   const classes1=classNames(
-    
-    className,
-   
-    {typeofbuttton}
-   )
-    return(
-      <>
-        <button {...props} disable={disabled} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} type="button"  className={disabled===true ?  classes.defmainbtndisabled :  classes.defmainbtn2  } onClick={onClick}>{children}</button>
-         {isHovered}</>
-      ) //вставка строки без + чтоб строку не обрывать
-  } 
+    const classes1 = classNames(
+        className,
+        typeofbutton // Теперь передаётся корректно
+    );
 
-  Button2.PropsType={
-    children:PropsType.node,
-    onClick:PropsType.func,
-    className:PropsType.string,
-    disabled:PropsType.bool,
-    pressed:PropsType.bool,
-    hover:PropsType.bool,
-  }
-  Button2.defaultProps = {
-    children:'Default button',
-    onClick:()=>{},
-    className:'',
-    disabled:false,
-    pressed:false,
-    hover:false,
-  }
+    return (
+        <>
+            <button 
+                {...props} 
+                disabled={disabled}  // Исправлено disable → disabled
+                onMouseEnter={onMouseEnter || handleMouseOver} 
+                onMouseLeave={onMouseLeave || handleMouseOut} 
+                type="button"  
+                className={disabled ? classes.defmainbtndisabled : classes.defmainbtn2} 
+                onClick={onClick}
+            >
+                {children}
+            </button>
+            {isHovered}
+        </>
+    );
+}
+
+// PropTypes для проверки типов
+Button2.propTypes = {
+    children: PropTypes.node,
+    onClick: PropTypes.func,
+    className: PropTypes.string,
+    disabled: PropTypes.bool,
+    pressed: PropTypes.bool,
+    hover: PropTypes.bool,
+};

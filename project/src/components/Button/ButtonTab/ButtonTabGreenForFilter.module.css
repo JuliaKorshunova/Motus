@@ -138,8 +138,6 @@ border-radius: 13px;
 }
 
 .activegreen{
-
-  
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -164,3 +162,31 @@ border-radius: 13px;
   border-radius: 13px;
   border: 0;
 }
+
+@media (max-width: 1279px) { 
+  .defmainbtn{
+    font-size: 12px;
+    line-height: 134%;
+    padding: 4px 8px;
+    border-radius: 7px;
+  }
+
+  .defmainbtn:hover {
+    font-size: 12px;
+    line-height: 134%;
+    padding: 4px 8px;
+    border-radius: 7px;
+  }
+
+
+
+
+
+
+
+
+
+
+}
+
+

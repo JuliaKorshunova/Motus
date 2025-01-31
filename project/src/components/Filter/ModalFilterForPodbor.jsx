@@ -6,12 +6,13 @@ import donetab_for_filter from '/donetabtofilter.png';
 import MainButton2 from '../Button/MainButton2';
 import './ModalFilterForPodbor.css'; 
 
-const ModalFilterForPodbor = ({isModalOpen,closeModal,}) => {
+const ModalFilterForPodbor = ({ isModalOpen, closeModal }) => {
     const [selectedOption, setSelectedOption] = useState(null);
-    const [sliderValue, setSliderValue] = useState(200); // Значение ползунка
-    const testDeisabled=false;
+    const [sliderValue, setSliderValue] = useState(200);
+    const testDeisabled = false;
 
-    const [isHovered, setIsHovered] = useState(false);
+    const [isHovered1, setIsHovered1] = useState(false);
+    const [isHovered2, setIsHovered2] = useState(false);
 
     const maxSliderWidth = window.innerWidth <= 1439 ? 228 : 260;
 
@@ -32,15 +33,9 @@ const ModalFilterForPodbor = ({isModalOpen,closeModal,}) => {
         setSliderValue(e.target.value);
     };
 
-    const handleMouseEnter = () => {
-        setIsHovered(true);
-      };
-    
-      const handleMouseLeave = () => {
-        setIsHovered(false);
-      };
-
     if (!isModalOpen) return null;
+
+    
 
     return (
         <div className="modal-overlay active">
@@ -129,57 +124,27 @@ const ModalFilterForPodbor = ({isModalOpen,closeModal,}) => {
                             </div>
                         </div>
 
-
-                        <div className='btnnsubforResetLibrary '>
-                                         {testDeisabled === true ? (
-                                            <div className='pocastdis'>
-                                              <MainButton2 
-                                              disabled={true}>Сбросить</MainButton2>
-                                             
-                                            </div>
-                                          )
-                                            : isHovered === true ? (
-                                              <div className='bgforbtnsub'>
-                                                <MainButton2 
-                                                onMouseEnter={handleMouseEnter} 
-                                                onMouseLeave={handleMouseLeave} 
-                                                disabled={testDeisabled}>
-                                                  Сбросить
-                                                </MainButton2>
-                                              </div>) : (
-                                              <MainButton2 
-                                              onMouseEnter={handleMouseEnter} 
-                                              onMouseLeave={handleMouseLeave} 
-                                              disabled={testDeisabled}>
-                                                Сбросить
-                                              </MainButton2>)}
-                                      </div>
+                        <div className='btnnsubforResetLibrary'>
+                            <MainButton2
+                                onMouseEnter={() => setIsHovered1(true)}
+                                onMouseLeave={() => setIsHovered1(false)}
+                                disabled={testDeisabled}
+                                className={isHovered1 ? 'bgforbtnsub' : ''}
+                            >
+                                Сбросить
+                            </MainButton2>
+                        </div>
                         
-                                      <div className='btnnsubforApply'>
-                                         {testDeisabled === true ? (
-                                            <div className='pocastdis'>
-                                              <MainButton2 
-                                              disabled={true}>Применить</MainButton2>
-                                             
-                                            </div>
-                                          )
-                                            : isHovered === true ? (
-                                              <div className='bgforbtnsub'>
-                                                <MainButton2 
-                                                onMouseEnter={handleMouseEnter} 
-                                                onMouseLeave={handleMouseLeave} 
-                                                disabled={testDeisabled}>
-                                                  Применить
-                                                </MainButton2>
-                                              </div>) : (
-                                              <MainButton2 
-                                              onMouseEnter={handleMouseEnter} 
-                                              onMouseLeave={handleMouseLeave} 
-                                              disabled={testDeisabled}>
-                                                Применить
-                                              </MainButton2>)}
-                                      </div>
-                        
+                        <div className='btnnsubforApply'>
+                            <MainButton2
+                                onMouseEnter={() => setIsHovered2(true)}
+                                onMouseLeave={() => setIsHovered2(false)}
+                                disabled={testDeisabled}
+                                className={isHovered2 ? 'bgforbtnsub' : ''}
+                            >
+                                Применить
+                            </MainButton2>
+                        </div>
                     </div>
                 </div>
             </div>
