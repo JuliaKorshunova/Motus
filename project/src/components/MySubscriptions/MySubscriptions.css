@@ -1,4 +1,44 @@
+.library_container-s{
+   position: absolute;
+   width: 632px;
+   height: 60px;
+   left: 306px;
+   top: 159px;
+   right: 30px;
+   display: flex
+;
+   align-items: center;
+   justify-content: space-between;
+}
 
+.zagolovokForL-s{
+   font-family: 'Stolzl';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 60px;
+   line-height: 60px;
+   color: #0E0E0E;
+   margin-right: 10px;
+}
+
+.subtitle1ForL-s{
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 28px;
+   line-height: 143%;
+   color: #6D6D6D;
+   white-space: nowrap; /* Запрещает перенос текста */
+}
+
+
+
+
+
+.r1-s{
+   display: flex;
+   flex-direction: column;
+}
 
 .sub_container {
     /* Group 8786 */
@@ -91,6 +131,40 @@
 }
 
   @media (max-width: 1279px) {
+
+   .library_container-s{
+      position: absolute;
+      width: 172px;
+      height: 48px;
+      left: 100px;
+      top: 111px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+   }
+   
+   .zagolovokForL-s{
+      font-size: 48px;
+      line-height: 48px;
+   }
+   
+   .subtitle1ForL-s{
+      font-size: 16px;
+        line-height: 143%;
+        white-space: nowrap;
+        margin-left: -75px;
+   }
+
+   .filters-s{
+      display: none;
+   }
+   
+   .r1-s{
+      display: flex;
+      flex-direction: column;
+   }
    .filter-hidden {
        display: none; /* Скрывает элементы */
    }

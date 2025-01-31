@@ -35,3 +35,36 @@ flex-grow: 0;
 .zi{
     z-index: 1999;
 }
+
+.tabforsub{
+    display: flex;
+     flex-direction: row;
+     align-items: flex-start;
+     padding: 0px;
+     gap: 10px;
+     position: relative;
+     left: 0px;
+     margin-top: 16px;
+     margin-left: 280px;
+     margin-bottom: 30px;
+     /* margin-top: 48%; */
+ }
+
+ @media (max-width: 1279px) {
+
+    .tabforsub{
+        display: flex;
+         flex-direction: row;
+         align-items: flex-start;
+         padding: 0px;
+         gap: 10px;
+         position: relative;
+         left: -290px;
+         margin-top: 16px;
+         margin-left: 280px;
+         margin-bottom: 30px;
+         /* margin-top: 48%; */
+     }
+}
+
+

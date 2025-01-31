@@ -49,49 +49,47 @@ export default function MySubscriptions() {
     return (
         <>
             <Header />
-            <div className="sub_container">
-                <div className="zagolovok1">Subscriptions</div>
-                <div className="subtitle11"> — [səbˈskrɪpʃ(ə)ns] (en.) подписки</div>
+            <div className="library_container-s">
+                <div className="zagolovokForL-s">Subscriptions</div>
+                <div className="subtitle1ForL-s"> — [səbˈskrɪpʃ(ə)ns] (en.) подписки</div>
             </div>
-            <div className="tab"></div>
-            <div className="obedinen11-sub">
+          
+            <div className="obedinen11l">
 
-            <div className="obedinen-sub">
+           
                 
                 <TabsSectionForSubscriptions Active1={tab} onChange={(current) => setTab(current)} />
 
-                {tab === 'pod' && (
-                    <>
-                        <SubscribesSection />
-                        {!isMobile && <FilterForPodcast />}
-                    </>
-                )}
-                {tab === 'podbor' && (
-                    <>
-                        <PodborSection />
-                        {!isMobile && <FilterForPodbor />}
-                    </>
-                )}
-                {tab === 'autor' && (
-                    <>
-                        <AuthorsSection />
-                        {!isMobile && <FilterForAuthors />}
-                    </>
-                )}
-            </div>
+                <div className="filters-s">
+                                    {tab === 'pod' && <FilterForPodcast />}
+                                    {tab === 'podbor' && <FilterForPodbor />}
+                                    {tab === 'autor' && <FilterForAuthors />}
+                                </div>
+                                <div className='r1-s'>
+                                    {tab === 'pod' && (
+                                        <SubscribesSection filterOption={selectedOption} sliderValue={sliderValue} />
+                                    )}
+                                    {tab === 'podbor' && (
+                                        <PodborSection filterOption={selectedOption} sliderValue={sliderValue} />
+                                    )}
+                                    {tab === 'autor' && (
+                                        <AuthorsSection filterOption={selectedOption} sliderValue={sliderValue} />
+                                    )}
+                </div>
+        
 
-            {/* Кнопка для открытия модального окна */}
-            <div className="filter_button-sub">
-                <SecondImgButton
-                    isImg={true}
-                    isActive={false}
-                    onClick={openModal}
-                    onMouseEnter={() => setIsHovered(true)}
-                    onMouseLeave={() => setIsHovered(false)}
-                >
-                    <img className="image-class" src={filterImg} alt="Изображение кнопки" />
-                </SecondImgButton>
-            </div>
+             {/* Кнопка для открытия модального окна */}
+                                    <div className="filter_button_for_library">
+                                        <SecondImgButton
+                                            isImg={true}
+                                            isActive={false}
+                                            onClick={openModal}
+                                            onMouseEnter={() => setIsHovered(true)}
+                                            onMouseLeave={() => setIsHovered(false)}
+                                        >
+                                            <img className="image-class" src={filterImg} alt="Изображение кнопки" />
+                                        </SecondImgButton>
+                                    </div>
 
             </div>
 

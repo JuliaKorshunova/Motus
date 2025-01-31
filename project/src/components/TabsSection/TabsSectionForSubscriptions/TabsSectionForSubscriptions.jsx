@@ -68,7 +68,7 @@ export default function TabsSectionForSubscriptions({Active1, onChange}) {
                 
 
 
-    <div className="tabforlibrary">
+    <div className="tabforsub">
     {buttons.map((button) => (
         <div key={button.value} className="zi">
             {/* Проверка на активное состояние */}
