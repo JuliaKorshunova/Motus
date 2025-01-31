@@ -30,3 +30,12 @@
 .btnnsubforReset-a {
     margin-top: 350px;
 }
+
+.bgforbtnsub-a{
+    width: 72px;
+    background: #FF0074;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 0px;
+}

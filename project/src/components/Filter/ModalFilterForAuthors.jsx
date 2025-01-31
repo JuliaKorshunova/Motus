@@ -135,7 +135,7 @@ const ModalFilterForAuthors = ({
             <MainButton2 disabled>Сбросить</MainButton2>
         </div>
     ) : isHovered1 ? (
-        <div className='bgforbtnsub'>
+        <div className='bgforbtnsub-a'>
             <MainButton2 
                 onMouseEnter={handleMouseEnter1} 
                 onMouseLeave={handleMouseLeave1}
