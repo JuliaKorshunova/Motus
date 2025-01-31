@@ -390,10 +390,15 @@ color: #6D6D6D;
 }
 
 
-@media (max-width: 1439px) {
-  .zagalovoksubscribes { 
-   top: 20px;
-   margin-top: 0px;
+
+.sectionsubForSubs1 {
+  /* width: 37vw; */
+  /* height: 270px; */
+  height: 270px;
+  top: 0px;
+  margin-left: 0px;
+  min-width: 540px;
+
 }
 
   .sectionsubForSubs{
@@ -473,7 +478,7 @@ color: #6D6D6D;
       .text2subForSubscribes{
         left: 40px;
       }
-}
+
 
 .smesh_button{
   /* search_btn */
@@ -492,6 +497,15 @@ flex-grow: 0;
 
 }
 
+@media (max-width: 1439px) {
+  .sectionsubForSubs1 {
+      /* width: 37vw; */
+      /* height: 270px; */
+      height: 240px;
+      min-width: 476px;
+  }
+}
+
 @media (max-width: 1279px) {
 
   .cardsub {
@@ -506,7 +520,7 @@ flex-grow: 0;
   }
   .sectionsubForSubs{
     
-    width: calc(100vw - 30px);
+    width: calc(100vw - 80px);
     /* height: 270px; */
     height: 144px;
 
@@ -516,7 +530,7 @@ flex-grow: 0;
   }
   .sectionsubForSubs1{
     
-    width: calc(100vw - 30px);
+    width: calc(100vw - 40px);
     /* height: 270px; */
     height: 144px;
 

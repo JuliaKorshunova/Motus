@@ -57,8 +57,8 @@ export default function MySubscriptions() {
             <div className="obedinen11l">
 
            
-                
-                <TabsSectionForSubscriptions Active1={tab} onChange={(current) => setTab(current)} />
+                <div className='otstup'>
+                <TabsSectionForSubscriptions Active1={tab} onChange={(current) => setTab(current)} /></div>
 
                 <div className="filters-s">
                                     {tab === 'pod' && <FilterForPodcast />}

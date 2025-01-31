@@ -34,7 +34,7 @@ export default function SubscribesSection() {
                     image2={sub.image2} // Передаем второе изображение
                     image3={sub.image3} // Передаем третье изображение
                     hashtags={sub.hashtags}
-                    className="sectionsubForSubs"
+                    className="sectionsubForSubs1"
                 />
             ))}
         </div>

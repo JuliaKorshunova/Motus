@@ -304,6 +304,21 @@ top: -30px;
    .modal-content {
       display: block; /* Показываем контент модального окна */
    }
+
+   .obedinen11l {
+      overflow-x: hidden;
+      width: calc(100vw - 30px);
+      margin-left: 0px;
+}
+
+.otstup{
+   margin-left: 16px;
+}
+
+.r1-s{
+   width: calc(100vw - 30px);
+   margin-left: 20px;
+}
 }
 
 @media (min-width: 1280px) {
@@ -313,6 +328,11 @@ top: -30px;
 
    .modal-content {
       display: none; /* Скрываем контент модального окна */
+   }
+
+
+   .obedinen11l{
+  
    }
 
    
