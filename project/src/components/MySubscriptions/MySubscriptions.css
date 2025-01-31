@@ -309,6 +309,7 @@ top: -30px;
       overflow-x: hidden;
       width: calc(100vw - 30px);
       margin-left: 0px;
+      overflow-y: hidden;
 }
 
 .otstup{
