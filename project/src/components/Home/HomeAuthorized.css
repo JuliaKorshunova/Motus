@@ -1382,6 +1382,27 @@ border-radius: 13px;
     .viewmore{
         z-index: 1000;
     }
+
+    .fractall{
+
+    }
+    @media (min-width: 1280px) {
+        .fractall{
+            display: none;
+        }
+        .orangeGradient3{
+            display: none;
+        }
+        .more1{
+            display: none;
+        }
+        .morearrow1{
+            display: none;
+        }
+    
+      
+    }
+
     @media (min-width: 1440px) {
         .viewmore{
             display: none;
@@ -1465,4 +1486,206 @@ border-radius: 13px;
            
         }
         
+}
+
+@media (max-width: 1279px) {
+    .orangeGradient2{
+        display: none;
+    }
+    .orangeGradient1{
+        display: none;
+    }
+
+    .obedinenieforhome{
+        width: calc(100vw - 30px);
+        margin-left: -20px;
+        height: 150px;
+        /* display: flex;
+        justify-content: center; */
+    }
+    .text_to_place{
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+    .whiteblockforhome1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text_to_motus{
+        position: relative;
+
+        left: 0px;
+        top: 0px;
+
+        /* mobile/it */
+        font-family: 'Inter';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 137%;
+        /* or 19px */
+
+        /* black */
+        color: #0E0E0E;
+
+
+    }
+
+    .gradient{
+        width: calc(100vw - 40px);
+        height: 232px;
+        margin-top: 262px;
+        margin-left: 10px;
+        border-radius: 20px;
+    }
+    .obedinenieforhome2{
+        margin-top: 536px;
+        margin-left: -25px;
+        width: calc(100vw - 30px);
+    }
+
+    .text_to_second{
+        font-family: 'Stolzl';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 112%;
+        color: #0E0E0E;
+
+
+    }
+
+    .forfractal{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        margin-left: -33px;
+    }
+    .text_to_toppodcasts{
+        margin-top: 30px;
+        /* mobile/h1 */
+        font-family: 'Stolzl';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 93%;
+        /* or 24px */
+
+        /* black */
+        color: #0E0E0E;
+        margin-left: -20px;
+        position: relative;
+
+
+    }
+    .card-container-stroka{
+        position: relative;
+        margin-top: 16px;
+        display: flex;
+        margin-left: -20px;
+        flex-direction: column;
+        
+        gap: 8px;
+        width: calc(100vw - 40px);
+        order: 3;
+        
+      
+    }
+
+    .orangeGradient3{
+        width: calc(100vw - 35px);
+        height: 80px;
+        border-radius: 20px;
+        margin-left: 5x;
+        z-index: 700;
+        position: absolute;
+        margin-top: 303px;
+    }
+    .orangeGradient4{
+        width: calc(100vw - 35px);
+        height: 80px;
+        border-radius: 20px;
+        margin-left: 5x;
+        z-index: 700;
+        position: absolute;
+        margin-top: 456px;
+    }
+    .viewmore{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 12px;
+        margin-top: 27px;
+        width: calc(100vw - 30px);
+    }
+    .more2{
+        position: relative;
+        font-family: 'Inter';
+        font-style: italic;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 134%;
+        margin-top: 0px;
+        margin-left: 0px;
+        width: auto;
+        height: auto;
+        /* or 24px */
+
+        /* white */
+        color: #FFFFFF;
+
+
+    }
+    .morearrow2{
+        width: auto;
+        margin-left: 0px;
+        margin-top: 5px;
+        position: relative;
+        height: 16px;
+        width: 16px;
+    }
+
+        .text_to_podborka{
+
+       
+        /* top: 0px; */
+        position: relative;
+        margin-top: -300px;
+        font-family: 'Stolzl';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 93%;
+        /* or 24px */
+
+        /* black */
+        color: #0E0E0E;
+
+
+        }
+        .podporkiglav{
+            order: 4;
+            margin-top: 437px;
+            margin-left: -20px;
+        }
+        .forpodborka{
+            display: flex;
+            flex-direction: column;
+            margin-top: 16px;
+            gap: 8px;
+        }
+        .viewmore1{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            gap: 12px;
+            margin-top: 24px;
+        }
+ 
+
+        
+
 }

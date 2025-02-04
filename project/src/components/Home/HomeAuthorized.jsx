@@ -1,7 +1,9 @@
 import './HomeAuthorized.css'
 import Header from '../Header/Header';
 import image from '/Gradient.png';
+import fractall from '/fractall.svg';
 import image2 from '/Gradientbig.png';
+import image3 from '/Gradientformobile.png';
 import imageGradient from '/GradientForReg.png';
 import rec from '/Rectangle 21.png'
 import newbie from '/newbie.png';
@@ -298,6 +300,12 @@ export default function HomeAuthorized  () {
                      </div>
                 </div></div></section>
                 </div>
+
+                <div className='forfractal'>
+                     <img  src={fractall} alt="Описание изображения" className='fractall'></img> 
+                </div>
+                    
+              
           
                 <div >
                 <div className="text_to_toppodcasts">
@@ -323,9 +331,11 @@ export default function HomeAuthorized  () {
                     <div className='viewmore'>
 
                     <img src={image2} className="orangeGradient2" alt="Описание изображения" />
+               
                     <div className='more2'>Смотреть больше</div>
                     <img className="morearrow2" src={arrow_forward2} alt="Описание изображения" />
                     </div>
+                    <img src={image3} className="orangeGradient3" alt="Описание изображения" />
              </div>
              </div>
 
@@ -381,16 +391,25 @@ export default function HomeAuthorized  () {
                             className2={'obedinenie3forpod'}
                         />
                     ))}
+
+                    
                      <img src={image2} className="orangeGradient1" alt="Описание изображения" />
                     <div className='more1'>Смотреть больше</div>
                     <img className="morearrow1" src={arrow_forward2} alt="Описание изображения" />
                     </div>
+
                    
                   
-                   
+                    <div className='viewmore'>
+                    <div className='more2'>Смотреть больше</div>
+                    <img className="morearrow2" src={arrow_forward2} alt="Описание изображения" />
+                    </div>
+                    <img src={image3} className="orangeGradient4" alt="Описание изображения" />
+
                     
                 </div>
 
+                   
              
 
             
