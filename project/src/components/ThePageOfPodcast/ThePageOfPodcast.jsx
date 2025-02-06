@@ -175,7 +175,7 @@ export default function ThePageOfPodcast() {
             </div>
         ))}
             <div className="text__for__age">18+</div>
-            <div className="button-container"> 
+            <div className="button-container-podcast"> 
             {isHovered === true ? (
                       <div className='bgforlisten'>
                         <MainButton onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} >
@@ -187,7 +187,7 @@ export default function ThePageOfPodcast() {
                       </MainButton>)}
             </div>
      
-            <div className="lessons"> 
+            <div className="lessons-1"> 
             <div className='home_for_card_container'> 
                 {podcastReleases.map(mainPage => ( 
                     <CardsOfRelease key={mainPage.id} mainPage={mainPage}/>  

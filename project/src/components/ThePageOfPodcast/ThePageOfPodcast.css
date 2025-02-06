@@ -14,7 +14,7 @@
   height: 1661px;
   left: 25px;
   top: 149px;
-  margin-right: 30px;
+
   
   }
   
@@ -40,7 +40,7 @@
   
   .text__for__rich { 
     width: calc(100% - 30px); /* Занимает всю ширину с отступом */
-    height: 120px; 
+    height: auto; 
     
     /* остальной стиль */
     font-family: 'Stolzl'; 
@@ -501,7 +501,7 @@
   }
   
   
-  .button-container {
+  .button-container-podcast {
     display: flex;           /* Включаем flexbox */
     align-items: center;     /* Центрируем кнопку по вертикали (если это нужно) */
     margin-top: -215px;
@@ -524,6 +524,51 @@
     background: #FF0074;
     margin: 0;
     padding: o;
+  }
+  
+
+ .lessons-1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    position: relative;
+    height: 1350px;
+    margin-left: 300px;
+  }
+
+
+  @media (max-width: 1439px) {
+    .frame__8815 {
+    left: 280px;
+    }
+    .button-container-podcast {
+      margin-left: 270px;
+
+  }
+  .releasephoto{
+    height: 230px;
+    width: 230px;
+  }    
+  }
+
+  @media (max-width: 1279px) {
+    .releasephotoanddes{
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+    ._releasephotoanddes {
+      display: flex;
+      align-items: center; /* Выравниваем элементы по верхнему краю */
+      justify-content: center;
+      background-color: #FF0074;
+      position: relative;
+      /* width: calc(100vw - 32px); */
+      height: auto;  /* Удаляем высоту, чтобы контент влиял на размер блока */
+      margin-top: 149px;
+      
+  }
   }
   
   
