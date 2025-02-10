@@ -155,103 +155,127 @@ export default function HomeAuthorized  () {
 
     // Определяем количество карточек для отображения
     const numberOfCards = windowWidth >= 1440 ? 3 : 2; // Изменено на >=
+
+
+       const username=''
+          const emaill=''
+      
+    
+       // Если модальное окно не открыто, ничего не рендерим
+         const [podcasterData, setPodcasterData] = useState([]);
+         const [isButtonDisabled1, setIsButtonDisabled1] = useState(true); // Начальное состояние кнопки - отключена
+    
+        const [email, setEmail] = useState(emaill);
+    const [error, setError] = useState('');
+
+    const [password, setPassword] = useState('');   
+    const [errorPassword, setErrorPassword] = useState(''); 
+ 
+    
+  
+        const [isEmailNotEmpty, setIsEmailNotEmpty] = useState(false); 
+        
+        const [isNameNotEmpty, setIsNameNotEmpty] = useState(false); 
+        const [isNickNameNotEmpty, setIsNickNameNotEmpty] = useState(false);
+        const [isDesNotEmpty, setIsDesNotEmpty] = useState(false); 
+    
+    
+        const handleEmailChange = (e) => {
+            const value = e.target.value;
+            setEmail(value);
+            setIsEmailNotEmpty(value.trim() !== '');
+            // Простая регулярная проверка email
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(value)) {
+                setError('Введите корректный адрес электронной почты');
+            } else {
+                setError('');
+            }
+        };
+       
+    
+   
+      const [isPassNotEmpty, setIsPassNotEmpty] = useState(false);  
+        const handlePasswordChange = (e) => {   
+            const value = e.target.value;    
+            setPassword(value);   
+            setIsPassNotEmpty(value.trim() !== '');
+           const passwordPattern=/(?=.*[a-z])(?=.*[A-Z])/;
+            // Проверяем валидность пароля   
+            if (!passwordPattern.test(value)) {    
+                setErrorPassword('Пароль должен содержать строчную и заглавную буквы');    
+            } else {    
+                setErrorPassword(''); // Сбрасываем ошибку, если пароль валиден    
+            }   
+        };  
+        const handleSubmit = (e) => {     
+            e.preventDefault();     
+    
+            // Проверка на валидность    
+            let hasError = false; // Флаг для отслеживания ошибки     
+         
+        
+    
+            if (password.trim() === '' || errorPassword) {   
+                setErrorPassword('Пароль должен быть действительным');  
+                hasError = true; 
+            }  
+            if (email.trim() === '' || error) {   
+                setError('Пароль должен быть действительным');  
+                hasError = true; 
+            }  
+          
+            // Обработка успешной валидации, если все поля заполнены    
+            if (!hasError) {   
+       
+                setNickname('');    
+                setPassword('');      
+                setErrorPassword('');   
+                setEmail('') 
+            }    
+        };  
+        const [focusedState, setFocusedState] = useState({
+            input1: false,
+     
+            input6: false,
+          });
+          const createFocusHandler = (inputName) => {
+            return {
+              onFocus: () => {
+                setFocusedState(prevState => ({
+                  ...prevState,
+                  [inputName]: true,
+                }));
+              },
+              onBlur: () => {
+                setFocusedState(prevState => ({
+                  ...prevState,
+                  [inputName]: false,
+                }));
+              },
+            };
+          };
+          const input1FocusHandlers = createFocusHandler('input1');
+         
+          const input6FocusHandlers = createFocusHandler('input6');    
+        
+    
+        useEffect(() => {
+            // Проверка наличия ошибок
+            const hasError = (error=='' &&  errorPassword=='') ;
+            console.log("isChecked inside useEffect:", isChecked); // Добавим консоль для отслеживания
+    
+            // Если хотя бы одно поле имеет ошибку — отключаем кнопку
+            // setIsButtonDisabled1(!hasError);
+        }, [error, errorPassword, isChecked]); 
     return (
         <div className='withoutscroll'>
         <Header  />  
        
          <img  src={image} alt="Описание изображения" className='gradient'></img>
-         <div className='hashlocation'>
-        <div className='hashmain'>
-                            
-                <div style={{ overflow: 'hidden', whiteSpace: 'nowrap' }}>
-                    <Marquee speed={10} direction='right'>
-                        <p className="hashtaggreen" style={{ display: 'inline-block', margin: 0 }}>
-                        #спорт #маньяки #веселье #секс #феминизм #блогерство #дети #образование #книги #сериалы #фото&nbsp;
-                        #спорт #маньяки #веселье #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
-                        #спорт #маньяки #образование #секс #фото #блогерство #дети #веселье #книги #сериалы #феминизм&nbsp;
-                        #блогерство #дети #образование #книги #сериалы #феминизм #спорт #маньяки #веселье #секс #фото #блогерство #спорт #образование #книги #сериалы #феминизм&nbsp;
-                        #спорт #маньяки #веселье #секс #фото #блогерство #спорт #образование #книги #сериалы #феминизм&nbsp;
-                        #спорт #маньяки #веселье #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
-                        #спорт #маньяки #веселье #секс #фото &nbsp;
-                       
-                        </p>
-                    </Marquee>
-                    </div>
-                    <div style={{ overflow: 'hidden', whiteSpace: 'nowrap' }}>
-                    <Marquee speed={10} direction="right">
-                    <p className='hashtagpink' style={{ display: 'inline-block', margin: 0 }}>
-                    #спорт #маньяки #веселье #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
-                    #спорт #маньяки #образование #секс #фото #блогерство #дети #веселье #книги #сериалы #феминизм&nbsp;
-                        #спорт #маньяки #веселье #секс #фото #блогерство #спорт #образование #книги #сериалы #феминизм&nbsp;
-                        #спорт #маньяки #веселье #секс #феминизм #блогерство #дети #образование #книги #сериалы #фото&nbsp;
-                        #спорт #маньяки #веселье #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
-                        #спорт #маньяки #образование #секс #фото #блогерство #дети #веселье #книги #сериалы #феминизм&nbsp;
-                        #сериалы #фото&nbsp;
-                        #спорт #маньяки #веселье #секс #фото &nbsp;
-                       
-                         </p>
-                    </Marquee>
-                    </div>
-
-                </div>
-                
-        </div>
+      
         
-        <div className='hashmain2'>
-             <div style={{ overflow: 'hidden', whiteSpace: 'nowrap' }}>
-                    <Marquee speed={10} direction='right'>
-                        <p className="hashtaggreen" style={{ display: 'inline-block', margin: 0 }}>
-                        #спорт #маньяки #веселье #секс #фото #блогерство #спорт #образование #книги #сериалы #феминизм&nbsp;
-                        #спорт #маньяки #веселье #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
-                        #спорт #маньяки #веселье #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
-                        #спорт #маньяки #веселье #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
-                        #образование #книги #сериалы #феминизм&nbsp;
-                        #блогерство #спорт #образование #книги #сериалы #феминизм&nbsp;
-                        #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
-                        </p>
-                    </Marquee>
-                    </div>
-                    <div style={{ overflow: 'hidden', whiteSpace: 'nowrap' }}>
-                    <Marquee speed={10} direction="right">
-                    <p className='hashtagorange' style={{ display: 'inline-block', margin: 0 }}>
-                       #образование #книги #сериалы #феминизм #спорт #маньяки #веселье #секс #фото #блогерство #спорт #образование #книги #сериалы #феминизм&nbsp;
-                        #спорт #образование #веселье #секс #фото #блогерство #дети #маньяки #книги #сериалы #феминизм&nbsp;
-                        #спорт #маньяки #веселье #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
-                        #спорт #маньяки #веселье #секс #фото #блогерство #дети &nbsp;
-                        #дети #образование #книги #сериалы #феминизм&nbsp;
-                        #маньяки #веселье #секс #фото #блогерство #спорт #образование #книги #сериалы #феминизм&nbsp;
-                        #дети #образование #книги #сериалы #феминизм&nbsp;
-                         </p>
-                    </Marquee>
-                    </div>
-                    <div style={{ overflow: 'hidden', whiteSpace: 'nowrap' }}>
-                    <Marquee speed={10} direction="right">
-                    <p className='hashtagpink' style={{ display: 'inline-block', margin: 0 }}>
-                        #спорт #образование #книги #секс #феминизм&nbsp;
-                        #спорт #маньяки #веселье #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм #спорт #маньяки #веселье #сериалы #фото #блогерство&nbsp;
-                        #спорт #маньяки #веселье #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
-                        #спорт #маньяки #блогерство #дети #веселье #секс #фото#образование #книги #сериалы #феминизм&nbsp;
-                        #маньяки #веселье #сериалы #фото #блогерство&nbsp;
-                        #книги #сериалы #феминизм&nbsp;
-                        #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
-                        #образование #книги #сериалы #феминизм #спорт #маньяки #веселье #сериалы #фото #блогерство&nbsp;
-                         </p>
-                    </Marquee>
-                    </div>
-                    <div style={{ overflow: 'hidden', whiteSpace: 'nowrap' }}>
-                    <Marquee speed={10} direction='right'>
-                        <p className="hashtaggreen" style={{ display: 'inline-block', margin: 0 }}>
-                        #веселье #секс #фото #блогерство #спорт #образование #книги #сериалы #феминизм&nbsp;
-                        #спорт #маньяки #веселье #секс #фото #блогерство #спорт #образование #книги #сериалы #феминизм #спорт #маньяки&nbsp;
-                        #спорт #маньяки #веселье #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
-                        #спорт #маньяки #веселье #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
-                        #веселье #секс #фото #блогерство #спорт #образование #книги #сериалы #феминизм&nbsp;
-                        #спорт #маньяки #веселье #секс #фото #блогерство #спорт #образование #книги #сериалы #феминизм #спорт #маньяки&nbsp;
-                        #сериалы #феминизм&nbsp;
-                        </p>
-                    </Marquee>
-                    </div>
-                </div> 
+        
          
         <div className="group11">
         <img  src={fractal} alt="Описание изображения" className='group11'></img>
@@ -400,7 +424,7 @@ export default function HomeAuthorized  () {
 
                    
                   
-                    <div className='viewmore'>
+                    <div className='viewmore3'>
                     <div className='more2'>Смотреть больше</div>
                     <img className="morearrow2" src={arrow_forward2} alt="Описание изображения" />
                     </div>
@@ -420,12 +444,47 @@ export default function HomeAuthorized  () {
                     Топовый тег
                      </div>
                     
-                     <img  src={ arrow_forward} alt="Описание изображения"></img>
+                     <img className="arrblack" src={ arrow_forward} alt="Описание изображения"></img>
                      <div className="text_to_topteg2">
                         #образование
                      </div>
                 </div>
+                <div className='hashlocation'>
+        <div className='hashmain'>
+                            
+                <div style={{ overflow: 'hidden', whiteSpace: 'nowrap' }}>
+                    <Marquee speed={10} direction='right'>
+                        <p className="hashtaggreen" style={{ display: 'inline-block', margin: 0 }}>
+                        #спорт #маньяки #веселье #секс #феминизм #блогерство #дети #образование #книги #сериалы #фото&nbsp;
+                        #спорт #маньяки #веселье #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
+                        #спорт #маньяки #образование #секс #фото #блогерство #дети #веселье #книги #сериалы #феминизм&nbsp;
+                        #блогерство #дети #образование #книги #сериалы #феминизм #спорт #маньяки #веселье #секс #фото #блогерство #спорт #образование #книги #сериалы #феминизм&nbsp;
+                        #спорт #маньяки #веселье #секс #фото #блогерство #спорт #образование #книги #сериалы #феминизм&nbsp;
+                        #спорт #маньяки #веселье #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
+                        #спорт #маньяки #веселье #секс #фото &nbsp;
+                       
+                        </p>
+                    </Marquee>
+                    </div>
+                    <div style={{ overflow: 'hidden', whiteSpace: 'nowrap' }}>
+                    <Marquee speed={10} direction="right">
+                    <p className='hashtagpink' style={{ display: 'inline-block', margin: 0 }}>
+                    #спорт #маньяки #веселье #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
+                    #спорт #маньяки #образование #секс #фото #блогерство #дети #веселье #книги #сериалы #феминизм&nbsp;
+                        #спорт #маньяки #веселье #секс #фото #блогерство #спорт #образование #книги #сериалы #феминизм&nbsp;
+                        #спорт #маньяки #веселье #секс #феминизм #блогерство #дети #образование #книги #сериалы #фото&nbsp;
+                        #спорт #маньяки #веселье #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
+                        #спорт #маньяки #образование #секс #фото #блогерство #дети #веселье #книги #сериалы #феминизм&nbsp;
+                        #сериалы #фото&nbsp;
+                        #спорт #маньяки #веселье #секс #фото &nbsp;
+                       
+                         </p>
+                    </Marquee>
+                    </div>
+
+                </div>
                 
+        </div>
                 <div className='card-container-stroka2'>  
             <div 
                 onMouseEnter={handleMouseEnterP} 
@@ -454,6 +513,61 @@ export default function HomeAuthorized  () {
                 </Marquee>
             </div>
         </div>  
+        <div className='hashmain2'>
+             <div style={{ overflow: 'hidden', whiteSpace: 'nowrap' }}>
+                    <Marquee speed={10} direction='right'>
+                        <p className="hashtaggreen" style={{ display: 'inline-block', margin: 0 }}>
+                        #спорт #маньяки #веселье #секс #фото #блогерство #спорт #образование #книги #сериалы #феминизм&nbsp;
+                        #спорт #маньяки #веселье #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
+                        #спорт #маньяки #веселье #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
+                        #спорт #маньяки #веселье #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
+                        #образование #книги #сериалы #феминизм&nbsp;
+                        #блогерство #спорт #образование #книги #сериалы #феминизм&nbsp;
+                        #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
+                        </p>
+                    </Marquee>
+                    </div>
+                    <div style={{ overflow: 'hidden', whiteSpace: 'nowrap' }}>
+                    <Marquee speed={10} direction="right">
+                    <p className='hashtagorange' style={{ display: 'inline-block', margin: 0 }}>
+                       #образование #книги #сериалы #феминизм #спорт #маньяки #веселье #секс #фото #блогерство #спорт #образование #книги #сериалы #феминизм&nbsp;
+                        #спорт #образование #веселье #секс #фото #блогерство #дети #маньяки #книги #сериалы #феминизм&nbsp;
+                        #спорт #маньяки #веселье #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
+                        #спорт #маньяки #веселье #секс #фото #блогерство #дети &nbsp;
+                        #дети #образование #книги #сериалы #феминизм&nbsp;
+                        #маньяки #веселье #секс #фото #блогерство #спорт #образование #книги #сериалы #феминизм&nbsp;
+                        #дети #образование #книги #сериалы #феминизм&nbsp;
+                         </p>
+                    </Marquee>
+                    </div>
+                    <div style={{ overflow: 'hidden', whiteSpace: 'nowrap' }}>
+                    <Marquee speed={10} direction="right">
+                    <p className='hashtagpink' style={{ display: 'inline-block', margin: 0 }}>
+                        #спорт #образование #книги #секс #феминизм&nbsp;
+                        #спорт #маньяки #веселье #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм #спорт #маньяки #веселье #сериалы #фото #блогерство&nbsp;
+                        #спорт #маньяки #веселье #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
+                        #спорт #маньяки #блогерство #дети #веселье #секс #фото#образование #книги #сериалы #феминизм&nbsp;
+                        #маньяки #веселье #сериалы #фото #блогерство&nbsp;
+                        #книги #сериалы #феминизм&nbsp;
+                        #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
+                        #образование #книги #сериалы #феминизм #спорт #маньяки #веселье #сериалы #фото #блогерство&nbsp;
+                         </p>
+                    </Marquee>
+                    </div>
+                    <div style={{ overflow: 'hidden', whiteSpace: 'nowrap' }}>
+                    <Marquee speed={10} direction='right'>
+                        <p className="hashtaggreen" style={{ display: 'inline-block', margin: 0 }}>
+                        #веселье #секс #фото #блогерство #спорт #образование #книги #сериалы #феминизм&nbsp;
+                        #спорт #маньяки #веселье #секс #фото #блогерство #спорт #образование #книги #сериалы #феминизм #спорт #маньяки&nbsp;
+                        #спорт #маньяки #веселье #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
+                        #спорт #маньяки #веселье #секс #фото #блогерство #дети #образование #книги #сериалы #феминизм&nbsp;
+                        #веселье #секс #фото #блогерство #спорт #образование #книги #сериалы #феминизм&nbsp;
+                        #спорт #маньяки #веселье #секс #фото #блогерство #спорт #образование #книги #сериалы #феминизм #спорт #маньяки&nbsp;
+                        #сериалы #феминизм&nbsp;
+                        </p>
+                    </Marquee>
+                    </div>
+                </div> 
              
  </div>
                 <div className="group4_home">
@@ -465,6 +579,8 @@ export default function HomeAuthorized  () {
                         <div className="whiteblockforhome1">
                             <div className="text_to_reg">
                                 Хочешь с нами?
+                            </div>
+                            <div className="text_to_reg1">
                                 Регистрируйся!
                             </div>
                         </div>
@@ -475,15 +591,44 @@ export default function HomeAuthorized  () {
     
     
                 <div className="inputforemail"> 
-                    <div className="rectangle_for_black">  
-                    <input type="email" className='rectangle_for_white' placeholder="E-mail" required /> 
-                    </div>  
+                <div className='inputplustext11'>
+                      <div className={` ${(focusedState.input1 && error.trim()==='') ? '_pink1' : '_blacknewpod3'}  ${error ? '_red1' : '_blacknewpod3'}   ${(isEmailNotEmpty && error.trim()==='' && focusedState.input1==false) ? '_green1' : '_blacknewpod3'}` } > 
+                        
+                    <input 
+                        type="email" 
+                        className={`_rectangle16 ${error ? 'rectangle-error1' : ''}`}    
+                        placeholder="Почта" 
+                        // value=''
+                        onChange={handleEmailChange}
+                        required 
+                        {...input1FocusHandlers} 
+                    />     
+                     </div>  
+                     {error && (
+                               <div className="text_for_mistake">{error}</div>
+                        )}
+                  
+                      </div> 
                 </div> 
                  
                 <div className="input2"> 
-                    <div className="rectangle_for_black_1">  
-                        <input type="password" className='rectangle_for_white1' placeholder="Пароль" required />  
-                    </div> 
+                <div className='inputplustext11'>
+              {/* <div className={`_rectangle15_3green ${errorPassword ? 'rectangle-container-error' : ''} ${focusedState.input6 ? '_rectangle15_3pink' : ''}`} > */}
+              <div className={`  ${errorPassword ? '_red1' : '_blacknewpod3'}  ${(focusedState.input6 && errorPassword.trim()==='') ? '_pink1' : '_blacknewpod3'} ${(isPassNotEmpty && errorPassword.trim()==='' && focusedState.input4==false) ? '_green1' : '_blacknewpod3'}`} >   
+                        <input    
+                            type="password"    
+                            className={`_rectangle16 ${errorPassword ? 'rectangle-error1' : ''}`}  
+                            placeholder="Пароль"    
+                            value={password}   
+                     
+                            onChange={handlePasswordChange}    
+                            required    
+                            {...input6FocusHandlers}  
+                        />    </div>       
+                        {errorPassword && (       
+                            <div className="text_for_mistake">{errorPassword}</div>       
+                        )}       
+                    </div>   
                 </div>
 
                 <div className='forcheckboxlocation'>
@@ -548,7 +693,7 @@ export default function HomeAuthorized  () {
                 </div>
     
 
-            <div>
+            <div className='aauthoors'>
 
                 <div className="text_to_authors">
                         Начинающие авторы
@@ -597,7 +742,7 @@ export default function HomeAuthorized  () {
             </div>
 
 
-            <div>
+            <div className='podpiskaa'>
             <div className='obedinenieforpodpiska'>
                 <section   className='sforhome'>
                  <div className="pinkblockforhome">
@@ -617,21 +762,21 @@ export default function HomeAuthorized  () {
                     <div className='obedinenieforpodpiska2'>
                     <section   className='sforhome'>
                     <div className="pinkblockforhome">
-                    <div className="whiteblockforhome">
+                    <div className="whiteblockforhome4">
                         
                     <div className='vstolbstar'>
                             <div className="vstrokustar">
-                            <img  src={star}   alt="Описание изображения"></img>
+                            <img  src={star}   className='stars' alt="Описание изображения"></img>
                             <div className='textforpodpiska'>Доступ к подкастам без рекламы</div>
                             </div>
 
                             <div className="vstrokustar">
-                            <img  src={star}   alt="Описание изображения"></img>
+                            <img  src={star} className='stars'  alt="Описание изображения"></img>
                             <div className='textforpodpiska'>Доступ к курсам без рекламы</div>
                             </div>
 
                             <div className="vstrokustar">
-                            <img  src={stargrey}   alt="Описание изображения"></img>
+                            <img  src={stargrey}   className='stars' alt="Описание изображения"></img>
                             <div className='textforpodpiskagrey'>Доступ к вводным занятиям всех курсов</div>
                             </div>
                         </div>
@@ -651,20 +796,20 @@ export default function HomeAuthorized  () {
                     <div className='obedinenieforpodpiska3'>
                     <section   className='sforhome'>
                     <div className="pinkblockforhome">
-                    <div className="whiteblockforhome">
+                    <div className="whiteblockforhome4">
                         <div className='vstolbstar'>
                             <div className="vstrokustar">
-                            <img  src={stargreen}   alt="Описание изображения"></img>
+                            <img  src={stargreen}  className='stars'   alt="Описание изображения"></img>
                             <div className='textforpodpiska'>Доступ к подкастам без рекламы</div>
                             </div>
 
                             <div className="vstrokustar">
-                            <img  src={stargreen}   alt="Описание изображения"></img>
+                            <img  src={stargreen}  className='stars'  alt="Описание изображения"></img>
                             <div className='textforpodpiska'>Доступ к курсам без рекламы</div>
                             </div>
 
                             <div className="vstrokustar">
-                            <img  src={stargreen}   alt="Описание изображения"></img>
+                            <img  src={stargreen}  className='stars'  alt="Описание изображения"></img>
                             <div className='textforpodpiska'>Доступ к вводным занятиям всех курсов</div>
                             </div>
                         </div>
@@ -689,6 +834,7 @@ export default function HomeAuthorized  () {
                     <div className="text_to_tags">
                         Поиск по тегам
                         </div>
+                        <div className='formaintabs'>
                       <div className='tabstroka'> 
                     <ButtonTabGreen  icon={donetab} >Криминал</ButtonTabGreen>
                     <ButtonTabOrange icon={donewhite}>Секс</ButtonTabOrange>
@@ -719,7 +865,7 @@ export default function HomeAuthorized  () {
                            Найти
                       </MainButtonBig>)}
                     </div>
-
+</div>
 
            </div>
 

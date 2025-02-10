@@ -21,7 +21,7 @@ top: 100px;
 }
 
 .conteinerforotstup{
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 .gradient{
     /* Gradient */
@@ -305,11 +305,12 @@ font-weight: 400;
 font-size: 55px;
 line-height: 132.73%;
 /* identical to box height, or 73px */
-margin-top: 1280px;
+margin-top: 0px;
 /* black */
 color: #0E0E0E;
 
 }
+
 .text_to_tags{
     font-family: 'Stolzl';
 font-style: normal;
@@ -357,7 +358,7 @@ color: #0E0E0E;
       }
 
       .hashlocation{
-        margin-top: 2480px;
+        margin-top: 30px;
       }
 .hashtaggreen{
 
@@ -485,7 +486,7 @@ top: 100px;
     position: absolute;
 }
 .card-container-stroka2{
-    margin-top: 120px;
+    margin-top: 25px;
     gap:20px;
     display: flex;
     flex-direction: row;
@@ -1000,7 +1001,7 @@ text-decoration: line-through;
 
 .end{
     /* width: calc(100vw); */
-    margin-top: 320px;
+    margin-top: 260px;
     height: 240px;
     position: absolute;
     max-height: 240px;
@@ -1147,8 +1148,9 @@ margin-top: 2701.66px;
 position: absolute;
 
 margin-left: 30px;
-left: 30px;
-margin-top: 300px;
+
+margin-top: -250px;
+left: 0px;
 
 
 }
@@ -1346,6 +1348,17 @@ background: #FF0074;
 border-radius: 13px;
 
 }
+.whiteblockforhome4 {
+    /* position: absolute; */
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    padding-bottom: 35px;
+    padding-top: 30px;
+    background: #FFFFFF;
+    border-radius: 40px;
+}
 
 .obedinenieforhome3{
        /* overflow-x: hidden; */
@@ -1383,6 +1396,34 @@ border-radius: 13px;
         z-index: 1000;
     }
 
+    .group4_home{
+        margin-top: -250px;
+        left: 0px;
+    }
+    .aauthoors{
+        margin-top: 734px;
+    }
+    .text_to_reg1{
+      
+        position: absolute;
+        width: 316px;
+        height: 96px;
+        left: 15px;
+        top: 74px;
+
+        /* 1280/h2 */
+        font-family: 'Stolzl';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 132.73%;
+        /* or 48px */
+
+        /* black */
+        color: #0E0E0E;
+        
+    }
+
     .fractall{
 
     }
@@ -1393,13 +1434,21 @@ border-radius: 13px;
         .orangeGradient3{
             display: none;
         }
-        .more1{
+        /* .more1{
             display: none;
         }
         .morearrow1{
             display: none;
+        } */
+        .orangeGradient4{
+            display: none;
         }
-    
+        .viewmore2{
+            display: none;
+        }
+        .viewmore3{
+            display: none;
+        }
       
     }
 
@@ -1407,12 +1456,14 @@ border-radius: 13px;
         .viewmore{
             display: none;
         }
+    
       
     }
     @media (max-width: 1447px) {
         .hashlocation{
             margin-top: 2500px;
           }
+
       
     }
 
@@ -1498,7 +1549,7 @@ border-radius: 13px;
 
     .obedinenieforhome{
         width: calc(100vw - 30px);
-        margin-left: -20px;
+        margin-left: 8px;
         height: 150px;
         /* display: flex;
         justify-content: center; */
@@ -1535,15 +1586,15 @@ border-radius: 13px;
     }
 
     .gradient{
-        width: calc(100vw - 40px);
+        width: calc(100vw - 35px);
         height: 232px;
         margin-top: 262px;
-        margin-left: 10px;
+        margin-left: 8px;
         border-radius: 20px;
     }
     .obedinenieforhome2{
         margin-top: 536px;
-        margin-left: -25px;
+        margin-left: 8px;
         width: calc(100vw - 30px);
     }
 
@@ -1554,6 +1605,7 @@ border-radius: 13px;
         font-size: 14px;
         line-height: 112%;
         color: #0E0E0E;
+        margin: 0px;
 
 
     }
@@ -1576,7 +1628,7 @@ border-radius: 13px;
 
         /* black */
         color: #0E0E0E;
-        margin-left: -20px;
+        margin-left: 8px;
         position: relative;
 
 
@@ -1585,7 +1637,7 @@ border-radius: 13px;
         position: relative;
         margin-top: 16px;
         display: flex;
-        margin-left: -20px;
+        margin-left: 8px;
         flex-direction: column;
         
         gap: 8px;
@@ -1621,6 +1673,14 @@ border-radius: 13px;
         margin-top: 27px;
         width: calc(100vw - 30px);
     }
+    .viewmore3{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 12px;
+        margin-top: 27px;
+        width: calc(100vw - 30px);
+    }
     .more2{
         position: relative;
         font-family: 'Inter';
@@ -1633,7 +1693,7 @@ border-radius: 13px;
         width: auto;
         height: auto;
         /* or 24px */
-
+        z-index: 1000;
         /* white */
         color: #FFFFFF;
 
@@ -1646,6 +1706,7 @@ border-radius: 13px;
         position: relative;
         height: 16px;
         width: 16px;
+        z-index: 1000;
     }
 
         .text_to_podborka{
@@ -1669,7 +1730,7 @@ border-radius: 13px;
         .podporkiglav{
             order: 4;
             margin-top: 437px;
-            margin-left: -20px;
+            margin-left:8px;
         }
         .forpodborka{
             display: flex;
@@ -1684,8 +1745,489 @@ border-radius: 13px;
             gap: 12px;
             margin-top: 24px;
         }
- 
+        .text_to_topteg{
 
+            font-family: 'Stolzl';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 93%;
+            /* or 24px */
+
+            /* black */
+            color: #0E0E0E;
+
+
+        }
+        .text_to_topteg2{
+            font-family: 'Stolzl';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 93%;
+            margin-top: 58px;
+            margin-left: -90px;
+
+        }
+        .arrblack{
+            height: 24px;
+            width: 24px;
+        }
+        .toptegvsroku{
+            gap: 8px;
+            margin-top: 107px;
+            margin-left: 8px;
+        }
+        .hashtaggreen{
+
+        font-family: 'Stolzl';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 112%;
+        /* identical to box height, or 16px */
+
+        /* sec */
+        color: #69FF12;
+
+
+        }
+        .hashtagorange{
+            font-family: 'Stolzl';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 112%;
+
+        }
+        .hashtagpink{
+            font-family: 'Stolzl';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 112%;
+        }
+        .hashlocation{
+            margin-top: 16px;
+            margin-left: -20px;
+        }
+        .card-container-stroka2{
+            margin-top: 13px;
+        }
+        .hashmain2{
+            margin-top: 168px;
+        }
+
+        .group4_home{
+            height: auto;
+            position: relative;
+            margin-top: 157px;
+            margin-left: 16px;
+            left: 30px;
+        }
+
+        .forcheckboxlocation{
+            margin-top: 0px;
+        }
+        .inputforemail{
+            /* position: relative; */
+            margin-top: 128px;
+            margin-left: -30px;
+            top: 0px;
+        }
+        .input2{
+            /* position: relative; */
+            margin-top: 160px;
+            margin-left: -30px;
+            top: 0px;
+        }
+        .gradientSmall{
+            top: 0px;
+            height: 112px;
+            width: 15vw;
+            border-radius: 20px;
+        }
+        .obedinenieforhome3{
+            top: 0px;
+            margin-left: calc(15vw - 46px + 20px);
+            width: calc(100vw - 15vw - 30px - 46px + 35px - 8px);
+            height: 112px;
+        }
+
+        .forcheckboxlocation{
+            margin-top: 192px;
+            position: absolute;
+            margin-left: -30px;
+        }
+        .forBtnReg{
+            margin-top: 224px;
+            width: calc(100vw - 16px - 8px + 10px - 30px - 52px - 8px );
+            margin-left: -30px;
+            height: 24px;
+        }
+        .forBtnExit{
+            margin-top: 224px;
+            margin-left: calc(100vw - 16px - 8px + 10px - 30px - 52px - 8px - 30px + 8px);
+        }
+
+        .text_to_reg{
+        /* mobile/h1 */
+        font-family: 'Stolzl';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 93%;
+        /* or 24px */
+
+        /* black */
+        color: #0E0E0E;
+        position: relative;
+        width: auto;
+        height: auto;
+        left: 0px;
+        top: 0px;
+
+
+        }
+        .text_to_reg1{
+            /* mobile/h1 */
+            font-family: 'Stolzl';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 93%;
+            /* or 24px */
+    
+            /* black */
+            color: #0E0E0E;
+            position: relative;
+            width: auto;
+            height: auto;
+            left: 0px;
+            top: 0px;
+    
+    
+            }
+        .inputplustext11{
+            width: calc(100vw - 16px - 8px + 10px);
+        }
         
+        .whiteblockforhome1{
+            border-radius: 20px;
+        }
+        .whiteblockforhome{
+            border-radius: 20px;
+            padding: 16px;
 
+           
+        }
+
+        .text_for_checkbox{
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 134%;
+        margin-top: 2px;
+
+
+
+        }
+        .custom-checkbox{
+            margin-right: 8px;
+        }
+
+        .bgforbtnoformlenie{
+            height: 24px;
+        }
+
+        .text_to_authors{
+            position: relative;
+            margin-top: 0px;
+
+            font-family: 'Stolzl';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 93%;
+            /* or 24px */
+
+            /* black */
+            color: #0E0E0E;
+
+
+        }
+        .aauthoors{
+            position: relative;
+            margin-top: 564px;
+            margin-left: 10px;
+        }
+        .manycards{
+            margin-top: 13px;
+            gap: 8px;
+        }
+        .sizeofpict{
+            border-radius: 20px;
+            height: 126px;
+            width: 126px;
+        }
+        .nameofauthor{
+
+        font-family: 'Inter';
+        font-style: italic;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 134%;
+        /* or 24px */
+
+        /* black */
+        color: #0E0E0E;
+
+
+        }
+        .orangeGradient{
+            display: none;
+        }
+        .more{
+            display: none;
+        }
+        .morearrow{
+            display: none;
+        }
+        .podpiskaa{
+            margin-top: 79px;
+            margin-left: 8px;
+        }
+        .obedinenieforpodpiska{
+            margin-top: 0px;
+            width: 54vw;
+        height: auto;
+    margin-bottom: 24px;
+        }
+        .podpiska{
+            font-family: 'Stolzl';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 93%;
+            margin-top: 0px;
+            height: 40px;
+            margin-left: 16px;
+           
+
+
+        }
+        .podpiskaImg1{
+            border-radius: 20px;
+            height: 120px;
+            margin-left: 0px;
+           width: calc(100vw - 16px - 8px + 10px - 30px + 10px);
+        }
+        .podpiskaImg1Name{
+        font-family: 'Stolzl';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+
+        color: #0E0E0E;
+        margin-left: 16px;
+        margin-top: 27px;
+
+        }
+        .podpiskaImg2Name{
+            font-family: 'Stolzl';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 36px;
+    
+            color: #0E0E0E;
+            margin-left: 16px;
+            margin-top: 251px;
+    
+            }
+
+            .podpiskaImg2Des{
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 133%;
+                margin-left: 16px;
+                margin-top: 286px; 
+            }
+
+        .podpiskaImg1Des{
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 133%;
+            margin-left: 16px;
+            margin-top: 62px; }
+
+        .podpiskaImg1Price{
+            margin-top: 49px;
+            margin-left: calc(100vw - 16px - 8px + 10px - 30px - 73px - 28px + 20px);
+
+            font-family: 'Inter';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 137%;
+            /* or 19px */
+
+            /* black */
+            color: #0E0E0E;
+
+
+        }
+        .obedinenieforpodpiska2{
+            margin-top: 128px;
+            height: 72px;
+            margin-left: 0px;
+            width: calc(100vw - 16px - 8px + 10px - 30px + 10px);
+        }
+        .podpiskaImg2{
+            border-radius: 20px;
+            height: 120px;
+            margin-left: 0px;
+           width: calc(100vw - 16px - 8px + 10px - 30px + 10px);
+           margin-top: 224px;
+        }
+        .whiteblockforhome4{
+            padding-top: 12px;
+            padding-left: 16px;
+            border-radius: 20px;
+            padding-bottom: 12px;
+            padding-right: 30px;
+        }
+        .textforpodpiska{
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 134%;
+        /* or 16px */
+
+        /* black */
+        color: #0E0E0E;
+
+
+        }
+        .textforpodpiskagrey{
+            
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 134%;
+        }
+        .stars{
+            height: 8px;
+            width: 8px;
+        }
+        .vstrokustar{
+            gap: 8px;
+        }
+        .vstolbstar{
+            margin-left: 0px;
+        }
+        .obedinenieforpodpiska3{
+            margin-top: 352px;
+            height: 72px;
+            margin-left: 0px;
+            width: calc(100vw - 16px - 8px + 10px - 30px + 10px);
+        }
+
+        .podpiskaImg2Price1{
+            margin-top: 253px;
+
+            font-family: 'Inter';
+            font-style: italic;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 137%;
+            color: #0E0E0E;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            margin-left: 0px;
+
+        }
+        .podpiskaImg2Price2{
+            margin-top: 273px;
+            font-family: 'Inter';
+            font-style: italic;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 137%;
+            color: #0E0E0E;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            margin-left: 0px;
+        }
+        .podpiskaImg2Price3{
+            margin-top: 293px;
+            font-family: 'Inter';
+            font-style: italic;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 137%;
+            color: #0E0E0E;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            margin-left: 0px;
+        }
+        .priceVStolb{
+            margin-left: calc(100vw - 16px - 8px + 10px - 30px - 73px - 28px - 40px - 18px + 20px); ;
+        }
+        .forBtnBuy{
+            margin-top: 448px;
+            width: calc(100vw - 16px - 8px + 10px - 30px + 10px);
+            margin-left: 0px;
+        }
+        .forBtnSearch{
+            margin-top: auto;
+            top: 0px;
+            position: relative;
+            width: calc(100vw - 16px - 8px + 10px - 30px + 10px);
+            margin-left: 0px;
+        }
+        .formaintabs{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .tabstroka{
+            position: relative;
+            /* justify-content: center; */
+            width: calc(100vw - 16px - 8px + 10px - 30px + 10px);
+            align-items: center;
+            padding-top: 13px;
+        }
+        .parentcont{
+            margin-left: 8px;
+            margin-top:  700px;
+        }
+        .text_to_tags{
+
+        font-family: 'Stolzl';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 93%;
+        margin-top: 0px;
+        /* or 24px */
+
+        /* black */
+        color: #0E0E0E;
+
+
+        }
 }
