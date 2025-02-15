@@ -33,6 +33,39 @@ import ButtonTabOrange from '../Button/ButtonTab/ButtonTabOrange';
 import ButtonTabPink from '../Button/ButtonTab/ButtonTabPink';
 import { useNavigate } from 'react-router-dom';
 export default function HomeAuthorized  () {
+
+    const [numberOfCards, setNumberOfCards] = useState(calculateNumberOfCards());
+    const [numberOfCards1, setNumberOfCards1] = useState(calculateNumberOfCards1());
+
+    useEffect(() => {
+      const handleResize = () => {
+        setNumberOfCards(calculateNumberOfCards());
+        setNumberOfCards1(calculateNumberOfCards1());
+      };
+  
+      window.addEventListener('resize', handleResize);
+  
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+  
+    function calculateNumberOfCards() {
+      const windowWidth = window.innerWidth;
+  
+     if (windowWidth >= 1280 && windowWidth < 1440) {
+        return 2;
+      } else if (windowWidth < 1280) {
+        return 3;
+      }
+    }
+    function calculateNumberOfCards1() {
+        const windowWidth = window.innerWidth;
+    
+       if (windowWidth >= 1280 && windowWidth < 1440) {
+          return 2;
+        } 
+      }
     const navigate = useNavigate();
   
     const handleRegisterClick = () => navigate('/register');
@@ -153,9 +186,20 @@ export default function HomeAuthorized  () {
         };
     }, []);
 
-    // Определяем количество карточек для отображения
-    const numberOfCards = windowWidth >= 1440 ? 3 : 2; // Изменено на >=
-
+    // let numberOfCards;
+    // window.addEventListener('resize', () => {
+    //     const windowWidth = window.innerWidth;
+       
+      
+    //      if (windowWidth >= 1280 && windowWidth < 1440) {
+    //       numberOfCards = 2;
+    //     } else if (windowWidth < 1280) {
+    //       numberOfCards = 3;
+    //     }
+    //   console.log('r='+numberOfCards)
+    // //  Вывод для проверки (или обновите интерфейс)
+    //     // Здесь необходимо обновить интерфейс, чтобы отобразить правильное количество карт.
+    //   });
 
        const username=''
           const emaill=''
@@ -268,6 +312,50 @@ export default function HomeAuthorized  () {
             // Если хотя бы одно поле имеет ошибку — отключаем кнопку
             // setIsButtonDisabled1(!hasError);
         }, [error, errorPassword, isChecked]); 
+
+
+         function useHorizontalScroll() {
+            const elRef = useRef();
+            useEffect(() => {
+              const el = elRef.current;
+              if (el) {
+                const onWheel = e => {
+                  if (e.deltaY == 0) return;
+                  e.preventDefault();
+                  el.scrollTo({
+                    left: el.scrollLeft + e.deltaY,
+                    behavior: "smooth"
+                  });
+                };
+                el.addEventListener("wheel", onWheel);
+                return () => el.removeEventListener("wheel", onWheel);
+              }
+            }, []);
+            return elRef;
+          }
+          const scrollRef = useHorizontalScroll();
+
+          function useHorizontalScroll1() {
+            const elRef = useRef();
+            useEffect(() => {
+              const el = elRef.current;
+              if (el) {
+                const onWheel = e => {
+                  if (e.deltaY == 0) return;
+                  e.preventDefault();
+                  el.scrollTo({
+                    left: el.scrollLeft + e.deltaY,
+                    behavior: "smooth"
+                  });
+                };
+                el.addEventListener("wheel", onWheel);
+                return () => el.removeEventListener("wheel", onWheel);
+              }
+            }, []);
+            return elRef;
+          }
+          const scrollRef1 = useHorizontalScroll1();
+
     return (
         <div className='withoutscroll'>
         <Header  />  
@@ -331,13 +419,16 @@ export default function HomeAuthorized  () {
                     
               
           
-                <div >
+                <div className='formainpodcasts'>
                 <div className="text_to_toppodcasts">
                      Топ подкастов
                      </div>
 
 
             <div className='card-container-stroka'>
+            {/* <div ref={scrollRef1} style={{ width: "100vw", overflow: "auto" }} > */}
+            <div ref={scrollRef1} className='srollhori12' >
+            <div className='srollhori1'>
             {subscribeData.slice(0, numberOfCards).map((sub, index) => (
                 <OneSubcribe 
                     key={index} // Не забудьте добавить ключ для каждого элемента списка
@@ -360,10 +451,12 @@ export default function HomeAuthorized  () {
                     <img className="morearrow2" src={arrow_forward2} alt="Описание изображения" />
                     </div>
                     <img src={image3} className="orangeGradient3" alt="Описание изображения" />
+                    </div>
+             </div>
              </div>
              </div>
 
-             <div className='podporkiglav'>
+             <div className='podborkiglav'>
                  <div className="text_to_podborka">
                     Подборки слушателей
                 </div>
@@ -490,13 +583,10 @@ export default function HomeAuthorized  () {
                 onMouseEnter={handleMouseEnterP} 
                 onMouseLeave={handleMouseLeaveP}
             >
-                <Marquee
-                    speed={isAnimating ? 50 : 0} // Двигаем только при наведении
-                    direction='right'
-                    style={{ whiteSpace: 'nowrap', transform: `translateX(-${position}px)` }} // Применение преобразования для фиксированной позиции
-                    pauseOnHover={false}
-                >
-                    {subscribeData.map((sub, index) => (
+
+            <div ref={scrollRef} className='srollhori122'>
+                <div className='srollhori'>
+                   {subscribeData.slice(0, numberOfCards1).map((sub, index) => (
                         <OneSubcribe   
                             key={index} 
                             name={sub.name} 
@@ -508,9 +598,26 @@ export default function HomeAuthorized  () {
                             image2={sub.image2} 
                             image3={sub.image3} 
                             hashtags={sub.hashtags}
+                           
                         />
                     ))}
-                </Marquee>
+                  <div className='viewmoreS'>
+                    <img src={image2} className="orangeGradient2" alt="Описание изображения" />
+                    <div className='more2'>Смотреть больше</div>
+                    <img className="morearrow2" src={arrow_forward2} alt="Описание изображения" />
+                </div>
+                </div>
+                </div>
+                {/* <Marquee
+                    speed={isAnimating ? 50 : 0} 
+                    direction='right'
+                    style={{ whiteSpace: 'nowrap', transform: `translateX(-${position}px)` }}
+                    pauseOnHover={false}
+                > */}
+                   {/* <div style={{ overflowX: 'auto', whiteSpace: 'nowrap', padding: '10px', display: 'flex', flexDirection:'row', marginRight: '10px' }}>
+                  
+                </div> */}
+                {/* </Marquee> */}
             </div>
         </div>  
         <div className='hashmain2'>
@@ -592,7 +699,7 @@ export default function HomeAuthorized  () {
     
                 <div className="inputforemail"> 
                 <div className='inputplustext11'>
-                      <div className={` ${(focusedState.input1 && error.trim()==='') ? '_pink1' : '_blacknewpod3'}  ${error ? '_red1' : '_blacknewpod3'}   ${(isEmailNotEmpty && error.trim()==='' && focusedState.input1==false) ? '_green1' : '_blacknewpod3'}` } > 
+                      <div className={` ${(focusedState.input1 && error.trim()==='') ? '_pink1' : '_blacknewpod4'}  ${error ? '_red1' : '_blacknewpod4'}   ${(isEmailNotEmpty && error.trim()==='' && focusedState.input1==false) ? '_green1' : '_blacknewpod4'}` } > 
                         
                     <input 
                         type="email" 
@@ -614,7 +721,7 @@ export default function HomeAuthorized  () {
                 <div className="input2"> 
                 <div className='inputplustext11'>
               {/* <div className={`_rectangle15_3green ${errorPassword ? 'rectangle-container-error' : ''} ${focusedState.input6 ? '_rectangle15_3pink' : ''}`} > */}
-              <div className={`  ${errorPassword ? '_red1' : '_blacknewpod3'}  ${(focusedState.input6 && errorPassword.trim()==='') ? '_pink1' : '_blacknewpod3'} ${(isPassNotEmpty && errorPassword.trim()==='' && focusedState.input4==false) ? '_green1' : '_blacknewpod3'}`} >   
+              <div className={`  ${errorPassword ? '_red1' : '_blacknewpod4'}  ${(focusedState.input6 && errorPassword.trim()==='') ? '_pink1' : '_blacknewpod4'} ${(isPassNotEmpty && errorPassword.trim()==='' && focusedState.input4==false) ? '_green1' : '_blacknewpod4'}`} >   
                         <input    
                             type="password"    
                             className={`_rectangle16 ${errorPassword ? 'rectangle-error1' : ''}`}  
