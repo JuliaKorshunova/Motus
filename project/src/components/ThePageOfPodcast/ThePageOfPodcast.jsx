@@ -87,9 +87,27 @@ export default function ThePageOfPodcast() {
         <>
             <Header  /> 
             <div className='releasephotoanddes'>
-            <div className='fix'>
-            <div><img className='releasephoto' src={releasephoto} alt="Release" /></div>
-            
+            <div className='_releasephotoanddes'>
+            <div className="whitepodcast">
+           <div className="text__for__age2">18+</div>
+           <div className='fix'>
+            <div className="centerpodcast">
+            <img className='releasephoto' src={releasephoto} alt="Release" />
+            <div className="textMain3-podcast">
+            <div className="textMain2-podcast"> Как стать богатым за 5 минут не выходя из дома </div>
+            <div className="button-containerpodcast">
+                    {isHovered === true ? (
+                      <div className='bgforlisten'>
+                        <MainButton onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} >
+                          Слушать с первого выпуска
+                        </MainButton>
+                      </div>) : (
+                      <MainButton onClick={ispressed} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} >
+                       Слушать с первого выпуска
+                      </MainButton>)}
+
+            </div>
+<div className="forflexx">
             {infReleases.map((r, index) => (
             <div className='t1'>
             
@@ -99,7 +117,7 @@ export default function ThePageOfPodcast() {
                         <img className='' src={ellipse} alt="Release" />
                         <div>
                             <h6 className='nazv1'>{r.name}</h6> {/* Имя автора повторно */}
-                            <h6 className='nazv2'>{r.followers}</h6> {/* Количество подписчиков */}
+                            <h6 className='nazv222'>{r.followers}</h6> {/* Количество подписчиков */}
                         </div>
                     </div>
                 </>
@@ -131,7 +149,8 @@ export default function ThePageOfPodcast() {
         </div> 
     )} 
 </div>
- <div className="gray-line" />
+
+<div className="gray-line" />
  <div className='nazv2'>
             <div className="frame_9" ref={hashtagsRef}>
                 {hashtags.map((h, index) => (
@@ -145,8 +164,21 @@ export default function ThePageOfPodcast() {
                 ))}
             </div>
         </div>
+        </div>
             </div>
         </div>
+            </div>
+
+            </div>
+            </div>
+            </div>
+
+            
+            
+            
+            
+            
+
 
   
         <div className="frame__8815">
