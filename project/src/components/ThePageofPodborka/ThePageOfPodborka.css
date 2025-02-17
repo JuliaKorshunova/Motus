@@ -346,6 +346,10 @@ color: #0E0E0E;
  
 }
 @media (max-width: 1279px) {
+
+    .text__for__age{
+        display: none;
+    }
     .knop{
         display: none;
      }
