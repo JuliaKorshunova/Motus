@@ -1,7 +1,7 @@
 import './ThePageOfPodborka.css';  
 import CardsOfPodborka from '../CardsOfPodborka/CardsOfPodborka.jsx';
 import releasephoto from '/image 293.png';  
-import ellipse from '/Ellipse 196.png';
+import ellipse from '/Ellipse196.svg';
 import React, { useState, useRef, useEffect } from 'react';
 import SecondButton from '../Button/SecondButton';
 import SecondButtonBlack from '../Button/SecondButtonBlack.jsx';

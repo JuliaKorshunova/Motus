@@ -1,6 +1,8 @@
 import'./CardsOfRelease.css';
 import React, { useState } from "react";   
-import star from '/star.png';   
+import star from '/star.png'; 
+import phone from '/headphones.png'; 
+
 import MainButton2 from '../Button/MainButton2';
  
 export default function CardsOfRelease({ mainPage }) {  
@@ -21,12 +23,14 @@ export default function CardsOfRelease({ mainPage }) {
   return (     
     <div className="_card_of_podcast">     
         <div className="_blackblock" >    
-          <div className="_whiteblock">    
+          <div className="_whiteblock">
+            <div className="testt_release">
+              <div className="content-wrapper-release">
             <div className="text__for__name_release-1">    
               {title}    
             </div>    
             <div className="container8786-1">   
-            <img src={star} alt="star" /> 
+            
               <div className="_text__time-1">   
                 {duration}   
               </div>   
@@ -34,13 +38,13 @@ export default function CardsOfRelease({ mainPage }) {
               <div className="_text__date-1">   
                 {date}   
               </div> 
-              <img  src={star} alt="star" />    
+              <img className = "star"  src={star} alt="star" />    
         
               <div className="_text__time-1">  
                 Аудио  
               </div> 
 
-              <img  src={star} alt="star" /> 
+              <img className = "phone"  src={phone} alt="star" /> 
               
             </div>  
             <div className="text__for__description__release-1">    
@@ -79,7 +83,8 @@ export default function CardsOfRelease({ mainPage }) {
                           </MainButton2>
                       )} 
               </div>
-
+              </div> 
+              </div>   
           </div>    
         </div> 
     </div>     

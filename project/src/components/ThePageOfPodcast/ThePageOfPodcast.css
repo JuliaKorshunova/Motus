@@ -4,6 +4,23 @@
     font-weight: 500; /* Или значение, которое соответствует стилю шрифта */
     font-style: normal; 
   }
+
+
+  .r2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .frame__8815 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 5px;
+    position: absolute;
+    left: 280px;
+
+}
   
   
   .group__8794{
@@ -555,6 +572,80 @@
 
   @media (max-width: 1279px) {
 
+    
+
+    .home_for_card_podcast{
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .nazv1{
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 134%;
+      color: #0E0E0E;
+    }
+
+    .nazv222{
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 126%;
+      color: #0E0E0E;
+      width: 100%;
+    }
+
+    .topisanie1-podcast{
+      display: flex;
+      padding: 0;
+      position: relative;
+      flex-direction: row;
+      gap: 8px;
+    }
+
+    .ellpodast{
+      width: 24px;
+      height: 24px;
+      margin-top: 2px;
+    }
+
+    .linepodcast{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 12px;
+      align-items: center;
+    }
+
+    .flex-container-podcast{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .text__for__description1_podcast{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 134%;
+        margin-top: 12px;
+        width: 100%;
+    }
+
+    .tabformobile-podcast{
+      margin-top: 16px;
+    }
+
+    .frame__8815{
+      left: 25px;
+    }
+
     .lessons-1{
       display: none;
     }
@@ -647,9 +738,7 @@
   height: 24px;
 }
 
-.nazv222{
-  display: none;
-}
+
 
 .text__for__rich{
   display: none;
@@ -686,6 +775,11 @@
   }
 
   @media (min-width: 1279px) {
+
+
+    .tabformobile-podcast{
+      display: none;
+    }
 
     
     .text__for__age2 {

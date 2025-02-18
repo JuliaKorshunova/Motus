@@ -151,7 +151,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin-top: -469px;
+    margin-top: -480px !important;
     margin-left: 272px;
 }
 .button-containerpod{
@@ -322,7 +322,7 @@ color: #0E0E0E;
           }
 
       .frame_8793{
-        margin-top: -443px;
+        margin-top: -480px;
         margin-left: 246px;
       }
       .frame_8815{

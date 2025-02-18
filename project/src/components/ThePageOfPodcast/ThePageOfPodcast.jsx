@@ -5,13 +5,16 @@ import ellipse from '/Ellipse 196.png';
 import React, { useState, useRef, useEffect } from 'react';
 import SecondButton from '../Button/SecondButton';
 import SecondButtonBlack from '../Button/SecondButtonBlack.jsx';
-
+import TabsSectionForPodcast from '../TabsSection/TabsSectionForPodcast/TabsSectionForPodcast.jsx';
 import MainButton  from '../Button/MainButton.jsx';
 // import vector22 from './../../img/chevron_left.svg';
 
 import SecondButtonForTabs from '../Button/SecondButtonForTabs.jsx';
 import Header from '../Header/Header.jsx';
 export default function ThePageOfPodcast() {
+
+    const [tab2, setTab2] = useState('opodcaste'); 
+
     const[isHovered, setIsHovered]=useState(false)
     const handleMouseEnter = () => {
       setIsHovered(true);
@@ -117,6 +120,7 @@ export default function ThePageOfPodcast() {
                         <img className='' src={ellipse} alt="Release" />
                         <div>
                             <h6 className='nazv1'>{r.name}</h6> {/* Имя автора повторно */}
+               
                             <h6 className='nazv222'>{r.followers}</h6> {/* Количество подписчиков */}
                         </div>
                     </div>
@@ -171,7 +175,95 @@ export default function ThePageOfPodcast() {
 
             </div>
             </div>
+
+            <div className="tabformobile-podcast">
+
+                <TabsSectionForPodcast Active1={tab2} onChange={(current) => setTab2(current)} />
+
+                <div className='r2'>
+                                                    {tab2 === 'release' &&
+                                                     <div className='home_for_card_podcast'> 
+                                                    {podcastReleases.map(mainPage => ( 
+                                                        <CardsOfRelease key={mainPage.id} mainPage={mainPage}/>  
+                                                    ))} 
+                                                    </div>
+                                                         }  
+                                                    {tab2 === 'opodcaste' &&  infReleases.length > 0 && (   
+                                                    <>
+                                                    <div className='flex-container-podcast'>
+                                                        <div className="text__for__description1_podcast">
+                                                        {infReleases[0].desc} </div>
+                
+                                          
+                
+                                            <div className='linepodcast'>
+                                            <div className='topisanie1-podcast'>
+                                                    <img className='ellpodast' src={ellipse} alt="Release" />
+                                                    <div>
+                                                        <h6 className='nazv1'>{infReleases[0].name}</h6> {/* Имя автора повторно */}
+                                                        <h6 className='nazv222'>{infReleases[0].followers}</h6> {/* Количество подписчиков */}
+                                                    </div>
+                                                </div>
+                                                <div className='knop1'> 
+                                                    {pressed ? ( 
+                                                        <div className={isHoveredb ? '' : 'bgg2'} id='1'> 
+                                                            <SecondButtonBlack  
+                                                                className="second-button-black" // Добавьте класс
+                                                                children='Отменить подписку'  
+                                                                onClick={ispressed}  
+                                                                onMouseEnter={handleMouseEnterb}  
+                                                                onMouseLeave={handleMouseLeaveb} 
+                                                            /> 
+                                                        </div> 
+                                                    ) : ( 
+                                                        <div className={isHoveredb2 ? '' : 'bgg'}> 
+                                                            <SecondButton  
+                                                                className="second-button" // Добавьте класс
+                                                                onMouseEnter={handleMouseEnterb2}  
+                                                                onClick={ispressed}  
+                                                                onMouseLeave={handleMouseLeaveb2}  
+                                                            > 
+                                                                Подписаться 
+                                                            </SecondButton> 
+                                                        </div> 
+                                                    )} 
+                                                    
+                                                        </div>
+                
+                                              </div>  
+                
+                                              
+                
+                                              <div className="frame_hash1" ref={hashtagsRef}>
+                                                    {hashtags.map((h, index) => (
+                                                        <div
+                                                            key={index}
+                                                            className='hastagss' // Просто используйте один класс
+                                                            data-text={h.name}
+                                                        >
+                                                            {h.name}
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                              </div>
+                                                
+                                                
+                                                </>
+                                                    
+                                                    
+                                                    )}
+                
+                
+                
+                
+                         </div>    
+             
             </div>
+
+            
+
+            </div>
+            
 
             
             
@@ -225,6 +317,9 @@ export default function ThePageOfPodcast() {
                     <CardsOfRelease key={mainPage.id} mainPage={mainPage}/>  
                 ))} 
             </div>
+
+
+
 </div>
 
             </div>

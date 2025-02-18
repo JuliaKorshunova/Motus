@@ -70,7 +70,7 @@ export default function CardsOfPodborka({ mainPage }) {
             <div className="author_of_podbrka">
               <img 
               className="icon_of_podborka" 
-              src="/Ellipse 196.png" 
+              src="/Ellipse196.svg" 
               alt="Описание изображения" />
               <div className='col2'>
                  <div className="name_of_author_podborka">{author}</div>
