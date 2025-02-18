@@ -138,8 +138,8 @@ export default function ThePageOfPodborka() {
                     <div className='topisanie'>
                         <img className='' src={ellipse} alt="Release" />
                         <div>
-                            <h6 className='nazv1'>{r.name}</h6> {/* Имя автора повторно */}
-                            <h6 className='nazv2'>{r.followers}</h6> {/* Количество подписчиков */}
+                            <div className='nazv1111'>{r.name}</div> {/* Имя автора повторно */}
+                            <div className='nazv2222'>{r.followers}</div> {/* Количество подписчиков */}
                         </div>
                     </div>
                 </>
@@ -225,8 +225,8 @@ export default function ThePageOfPodborka() {
                             <div className='topisanie1'>
                                     <img className='ellpod' src={ellipse} alt="Release" />
                                     <div>
-                                        <h6 className='nazv1'>{r.name}</h6> {/* Имя автора повторно */}
-                                        <h6 className='nazv2'>{r.followers}</h6> {/* Количество подписчиков */}
+                                        <div className='nazv1111'>{r.name}</div> {/* Имя автора повторно */}
+                                        <div className='nazv2222'>{r.followers}</div> {/* Количество подписчиков */}
                                     </div>
                                 </div>
                                 <div className='knop1'> 
@@ -307,7 +307,15 @@ export default function ThePageOfPodborka() {
                 </div>
             </div>
 
-            <div className="button-containerpod"> 
+            
+            
+            </div>
+
+            
+        ))}
+
+
+        <div className="button-containerpod"> 
             <div className="text__for__age1">18+</div>
             {isHovered === true ? (
                       <div className='bgforlisten'>
@@ -321,9 +329,6 @@ export default function ThePageOfPodborka() {
 
                 
             </div>
-            
-            </div>
-        ))}
             
           
 

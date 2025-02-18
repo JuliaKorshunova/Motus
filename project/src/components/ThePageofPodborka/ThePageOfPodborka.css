@@ -1,3 +1,6 @@
+
+
+
 .home_for_card_container {
     display: grid; /* Включаем Grid */
     grid-template-columns: 1fr; /* Одна колонка */
@@ -150,17 +153,22 @@
 .frame_8793{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
     gap: 15px;
-    margin-top: -480px !important;
-    margin-left: 272px;
+    position: absolute;
+    margin-right: 30px;
+    height: 175px;
+    left: 276px;
+    top: 0px;
 }
 .button-containerpod{
 
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 20px;
-    order: 3;
+    margin-top: -250px;
+    width: 100%;
+    margin-left: 278px;
    
 }
 .knop{
@@ -177,6 +185,7 @@ color: #FF0074;
 flex: none;
 order: 2;
 flex-grow: 0;
+margin-left: 20px;
 
 }
 
@@ -322,8 +331,11 @@ color: #0E0E0E;
           }
 
       .frame_8793{
-        margin-top: -480px;
-        margin-left: 246px;
+        margin-left: -25px;
+      }
+
+      .button-containerpod{
+        margin-left: 250px;
       }
       .frame_8815{
         left: 246px;
@@ -561,7 +573,7 @@ color: #0E0E0E;
         height: 24px;
         margin-top: 2px;
     }
-    .nazv1{
+    .nazv1111{
 
         font-family: 'Inter';
         font-style: normal;
@@ -572,7 +584,7 @@ color: #0E0E0E;
 
 
     }
-    .nazv2{
+    .nazv2222{
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
