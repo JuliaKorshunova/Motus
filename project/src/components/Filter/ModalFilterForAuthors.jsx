@@ -45,8 +45,8 @@ const ModalFilterForAuthors = ({
 
     return (
         <div className="modal-overlay active">
-            <div className="modal-content">
-                <div className="filter-wrapper">
+            <div className="modal-content-1">
+                <div className="filter-wrapper-1">
                     <img 
                         src="/arrow_forward.svg" 
                         alt="Arrow Icon" 
@@ -54,7 +54,7 @@ const ModalFilterForAuthors = ({
                         onClick={handleArrowClick} 
                     />
                     <div className="filter-header">Фильтрация</div>
-                    <div className="slider-wrapper">
+                    <div className="slider-wrapper-a">
                         <div className="filter-duration">
                             <div className="duration-text-label">Количество выпусков</div>
                             <div className="scrollBar">
