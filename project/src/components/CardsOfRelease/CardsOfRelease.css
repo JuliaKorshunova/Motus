@@ -1,470 +1,420 @@
-.content-wrapper-release
-    {
-        width: calc(100vw - 600px);
-    }
+.content-wrapper-release {
+  width: calc(100vw - 600px);
+}
 
-    .content-wrapper-release
-    {
-        display: flex;
-        flex-direction: column;
-        gap: 9px;
-    }
-
+.content-wrapper-release {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
 
 ._card_of_podcast {
-    background: white;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    min-width: 1100px;
-    height: 200px;
-    position: relative;
-    gap: 20px;
+  background: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 1100px;
+  height: 200px;
+  position: relative;
+  gap: 20px;
+}
+._blackblock {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: #0e0e0e;
+}
 
-}
-._blackblock{
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    background: #0E0E0E;
-}
-    
 ._whiteblock {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    background: #FFFFFF;
-    border-radius: 40px;
-    
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: #ffffff;
+  border-radius: 40px;
 }
 
-.text__for__name_release{
-/* Название выпуска */
+.text__for__name_release {
+  /* Название выпуска */
 
-position: absolute;
-height: 25px;
-left: 280px;
-right: 31px;
-top: 20px;
+  position: absolute;
+  height: 25px;
+  left: 280px;
+  right: 31px;
+  top: 20px;
 
-/* platform/h3 */
-font-family: 'Stolzl';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 124%;
-/* identical to box height, or 25px */
+  /* platform/h3 */
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 124%;
+  /* identical to box height, or 25px */
 
-/* black */
-color: #0E0E0E;
-
+  /* black */
+  color: #0e0e0e;
 }
 
-.text__for__description__release{
-    /* Описание выпуска, которое рассказывает о том, что этот выпуск рассказывает о том, что богатым можно стать за пять минут и вообще для этого даже не нужно выходить из дома. */
+.text__for__description__release {
+  /* Описание выпуска, которое рассказывает о том, что этот выпуск рассказывает о том, что богатым можно стать за пять минут и вообще для этого даже не нужно выходить из дома. */
 
-position: absolute;
-height: 40px;
-left: 280px;
-right: 31px;
-top: 84px;
+  position: absolute;
+  height: 40px;
+  left: 280px;
+  right: 31px;
+  top: 84px;
 
-/* platform/txt */
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 126%;
-/* or 20px */
+  /* platform/txt */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 126%;
+  /* or 20px */
 
-/* black */
-color: #0E0E0E;
-
-
+  /* black */
+  color: #0e0e0e;
 }
 
-._number{
-    /* 14 */
+._number {
+  /* 14 */
 
-position: absolute;
-width: 82px;
-height: 80px;
-left: 91px;
-top: calc(50% - 80px/2);
+  position: absolute;
+  width: 82px;
+  height: 80px;
+  left: 91px;
+  top: calc(50% - 80px / 2);
 
-font-family: 'Stolzl';
-font-style: normal;
-font-weight: 400;
-font-size: 80px;
-line-height: 100.51%;
-/* or 80px */
-text-align: center;
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 100.51%;
+  /* or 80px */
+  text-align: center;
 
-/* black */
-color: #0E0E0E;
-
-
+  /* black */
+  color: #0e0e0e;
 }
 
+.container8786 {
+  /* Frame 8786 */
 
-.container8786{
-    /* Frame 8786 */
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 10px;
-
-position: absolute;
-width: 424px;
-height: 20px;
-left: 280px;
-top: 54px;
+  position: absolute;
+  width: 424px;
+  height: 20px;
+  left: 280px;
+  top: 54px;
 }
 
-._text__time{
-    /* 23 минуты 27 секунд */
+._text__time {
+  /* 23 минуты 27 секунд */
 
-width: 168px;
-height: 20px;
+  width: 168px;
+  height: 20px;
 
-/* platform/txt */
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 126%;
-/* or 20px */
+  /* platform/txt */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 126%;
+  /* or 20px */
 
-/* black */
-color: #0E0E0E;
+  /* black */
+  color: #0e0e0e;
 
-white-space: nowrap;
+  white-space: nowrap;
 
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-._text__date{
-    /* 15 сентября 2024 */
+._text__date {
+  /* 15 сентября 2024 */
 
-width: 139px;
-height: 20px;
+  width: 139px;
+  height: 20px;
 
-/* platform/txt */
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 126%;
-/* or 20px */
+  /* platform/txt */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 126%;
+  /* or 20px */
 
-/* black */
-color: #0E0E0E;
+  /* black */
+  color: #0e0e0e;
 
-white-space: nowrap;
+  white-space: nowrap;
 
-
-/* Inside auto layout */
-flex: none;
-order: 2;
-flex-grow: 0;
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
 
+.star2 {
+  /* Rectangle 647 */
 
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
 
-.star2{
-/* Rectangle 647 */
-
-position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-
-/* main */
-background: #FF0074;
+  /* main */
+  background: #ff0074;
 }
 
-.text__for__audio{
-    /* Аудио */
+.text__for__audio {
+  /* Аудио */
 
-width: 47px;
-height: 20px;
+  width: 47px;
+  height: 20px;
 
-/* platform/txt */
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 126%;
-/* or 20px */
+  /* platform/txt */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 126%;
+  /* or 20px */
 
-/* black */
-color: #0E0E0E;
+  /* black */
+  color: #0e0e0e;
 
-
-/* Inside auto layout */
-flex: none;
-order: 4;
-flex-grow: 0;
-
-
-
+  /* Inside auto layout */
+  flex: none;
+  order: 4;
+  flex-grow: 0;
 }
 
-.btnn1-1{
-position: absolute;
-width: 110px;
-height: 40px;
-left: 280px;
-top: 150px;
+.btnn1-1 {
+  position: absolute;
+  width: 110px;
+  height: 40px;
+  left: 280px;
+  top: 150px;
 }
 
+.text__for__name_release-1 {
+  /* Название выпуска */
 
+  position: absolute;
+  height: 25px;
+  left: 280px;
+  right: 31px;
+  top: 10px;
 
-.text__for__name_release-1{
-/* Название выпуска */
+  /* platform/h3 */
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 124%;
+  /* identical to box height, or 25px */
 
-position: absolute;
-height: 25px;
-left: 280px;
-right: 31px;
-top: 10px;
-
-/* platform/h3 */
-font-family: 'Stolzl';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 124%;
-/* identical to box height, or 25px */
-
-/* black */
-color: #0E0E0E;
+  /* black */
+  color: #0e0e0e;
 }
 
-.container8786-1{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 0px;
-        gap: 10px;
-        position: relative;
-        order: 3;
-        left: 280px;
-        top: 54px;
-
-
+.container8786-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  position: relative;
+  order: 3;
+  left: 280px;
+  top: 54px;
 }
 
-
-._text__time-1{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 134%;
-    margin-bottom: 0px;
-    width: auto;
-    color: #0E0E0E;
-    white-space: nowrap;
+._text__time-1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 134%;
+  margin-bottom: 0px;
+  width: auto;
+  color: #0e0e0e;
+  white-space: nowrap;
 }
 
-._text__date-1{
-    width: 139px;
-    height: 20px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 126%;
-    color: #0E0E0E;
-    white-space: nowrap;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-
+._text__date-1 {
+  width: 139px;
+  height: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 126%;
+  color: #0e0e0e;
+  white-space: nowrap;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
 
-.text__for__audio-1{
-   /* Аудио */
+.text__for__audio-1 {
+  /* Аудио */
 
-width: 47px;
-height: 20px;
+  width: 47px;
+  height: 20px;
 
-/* platform/txt */
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 126%;
-/* or 20px */
+  /* platform/txt */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 126%;
+  /* or 20px */
 
-/* black */
-color: #0E0E0E;
+  /* black */
+  color: #0e0e0e;
 
-
-/* Inside auto layout */
-flex: none;
-order: 2;
-flex-grow: 0;
- 
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
 
-.star-ico-1{
-/* star */
+.star-ico-1 {
+  /* star */
 
-width: 15px;
-height: 15px;
+  width: 15px;
+  height: 15px;
 
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
-.star-ico-2{
-/* star */
+.star-ico-2 {
+  /* star */
 
-width: 15px;
-height: 15px;
+  width: 15px;
+  height: 15px;
 
-
-/* Inside auto layout */
-flex: none;
-order: 3;
-flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 3;
+  flex-grow: 0;
 }
 
-.text__for__description__release-1{
-/* Описание выпуска, которое рассказывает о том, что этот выпуск рассказывает о том, что богатым можно стать за пять минут и вообще для этого даже не нужно выходить из дома. */
+.text__for__description__release-1 {
+  /* Описание выпуска, которое рассказывает о том, что этот выпуск рассказывает о том, что богатым можно стать за пять минут и вообще для этого даже не нужно выходить из дома. */
 
-position: absolute;
-height: 40px;
-left: 280px;
-right: 31px;
-top: 84px;
+  position: absolute;
+  height: 40px;
+  left: 280px;
+  right: 31px;
+  top: 84px;
 
-/* platform/txt */
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 126%;
-/* or 20px */
+  /* platform/txt */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 126%;
+  /* or 20px */
 
-/* black */
-color: #0E0E0E;
-
-
+  /* black */
+  color: #0e0e0e;
 }
 
-.author_of_podbrka-1{
-    position: relative;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    display: flex
-;
-    flex-direction: row;
-    gap: 4px;
-    margin-left: 8px;
-    margin-top: -8px;
-    order: 5;
-     order: 6;
+.author_of_podbrka-1 {
+  position: relative;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-left: 8px;
+  margin-top: -8px;
+  order: 5;
+  order: 6;
 }
 
-.icon_of_podborka-1{
-    position: absolute;
-    left: 410px;
-    top: 125px;
+.icon_of_podborka-1 {
+  position: absolute;
+  left: 410px;
+  top: 125px;
 }
 
-
-
-.name_of_author_podborka-1{
-    position: absolute;
-    left: 460px;
-    top: 125px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 126%;
-    color: #0E0E0E;
+.name_of_author_podborka-1 {
+  position: absolute;
+  left: 460px;
+  top: 125px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 126%;
+  color: #0e0e0e;
 }
 
-.text_for_pod-1{
-    position: absolute;
-    left: 460px;
-    top: 145px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 126%;
-    color: #0E0E0E;
+.text_for_pod-1 {
+  position: absolute;
+  left: 460px;
+  top: 145px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 126%;
+  color: #0e0e0e;
 }
-
-
-
 
 @media (max-width: 1439px) {
+  /*width: 228px !important; */
 
-  
-    /*width: 228px !important; */
-  
-    ._card_of_podcast
-    {
-  
-      min-width: 972px ;
-      height: 200px ;
-
-  
+  ._card_of_podcast {
+    min-width: 972px;
+    height: 200px;
   }
 
-  .nazv1{
+  .nazv1 {
     font-size: 14px;
   }
-   
+}
+
+@media (max-width: 1279px) {
+  .phone {
+    width: 16px;
+    height: 16px;
+  }
+  .author_of_podbrka-1 {
+    display: none;
   }
 
+  .btnn1-1 {
+    position: absolute;
+    width: 110px;
+    height: 40px;
+    left: 81px;
+    top: 110px;
+  }
 
-  @media (max-width: 1279px) {
-
-
-    .phone{
-        width: 16px;
-        height: 16px;
-    }
-    .author_of_podbrka-1{
-        display: none;
-    }
-
-    .btnn1-1{
-        position: absolute;
-        width: 110px;
-        height: 40px;
-        left: 81px;
-        top: 110px; 
-    }
-
-    .text__for__description__release-1{
+  .text__for__description__release-1 {
     position: absolute;
     height: 64px;
     left: 81px;
@@ -472,7 +422,7 @@ color: #0E0E0E;
     top: 60px;
 
     /* mobile/txt */
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -480,47 +430,44 @@ color: #0E0E0E;
     /* or 16px */
 
     /* black */
-    color: #0E0E0E;
-    }
+    color: #0e0e0e;
+  }
 
+  .testt_release {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    .testt_release{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  ._card_of_podcast {
+    min-width: 396px;
+    height: 144px;
+  }
 
-    ._card_of_podcast
-    {
-        min-width: 396px ;
-        height: 144px ;
-    }
+  .content-wrapper-release {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
 
-    .content-wrapper-release
-    {
-        display: flex;
-        flex-direction: column;
-        gap: 0px;
-    }
+  .text__for__name_release-1 {
+    position: relative;
+    height: 16px;
+    left: 81px;
+    right: 8px;
+    top: 11px;
+    font-family: "Stolzl";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 112%;
+    order: 1;
+    color: #0e0e0e;
+    white-space: nowrap;
+  }
 
-    .text__for__name_release-1{
-        position: relative;
-        height: 16px;
-        left: 81px;
-        right: 8px;
-        top: 11px;
-        font-family: 'Stolzl';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 112%;
-        order: 1;
-        color: #0E0E0E;
-        white-space: nowrap;
-    }
-
-    ._number{
-        /* 140 */
+  ._number {
+    /* 140 */
 
     position: absolute;
     width: 45px;
@@ -529,7 +476,7 @@ color: #0E0E0E;
     top: 11px;
 
     /* mobile/h1 */
-    font-family: 'Stolzl';
+    font-family: "Stolzl";
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
@@ -538,11 +485,10 @@ color: #0E0E0E;
     text-align: center;
 
     /* black */
-    color: #0E0E0E;
+    color: #0e0e0e;
+  }
 
-    }
-
-    .container8786-1{
+  .container8786-1 {
     /* Frame 8786 */
 
     /* Auto layout */
@@ -558,51 +504,35 @@ color: #0E0E0E;
     left: 81px;
     top: 18px;
     white-space: nowrap;
-    }
-
-    .star{
-        height: 8px;
-        width: 8px;
-        white-space: nowrap;
-    }
-
-    ._text__time-1
-    {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 134%;
-        margin-bottom: 0px;
-        width: auto;
-        color: #0E0E0E;
-        white-space: nowrap;
-    }
-
-    ._text__date-1
-    {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 134%;
-        margin-bottom: -3px;
-        width: auto;
-        color: #6D6D6D;
-        white-space: nowrap;
-
-}
   }
 
+  .star {
+    height: 8px;
+    width: 8px;
+    white-space: nowrap;
+  }
 
+  ._text__time-1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 134%;
+    margin-bottom: 0px;
+    width: auto;
+    color: #0e0e0e;
+    white-space: nowrap;
+  }
 
-
-
-
-
-
-
-
-
-
-
+  ._text__date-1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 134%;
+    margin-bottom: -3px;
+    width: auto;
+    color: #6d6d6d;
+    white-space: nowrap;
+  }
+}

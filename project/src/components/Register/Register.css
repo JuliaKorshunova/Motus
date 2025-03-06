@@ -1,82 +1,74 @@
 .parent {
-    position: relative;
+  position: relative;
 }
 
 .Group26 {
-    position: absolute;
-    left: 1150px; /* Укажите значение, чтобы сдвинуть вправо */
+  position: absolute;
+  left: 1150px; /* Укажите значение, чтобы сдвинуть вправо */
 }
 
+.text_for_reg {
+  /* Регистрация / */
 
-.text_for_reg{
-/* Регистрация / */
+  position: absolute;
+  width: 449px;
+  height: 60px;
+  top: 149px;
 
-position: absolute;
-width: 449px;
-height: 60px;
-top: 149px;
+  /* platform/h1 */
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
 
+  /* black */
+  color: #0e0e0e;
 
-/* platform/h1 */
-font-family: 'Stolzl';
-font-style: normal;
-font-weight: 400;
-font-size: 60px;
-line-height: 60px;
-
-/* black */
-color: #0E0E0E;
-
-left: 300px;
-
-
+  left: 300px;
 }
 
 /* Или если используете Flexbox */
 .container {
-    display: flex;
-    justify-content: flex-start; /* Или flex-end в зависимости от расположения */
+  display: flex;
+  justify-content: flex-start; /* Или flex-end в зависимости от расположения */
 }
 
-.text_for_log{
-/* Вход */
+.text_for_log {
+  /* Вход */
 
-position: absolute;
-width: 155px;
-height: 60px;
-left: 780px;
-top: 149px;
+  position: absolute;
+  width: 155px;
+  height: 60px;
+  left: 780px;
+  top: 149px;
 
-/* platform/h1 */
-font-family: 'Stolzl';
-font-style: normal;
-font-weight: 400;
-font-size: 60px;
-line-height: 60px;
+  /* platform/h1 */
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
 
-/* subt */
-color: #6D6D6D;
-
-
+  /* subt */
+  color: #6d6d6d;
 }
 
-._frame_8820{
-    /* Frame 8820 */
+._frame_8820 {
+  /* Frame 8820 */
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 20px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
 
-position: absolute;
-width: 540px;
-height: 530px;
-left: 310px;
-top: 310px;
-
-
+  position: absolute;
+  width: 540px;
+  height: 530px;
+  left: 310px;
+  top: 310px;
 }
 
 /* ._rectangle15_2_black{
@@ -95,86 +87,83 @@ width: 540px;
 height: 40px;
 } */
 
-._rectangle15_3_black{
+._rectangle15_3_black {
+  left: 0;
+  right: 0;
 
-left: 0;
-right: 0;
+  bottom: 0;
+  top: 201px;
 
-bottom: 0;
-top: 201px;
+  background: #0e0e0e;
 
-background: #0E0E0E;
-
-width: 540px;
-height: 70px;
-
+  width: 540px;
+  height: 70px;
 }
 
-.text_for_mistake-user{
- /* Текст ошибки */
+.text_for_mistake-user {
+  /* Текст ошибки */
 
-position: absolute;
-width: 299px;
-left: 20px;
-top: 180px;
-bottom: -26%;
+  position: absolute;
+  width: 299px;
+  left: 20px;
+  top: 180px;
+  bottom: -26%;
 
-/* platform/subt */
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 126%;
-/* or 15px */
+  /* platform/subt */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 126%;
+  /* or 15px */
 
-/* error */
-color: #FF0F0F;
+  /* error */
+  color: #ff0f0f;
 
-white-space: nowrap; /* Добавлено для предотвращения переноса строки */
-   
+  white-space: nowrap; /* Добавлено для предотвращения переноса строки */
 }
 
 .frame5_1_desk,
 .frame5_2_desk {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start; /* Выравниваем элементы влево */
-    padding: 8px 15px; /* Добавляем левый отступ */
-    gap: 10px; /* Оптимальный отступ между иконкой и текстом */
-  
-    width: 266px;
-    height: 40px;
-    border-radius: 13px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start; /* Выравниваем элементы влево */
+  padding: 8px 15px; /* Добавляем левый отступ */
+  gap: 10px; /* Оптимальный отступ между иконкой и текстом */
+
+  width: 266px;
+  height: 40px;
+  border-radius: 13px;
 }
 
 .frame5_1_desk {
-    top: 290px;
+  top: 290px;
 }
 
 .frame5_2_desk {
-    top: 340px;
+  top: 340px;
 }
 
 /* Иконка + */
 .add_desk {
-    width: 14.58px;
-    height: 14.58px;
-    flex-shrink: 0; /* Запрещает уменьшение иконки */
+  width: 14.58px;
+  height: 14.58px;
+  flex-shrink: 0; /* Запрещает уменьшение иконки */
 }
 
 /* Текст */
 .text_for_download_desk,
 .text_for_link_desk {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 134%;
-    text-align: left; /* Текст всегда начинается с левого края */
-    color: #FF7510;
-    white-space: nowrap;
-    flex-shrink: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 134%;
+  text-align: left; /* Текст всегда начинается с левого края */
+  color: #ff7510;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 /* ._rectangle15_4_black{
@@ -194,142 +183,129 @@ height: 40px;
 
 } */
 
-._frame8821{
-    /* Frame 8821 */
+._frame8821 {
+  /* Frame 8821 */
 
-width: 356px;
-height: 10px;
+  width: 356px;
+  height: 10px;
 
-
-/* Inside auto layout */
-flex: none;
-order: 7;
-flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 7;
+  flex-grow: 0;
 }
 
-.text_for_password{
-    /* Пароль должен содержать строчную и заглавную и блабла */
+.text_for_password {
+  /* Пароль должен содержать строчную и заглавную и блабла */
 
-position: absolute;
-width: 356px;
-height: 15px;
-left: 20px;
-top: 50px;
+  position: absolute;
+  width: 356px;
+  height: 15px;
+  left: 20px;
+  top: 50px;
 
-/* platform/subt */
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 126%;
-/* or 15px */
+  /* platform/subt */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 126%;
+  /* or 15px */
 
-/* subt */
-color: #6D6D6D;
-
-
+  /* subt */
+  color: #6d6d6d;
 }
 
-.btnnForReg-user{
-
-    margin-top: 0px; /* Увеличьте значение по мере необходимости */
+.btnnForReg-user {
+  margin-top: 0px; /* Увеличьте значение по мере необходимости */
 }
 
-.rectangle-container-error-user{
-/* Rectangle 15 */
+.rectangle-container-error-user {
+  /* Rectangle 15 */
 
-/* error */
-background: #FF0F0F;
-
+  /* error */
+  background: #ff0f0f;
 }
 
 .rectangle-error-user {
-    background-color: #FFE5E5 !important; /* Светло-красный фон */
-    border: 1px solid #FFE5E5 !important; /* Красная рамка */
-    outline: none; /* Убираем стандартную обводку */
-    
-    
+  background-color: #ffe5e5 !important; /* Светло-красный фон */
+  border: 1px solid #ffe5e5 !important; /* Красная рамка */
+  outline: none; /* Убираем стандартную обводку */
 }
 
+.bgforbtn6 {
+  width: 163px;
+  height: 40px;
 
+  background: #ff0074;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  padding: 0px;
 
-
-.bgforbtn6{
-    width: 163px;
-    height: 40px;
-    
-    
-    background: #FF0074;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    padding: 0px;
-
-    white-space: nowrap; /* Запрещает перенос текста */
+  white-space: nowrap; /* Запрещает перенос текста */
 }
 
 .parent {
-    display: flex;          /* Устанавливаем флексбокс для родителя */
-    justify-content: flex-end; /* Выравниваем содержимое справа */
-    align-items: center;    /* Вертикальное выравнивание содержимого */
-    width: 100%;           /* Убедитесь, что родитель занимает всю ширину */
+  display: flex; /* Устанавливаем флексбокс для родителя */
+  justify-content: flex-end; /* Выравниваем содержимое справа */
+  align-items: center; /* Вертикальное выравнивание содержимого */
+  width: 100%; /* Убедитесь, что родитель занимает всю ширину */
 }
 
 .group26 {
-    margin-right: 0;       /* Убедитесь, что нет отступов справа */
+  margin-right: 0; /* Убедитесь, что нет отступов справа */
 }
 
 ._rectangle16_white1 {
-    /* position: absolute; */
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: #FFFFFF;
-    border-radius: 13px;
-    border: none;
-    padding: 20px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 126%;
-    color: #6D6D6D;
-    box-sizing: border-box;
-    height: 40px;
+  /* position: absolute; */
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #ffffff;
+  border-radius: 13px;
+  border: none;
+  padding: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 126%;
+  color: #6d6d6d;
+  box-sizing: border-box;
+  height: 40px;
 }
-._rectangle16_white2 {  
-
-    /* position: absolute; */
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: #FFFFFF;
-    border-radius: 13px;
-    border: none;
-    padding: 20px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 126%;
-    color: #6D6D6D;
-    box-sizing: border-box;
-    height: 70px;
-    }
+._rectangle16_white2 {
+  /* position: absolute; */
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #ffffff;
+  border-radius: 13px;
+  border: none;
+  padding: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 126%;
+  color: #6d6d6d;
+  box-sizing: border-box;
+  height: 70px;
+}
 
 ._rectangle15_black1 {
-    /* position: absolute; */
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: #0E0E0E;
-    border: none;
-    width: 540px;
-    height: 40px;
+  /* position: absolute; */
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #0e0e0e;
+  border: none;
+  width: 540px;
+  height: 40px;
 }
 /* ._rectangle15_1_black1 {
     position: absolute;
@@ -344,284 +320,271 @@ background: #FF0F0F;
 } */
 
 ._blacknewpod3 {
-    background: #000000;
-    /* width: calc(50%); */
-    width: 540px;
-    height: 40px;
+  background: #000000;
+  /* width: calc(50%); */
+  width: 540px;
+  height: 40px;
 }
-._blacknewpod4{
-    background: #000000;
-    /* width: calc(50%); */
-    width: 540px;
-    height: 70px;
-}
-
-._rectangle161:focus, ._rectangle161:hover {
-    outline: none;
-    border: none;
+._blacknewpod4 {
+  background: #000000;
+  /* width: calc(50%); */
+  width: 540px;
+  height: 70px;
 }
 
-  
+._rectangle161:focus,
+._rectangle161:hover {
+  outline: none;
+  border: none;
+}
+
 ._rectangle161 {
-    width: calc(100% - 22px);
-    padding-left: 20px;
-    margin-top: -0.5px;
-    padding-top: 0px;
-    /* padding-bottom: 1.5px; */
-    height: calc(100% - 0px);
-    background: #ffffff;
-    border-radius: 13px;
-    border: none;
-    height: 70px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 126%;
-    color: #000000;
+  width: calc(100% - 22px);
+  padding-left: 20px;
+  margin-top: -0.5px;
+  padding-top: 0px;
+  /* padding-bottom: 1.5px; */
+  height: calc(100% - 0px);
+  background: #ffffff;
+  border-radius: 13px;
+  border: none;
+  height: 70px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 126%;
+  color: #000000;
 }
 
 .rectangle-error1 {
-    background: #FFE5E5;
+  background: #ffe5e5;
 
-   
-        width: calc(100% - 22px);
-        padding-left: 20px;
-        /* margin-top: -0.5px; */
-        padding-top: 0px;
-        /* padding-bottom: 1.5px; */
-        height: calc(100% - 0px);
+  width: calc(100% - 22px);
+  padding-left: 20px;
+  /* margin-top: -0.5px; */
+  padding-top: 0px;
+  /* padding-bottom: 1.5px; */
+  height: calc(100% - 0px);
 
-        border-radius: 13px;
-        border: none;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 126%;
-        color: #000000;
+  border-radius: 13px;
+  border: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 126%;
+  color: #000000;
 }
 
 .rectangle-error161 {
-    background: #FFE5E5;
+  background: #ffe5e5;
 
-   
-        width: calc(100% - 22px);
-        padding-left: 20px;
-        /* margin-top: -0.5px; */
-        padding-top: 0px;
-        /* padding-bottom: 1.5px; */
-        height: calc(70px);
+  width: calc(100% - 22px);
+  padding-left: 20px;
+  /* margin-top: -0.5px; */
+  padding-top: 0px;
+  /* padding-bottom: 1.5px; */
+  height: calc(70px);
 
-        border-radius: 13px;
-        border: none;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 126%;
-        color: #000000;
+  border-radius: 13px;
+  border: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 126%;
+  color: #000000;
 }
 
 ._pink1 {
-    order: 1;
-    background-color: #FF0074; /* изменяем цвет именно для div*/
-  }
-  ._red1 {
-    order: 0;
-    background-color: #FF0F0F; /* изменяем цвет именно для div*/
-  }
-    
-  ._green1 {
-order: 2;
-    background-color: #69FF12; /* изменяем цвет именно для div*/
-  }
+  order: 1;
+  background-color: #ff0074; /* изменяем цвет именно для div*/
+}
+._red1 {
+  order: 0;
+  background-color: #ff0f0f; /* изменяем цвет именно для div*/
+}
+
+._green1 {
+  order: 2;
+  background-color: #69ff12; /* изменяем цвет именно для div*/
+}
 @media (max-width: 1279px) {
+  ._rectangle161 {
+    background: #ffffff;
+    padding-bottom: 0px;
+    height: 74px;
+    font-size: 12px;
+    margin-top: 0.5px;
+    line-height: 126%;
+    border-radius: 7px;
 
-    ._rectangle161 {
-        background: #ffffff;
-        padding-bottom: 0px;
-        height: 74px;
-        font-size: 12px;
-        margin-top: 0.5px;
-        line-height: 126%;
-        border-radius: 7px;
-       
-        width: calc(100%);
-        padding: 0;
-      padding-left: 8px;
-      padding-top: 4px;
-    }
+    width: calc(100%);
+    padding: 0;
+    padding-left: 8px;
+    padding-top: 4px;
+  }
 
-    .rectangle-error161 {
-        background: #FFE5E5;
-        padding-bottom: 0px;
-        height: 74px;
-        font-size: 12px;
-        margin-top: 0.5px;
-        line-height: 126%;
-        border-radius: 7px;
-    
-        width: calc(100%);
-        padding: 0;  
-        padding-left: 8px;
-        padding-top: 4px;
-    }
+  .rectangle-error161 {
+    background: #ffe5e5;
+    padding-bottom: 0px;
+    height: 74px;
+    font-size: 12px;
+    margin-top: 0.5px;
+    line-height: 126%;
+    border-radius: 7px;
 
-    ._blacknewpod3 {
-        display: flex
-;
-        justify-content: center;
-        align-items: center;
-        height: 23.4px;
-        width: calc(100% - 30px);
-    }
-    ._blacknewpod4 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 78px;
-        width: calc(100% - 15px);
-    }
-    ._frame_8820{
-        position: relative;
-        top: 16px;
-        left: 0px;
-        right: 0px;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        margin-left: 8px;
-    }
-    ._rectangle15_black1 {
-        display: flex;
-        justify-content: center; /* Центрирование по горизонтали */
-        align-items: center; /* Центрирование по вертикали */
-        height: 23.5px;
-        width: calc(100vw - 70px);
-        top: 16px;
-    }
-    ._rectangle15_1_black1{
-        display: flex;
-        justify-content: center; /* Центрирование по горизонтали */
-        align-items: center; /* Центрирование по вертикали */
-        height: 23.5px;
-        width: calc(100vw - 70px);
-  
-        top: 48px;
-      }
+    width: calc(100%);
+    padding: 0;
+    padding-left: 8px;
+    padding-top: 4px;
+  }
 
-      ._rectangle15_2_black{
-        display: flex;
-        justify-content: center; /* Центрирование по горизонтали */
-        align-items: center; /* Центрирование по вертикали */
-        height: 23.5px;
-        width: calc(100vw - 70px);
-        top: 80px;
-        }
+  ._blacknewpod3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 23.4px;
+    width: calc(100% - 30px);
+  }
+  ._blacknewpod4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 78px;
+    width: calc(100% - 15px);
+  }
+  ._frame_8820 {
+    position: relative;
+    top: 16px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 8px;
+  }
+  ._rectangle15_black1 {
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    height: 23.5px;
+    width: calc(100vw - 70px);
+    top: 16px;
+  }
+  ._rectangle15_1_black1 {
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    height: 23.5px;
+    width: calc(100vw - 70px);
 
-        ._rectangle15_3_black{
-            display: flex;
-            justify-content: center; /* Центрирование по горизонтали */
-            align-items: center; /* Центрирование по вертикали */
-            height: 80px;
-            width: calc(100vw - 70px);
-            top: 112px;
-            
-            }
+    top: 48px;
+  }
 
+  ._rectangle15_2_black {
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    height: 23.5px;
+    width: calc(100vw - 70px);
+    top: 80px;
+  }
 
-            ._rectangle15_4_black {
-                display: flex;
-                justify-content: center; /* Центрирование по горизонтали */
-                align-items: center; /* Центрирование по вертикали */
-                height: 23.5px;
-                width: calc(100vw - 70px);
-            }
-        ._rectangle16_white1 {  
+  ._rectangle15_3_black {
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    height: 80px;
+    width: calc(100vw - 70px);
+    top: 112px;
+  }
 
-            justify-content: center; /* Центрирование по горизонтали */
-            align-items: center; /* Центрирование по вертикали */
-            height: 24px;
-            font-size: 12px;   
-            line-height: 126%;   
-            border-radius: 7px;
-            padding-left: 8px;
-            width: calc(100% - 0px);
-            padding: 0px;
-            padding-left: 8px;
-            }
-            ._rectangle16_white2 {  
+  ._rectangle15_4_black {
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    height: 23.5px;
+    width: calc(100vw - 70px);
+  }
+  ._rectangle16_white1 {
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    height: 24px;
+    font-size: 12px;
+    line-height: 126%;
+    border-radius: 7px;
+    padding-left: 8px;
+    width: calc(100% - 0px);
+    padding: 0px;
+    padding-left: 8px;
+  }
+  ._rectangle16_white2 {
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    height: 80px;
+    font-size: 12px;
+    line-height: 126%;
+    border-radius: 7px;
+    padding-left: 8px;
+    width: calc(100% - 0px);
+    padding: 0px;
+    padding-left: 8px;
+  }
 
-                justify-content: center; /* Центрирование по горизонтали */
-                align-items: center; /* Центрирование по вертикали */
-                height: 80px;
-                font-size: 12px;   
-                line-height: 126%;   
-                border-radius: 7px;
-                padding-left: 8px;
-                width: calc(100% - 0px);
-                padding: 0px;
-                padding-left: 8px;
-                }
+  .add_desk {
+    height: 9px;
+    width: 9px;
+  }
 
-        .add_desk{
-            height: 9px;
-            width: 9px;
-        }
+  .text_for_download_desk {
+    font-size: 12px;
+  }
 
-        .text_for_download_desk{
-            font-size: 12px;
-        }
+  .text_for_link_desk {
+    font-size: 12px;
+  }
+  .frame5_1_desk {
+    padding: 0;
+    height: auto;
+    gap: 8px;
+    margin-left: 27px;
+  }
+  .frame5_2_desk {
+    padding: 0;
+    height: auto;
+    gap: 8px;
+    margin-left: 27px;
+  }
+  .btnnForReg-user {
+    margin-top: 24px;
+  }
 
-        .text_for_link_desk{
-            font-size: 12px;
-        }
-        .frame5_1_desk{
-            padding: 0;
-            height: auto;
-            gap: 8px;
-            margin-left: 27px;
-        }
-        .frame5_2_desk{
-            padding: 0;
-            height: auto;
-            gap: 8px;
-            margin-left: 27px;
-        }
-        .btnnForReg-user{
-            margin-top: 24px;
-        }
+  .inputplustext1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    width: 100vw;
+  }
+  .red1 {
+    width: 100%;
+  }
 
-        .inputplustext1 {
-            display: grid
-        ;
-            grid-template-columns: 1fr;
-            gap: 8px;
-            width: 100vw;
-        }
-        .red1{
-            width: 100%;
-        }
+  .rectangle-error1 {
+    background: #ffe5e5;
+    padding-bottom: 0px;
+    height: 24px;
+    font-size: 12px;
+    line-height: 126%;
+    border-radius: 7px;
+    padding-left: 8px;
+    width: calc(100%);
+  }
 
-        .rectangle-error1 {
-            background: #FFE5E5;
-            padding-bottom: 0px;
-            height: 24px;
-            font-size: 12px;
-            line-height: 126%;
-            border-radius: 7px;
-            padding-left: 8px;
-            width: calc(100%);
-        }
-
-        .btnnForReg-user{
-            width: 100vw;
-            display: flex;
-            justify-content: center;
-        }
-
-        
-
-
+  .btnnForReg-user {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
 }

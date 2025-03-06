@@ -1,323 +1,286 @@
-.text_for_login-zag{
-    /* Вход / */
+.text_for_login-zag {
+  /* Вход / */
 
-position: absolute;
-width: 194px;
-height: 60px;
+  position: absolute;
+  width: 194px;
+  height: 60px;
 
-top: 149px;
+  top: 149px;
 
-/* platform/h1 */
-font-family: 'Stolzl';
-font-style: normal;
-font-weight: 400;
-font-size: 60px;
-line-height: 60px;
-white-space: nowrap;
-/* black */
-color: #0E0E0E;
+  /* platform/h1 */
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  white-space: nowrap;
+  /* black */
+  color: #0e0e0e;
 
-left: 300px
-
+  left: 300px;
 }
 
-.text_for_register{
-    /* Регистрация */
+.text_for_register {
+  /* Регистрация */
 
-position: absolute;
-width: 409px;
-height: 60px;
-left: 520px;
-top: 149px;
+  position: absolute;
+  width: 409px;
+  height: 60px;
+  left: 520px;
+  top: 149px;
 
-/* platform/h1 */
-font-family: 'Stolzl';
-font-style: normal;
-font-weight: 400;
-font-size: 60px;
-line-height: 60px;
+  /* platform/h1 */
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
 
-/* subt */
-color: #6D6D6D;
-
-
+  /* subt */
+  color: #6d6d6d;
 }
 
-.frame_8820{
-    /* Вход / */
+.frame_8820 {
+  /* Вход / */
 
-position: absolute;
-width: 194px;
-height: 60px;
-left: calc(50% - 194px/2 - 317px);
-top: 149px;
+  position: absolute;
+  width: 194px;
+  height: 60px;
+  left: calc(50% - 194px / 2 - 317px);
+  top: 149px;
 
-/* platform/h1 */
-font-family: 'Stolzl';
-font-style: normal;
-font-weight: 400;
-font-size: 60px;
-line-height: 60px;
+  /* platform/h1 */
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
 
-/* black */
-color: #0E0E0E;
+  /* black */
+  color: #0e0e0e;
 
+  /* Frame 8820 */
 
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
 
-/* Frame 8820 */
-
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 20px;
-
-position: absolute;
-width: 540px;
-height: 190px;
-left: 310px;
-top: 240px;
-
-
+  position: absolute;
+  width: 540px;
+  height: 190px;
+  left: 310px;
+  top: 240px;
 }
 
+._rectangle15_black {
+  /* Rectangle 15 */
 
-._rectangle15_black{
-/* Rectangle 15 */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /* black */
+  background: #0e0e0e;
+  border: none;
 
-
-    position: absolute;   
-    left: 0;   
-    right: 0;   
-    top: 0;   
-    bottom: 0;   
-    /* black */
-    background: #0E0E0E ;
-    border: none;  
-
-    width: 540px;
-    height: 40px;
-
-
+  width: 540px;
+  height: 40px;
 }
 
-._rectangle15_1_black{
-    /* Rectangle 15 */
+._rectangle15_1_black {
+  /* Rectangle 15 */
 
-position: absolute;
-left: 0;
-right: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
 
-bottom: 0;
-top: 61px;
+  bottom: 0;
+  top: 61px;
 
-/* black */
-background: #0E0E0E;
+  /* black */
+  background: #0e0e0e;
 
-width: 540px;
-height: 40px;
-
+  width: 540px;
+  height: 40px;
 }
 
-._rectangle16_white {  
-    position: absolute;    
-    left: 0;    
-    right: 0;    
-    top: 0;    
-    bottom: 0;    
-    background: #FFFFFF;    
-    border-radius: 13px;    
-    border: none;    
-    padding: 20px;   
-    font-family: 'Inter';   
-    font-style: normal;   
-    font-weight: 400;   
-    font-size: 16px;   
-    line-height: 126%;   
-    color: #6D6D6D; 
-    box-sizing: border-box; /* Включает padding в размеры */
+._rectangle16_white {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #ffffff;
+  border-radius: 13px;
+  border: none;
+  padding: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 126%;
+  color: #6d6d6d;
+  box-sizing: border-box; /* Включает padding в размеры */
 }
 
 ._rectangle16:focus,
 ._rectangle16:hover {
-    outline: none; /* Убирает обводку */
-    border: none; /* Убедитесь, что обводка не добавляется */
+  outline: none; /* Убирает обводку */
+  border: none; /* Убедитесь, что обводка не добавляется */
 }
 
 /* Убираем обводку при фокусе */
-._rectangle16:focus { 
-    outline: none; /* Убираем стандартную обводку */
-   
+._rectangle16:focus {
+  outline: none; /* Убираем стандартную обводку */
 }
 
+.frame8821 {
+  /* Frame 8821 */
 
+  width: 356px;
+  height: 10px;
 
-.frame8821{
-    /* Frame 8821 */
-
-width: 356px;
-height: 10px;
-
-
-/* Inside auto layout */
-flex: none;
-order: 2;
-flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
 
-.text_for_forget_password{
- 
-width: 184px;
-height: 15px;
-left: 20px;
-top: 110px;
+.text_for_forget_password {
+  width: 184px;
+  height: 15px;
+  left: 20px;
+  top: 110px;
 
-/* platform/subt */
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 126%;
-/* or 15px */
+  /* platform/subt */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 126%;
+  /* or 15px */
 
-/* black */
-color: #0E0E0E;
-
-
+  /* black */
+  color: #0e0e0e;
 }
 
 .orange-text {
-    color: #FF7510; /* Или используйте другой цвет по вашему выбору */
+  color: #ff7510; /* Или используйте другой цвет по вашему выбору */
 }
 
 .btnnForLogin {
-    margin-top: 140px; /* Увеличьте значение по мере необходимости */
+  margin-top: 140px; /* Увеличьте значение по мере необходимости */
 }
 
-.parent1{
-    position: relative;
+.parent1 {
+  position: relative;
 }
 
 .group8830 {
-    position: absolute;          /* Сохраняем начальное положение */
-    right: 0;                   /* Прикрепляем к правому краю */
-    top: 0;                     /* Можете настроить по желанию */
-    width: auto;                /* Позволяет изображению иметь автоматическую ширину */
-   
+  position: absolute; /* Сохраняем начальное положение */
+  right: 0; /* Прикрепляем к правому краю */
+  top: 0; /* Можете настроить по желанию */
+  width: auto; /* Позволяет изображению иметь автоматическую ширину */
 }
 
-.bgforbtn2{
+.bgforbtn2 {
+  width: 87.5px;
+  height: 40px;
 
-    width: 87.5px;
-    height: 40px;
-    
-    
-    background: #FF0074;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    padding: 0px;
+  background: #ff0074;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  padding: 0px;
 }
-
 
 .btnnForReg-user {
-    order: 3;
-
+  order: 3;
 }
 
 ._frame_882012 {
-    display: flex
-;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 20px;
-    position: absolute;
-    width: 540px;
-    height: 530px;
-    left: 310px;
-    top: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  position: absolute;
+  width: 540px;
+  height: 530px;
+  left: 310px;
+  top: 240px;
 }
 
-
-.frame8821{
-    margin-left: 20px;
+.frame8821 {
+  margin-left: 20px;
 }
 
 @media (max-width: 1279px) {
-    .text_for_login-zag{
-        font-size: 26px;
-        position: relative;
-        top: 0;
-        left: 0;
-        right: 0; 
-        width: auto;
-        padding: 0;
-        height: auto;
-        line-height: 1;
-        white-space: nowrap;
-        
-      
-        
-    }
-    .frame8821{
-        margin-left: 16px;
-    }
-    .text_for_register{
-        font-size: 26px;
-        position: relative;   
-        top: 0;
-        left: 0;
-        right: 0; 
+  .text_for_login-zag {
+    font-size: 26px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    padding: 0;
     height: auto;
-        padding: 0;
-    width: auto; 
     line-height: 1;
- }
+    white-space: nowrap;
+  }
+  .frame8821 {
+    margin-left: 16px;
+  }
+  .text_for_register {
+    font-size: 26px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    padding: 0;
+    width: auto;
+    line-height: 1;
+  }
 
-    ._frame_8820{
-        margin-top: -10px;
-        
-    }
-    .centerforreg2{
-        height: 24px;
-        margin-bottom: 13px;
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        /* margin-left: 40px; */
-    }
- 
-    .centerforreg2{
-        display: flex;
-        flex-direction: row;
-    
-        /* text-align: center; */
-        justify-content: center;
-        margin-top: 115px;
-        order: 1;
-   
+  ._frame_8820 {
+    margin-top: -10px;
+  }
+  .centerforreg2 {
+    height: 24px;
+    margin-bottom: 13px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    /* margin-left: 40px; */
+  }
 
-    }
+  .centerforreg2 {
+    display: flex;
+    flex-direction: row;
 
-        ._frame_882012 {
-            margin-top: -10px;
-        }
+    /* text-align: center; */
+    justify-content: center;
+    margin-top: 115px;
+    order: 1;
+  }
 
-        ._frame_882012 {
-            position: relative;
-            top: 16px;
-            left: 0px;
-            right: 0px;
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            margin-left: 8px;
-        }
-    
+  ._frame_882012 {
+    margin-top: -10px;
+  }
 
+  ._frame_882012 {
+    position: relative;
+    top: 16px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 8px;
+  }
 }
-
-

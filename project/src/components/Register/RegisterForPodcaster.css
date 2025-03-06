@@ -1,97 +1,90 @@
-._rectangle15_33_black{
-    /* Rectangle 15 */
+._rectangle15_33_black {
+  /* Rectangle 15 */
 
-position: absolute;
-left: 0;
-right: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
 
-bottom: 0;
-top: 270px;
+  bottom: 0;
+  top: 270px;
 
-/* black */
-background: #0E0E0E;
+  /* black */
+  background: #0e0e0e;
 
-width: 540px;
-height: 70px;
+  width: 540px;
+  height: 70px;
 }
 
+._rectangle15_mave_black {
+  /* Rectangle 15 */
 
-._rectangle15_mave_black{
-        /* Rectangle 15 */
+  position: absolute;
+  left: 0;
+  right: 0;
 
-position: absolute;
-left: 0;
-right: 0;
+  bottom: 0;
+  top: 200px;
 
-bottom: 0;
-top: 200px;
+  /* black */
+  background: #0e0e0e;
 
-/* black */
-background: #0E0E0E;
-
-width: 540px;
-height: 40px;
+  width: 540px;
+  height: 40px;
 }
 
-.frame5_11_desk{
-/* Frame 5 */
+.frame5_11_desk {
+  /* Frame 5 */
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 8px 20px 7px;
-gap: 5px;
-
-position: absolute;
-width: 266px;
-height: 40px;
-left: 0px;
-top: 350px;
-
-border-radius: 13px;
-}
-
-
-.frame5_21_desk{
-/* Frame 5 */
-  
   /* Auto layout */
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 8px 20px 7px;
   gap: 5px;
-  
+
+  position: absolute;
+  width: 266px;
+  height: 40px;
+  left: 0px;
+  top: 350px;
+
+  border-radius: 13px;
+}
+
+.frame5_21_desk {
+  /* Frame 5 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 20px 7px;
+  gap: 5px;
+
   position: absolute;
   width: 266px;
   height: 40px;
   left: 0px;
   top: 400px;
-  
+
   border-radius: 13px;
 }
 
-._rectangle15_444_black{
-   
-position: absolute;
-left: 0;
-right: 0;
+._rectangle15_444_black {
+  position: absolute;
+  left: 0;
+  right: 0;
 
-bottom: 0;
-top: 470px;
+  bottom: 0;
+  top: 470px;
 
-/* black */
-background: #0E0E0E;
+  /* black */
+  background: #0e0e0e;
 
-width: 540px;
-height: 40px; 
+  width: 540px;
+  height: 40px;
 }
 
-
-.btnnForRegPodcaster-pod{
-    margin-top: 555px; /* Увеличьте значение по мере необходимости */
+.btnnForRegPodcaster-pod {
+  margin-top: 555px; /* Увеличьте значение по мере необходимости */
 }
-
-
-

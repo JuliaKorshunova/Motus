@@ -1,70 +1,65 @@
-.tabforlibrary{
-    /* Frame 6 */
+.tabforlibrary {
+  /* Frame 6 */
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 10px;
-/* left: 280px; */
-position: relative;
-left: 0px;
-margin-top: 16px;
-margin-left: 280px;
-margin-bottom: 30px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  /* left: 280px; */
+  position: relative;
+  left: 0px;
+  margin-top: 16px;
+  margin-left: 280px;
+  margin-bottom: 30px;
 
-    /* margin-top: 48%;  */
-
+  /* margin-top: 48%;  */
 }
-.bgforbtn3{
-
-background: #69FF12;
-flex: none;
-order: 0;
-flex-grow: 0; 
+.bgforbtn3 {
+  background: #69ff12;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-.image-button-class{
-    padding: 0px;
+.image-button-class {
+  padding: 0px;
 }
 
-.simple-button-class{
-    padding: 9px 20px 10px;
+.simple-button-class {
+  padding: 9px 20px 10px;
 }
-.zi{
-    z-index: 1999;
+.zi {
+  z-index: 1999;
 }
 
-.tabforsub{
+.tabforsub {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  position: relative;
+  left: 0px;
+  margin-top: 16px;
+  margin-left: 280px;
+  margin-bottom: 30px;
+  /* margin-top: 48%; */
+}
+
+@media (max-width: 1279px) {
+  .tabforsub {
     display: flex;
-     flex-direction: row;
-     align-items: flex-start;
-     padding: 0px;
-     gap: 10px;
-     position: relative;
-     left: 0px;
-     margin-top: 16px;
-     margin-left: 280px;
-     margin-bottom: 30px;
-     /* margin-top: 48%; */
- }
-
- @media (max-width: 1279px) {
-
-    .tabforsub{
-        display: flex;
-         flex-direction: row;
-         align-items: flex-start;
-         padding: 0px;
-         gap: 10px;
-         position: relative;
-         left: -290px;
-         margin-top: 16px;
-         margin-left: 280px;
-         margin-bottom: 30px;
-         /* margin-top: 48%; */
-     }
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    position: relative;
+    left: -290px;
+    margin-top: 16px;
+    margin-left: 280px;
+    margin-bottom: 30px;
+    /* margin-top: 48%; */
+  }
 }
-
-

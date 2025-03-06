@@ -1,79 +1,75 @@
-.category-label-a{
-    position: absolute;
-        width: 82px;
-        height: 20px;
-        left: 0px;
-        top: 280px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 126%;
-        color: #000000;
+.category-label-a {
+  position: absolute;
+  width: 82px;
+  height: 20px;
+  left: 0px;
+  top: 280px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 126%;
+  color: #000000;
 }
 
-.tab-wrapper111-a{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        align-content: flex-start;
-        padding: 0px;
-        gap: 10px;
-        /* position: absolute; */
-        width: 245px;
-        /* height: 110px; */
-        left: 0px;
-        /* top:630px; */
-        order: 1;
-        height: auto;
+.tab-wrapper111-a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 0px;
+  gap: 10px;
+  /* position: absolute; */
+  width: 245px;
+  /* height: 110px; */
+  left: 0px;
+  /* top:630px; */
+  order: 1;
+  height: auto;
 }
 
-
-
-.bgforbtnsub-a{
-    width: 73px;
-    background: #FF0074;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    padding: 0px;
+.bgforbtnsub-a {
+  width: 73px;
+  background: #ff0074;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  padding: 0px;
 }
 
-.bgforbtnsub-a1{
-    width: 82px;
-    background: #FF0074;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    padding: 0px;
+.bgforbtnsub-a1 {
+  width: 82px;
+  background: #ff0074;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  padding: 0px;
 }
 
-
-.obedForModal{
-    display: flex;
-    flex-direction: column;
-    margin-top: 210px;
-    gap: 20px;
+.obedForModal {
+  display: flex;
+  flex-direction: column;
+  margin-top: 210px;
+  gap: 20px;
 }
 
-.forbtnn2{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    order: 2;
+.forbtnn2 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  order: 2;
 }
 
-.slider-wrapper-a{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 20px;
-    position: absolute;
-    width: 228px;
-    height: 364px;
-    left: 0px;
-    top: 30px;
-
+.slider-wrapper-a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  position: absolute;
+  width: 228px;
+  height: 364px;
+  left: 0px;
+  top: 30px;
 }

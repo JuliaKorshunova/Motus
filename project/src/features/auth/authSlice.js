@@ -1,5 +1,5 @@
 // src/features/auth/authSlice.js
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   isLoggedIn: false, // Начальное состояние: пользователь не зашел
@@ -7,7 +7,7 @@ const initialState = {
 };
 
 export const authSlice = createSlice({
-  name: 'auth',
+  name: "auth",
   initialState,
   reducers: {
     loginSuccess: (state, action) => {

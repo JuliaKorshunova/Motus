@@ -1,342 +1,295 @@
-.library_container-s{
-   position: absolute;
-   width: 632px;
-   height: 60px;
-   left: 306px;
-   top: 159px;
-   right: 30px;
-   display: flex
-;
-   align-items: center;
-   justify-content: space-between;
+.library_container-s {
+  position: absolute;
+  width: 632px;
+  height: 60px;
+  left: 306px;
+  top: 159px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.zagolovokForL-s{
-   font-family: 'Stolzl';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 60px;
-   line-height: 60px;
-   color: #0E0E0E;
-   margin-right: 10px;
+.zagolovokForL-s {
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  color: #0e0e0e;
+  margin-right: 10px;
 }
 
-.subtitle1ForL-s{
-   font-family: 'Inter';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 28px;
-   line-height: 143%;
-   color: #6D6D6D;
-   white-space: nowrap; /* Запрещает перенос текста */
+.subtitle1ForL-s {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 143%;
+  color: #6d6d6d;
+  white-space: nowrap; /* Запрещает перенос текста */
 }
 
-
-
-
-
-.r1-s{
-   display: flex;
-   flex-direction: column;
+.r1-s {
+  display: flex;
+  flex-direction: column;
 }
 
 .sub_container {
-    /* Group 8786 */
- 
- position: absolute;
+  /* Group 8786 */
 
- height: 60px;
- left: 306px;
- top: 159px;
- right: 30px;
- display: flex; /* Это позволит отображать элементы в одну строку */
- align-items: center; /* Выравниваем по центру по вертикали, если нужно */
+  position: absolute;
 
- 
-  }
-  .r{
-   margin-right: 30px;
-  }
-  
-  .zagolovok1 {
-     /* Library */
-  
-     font-family: 'Stolzl';
-     font-style: normal;
-     font-weight: 400;
-     font-size: 60px;
-     line-height: 60px;
-     color: #0E0E0E;
-     margin-right: 10px; /*  Добавляем  отступ  между  "Library"  и  "-"  */
-  }
-  
-  .subtitle11 {
-     /* — [ˈlaɪbrərɪ] (en.) библиотека */
-  
-     font-family: 'Inter';
-     font-style: normal;
-     font-weight: 400;
-     font-size: 28px;
-     line-height: 143%;
-     color: #6D6D6D;
-     width: auto;
-  }
-  
-  .tab{
+  height: 60px;
+  left: 306px;
+  top: 159px;
+  right: 30px;
+  display: flex; /* Это позволит отображать элементы в одну строку */
+  align-items: center; /* Выравниваем по центру по вертикали, если нужно */
+}
+.r {
+  margin-right: 30px;
+}
+
+.zagolovok1 {
+  /* Library */
+
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  color: #0e0e0e;
+  margin-right: 10px; /*  Добавляем  отступ  между  "Library"  и  "-"  */
+}
+
+.subtitle11 {
+  /* — [ˈlaɪbrərɪ] (en.) библиотека */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 143%;
+  color: #6d6d6d;
+  width: auto;
+}
+
+.tab {
   /* Табы */
-  
+
   /* Auto layout */
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0px;
   gap: 10px;
-  
+
   position: absolute;
   width: 332px;
   left: 310px;
 
   top: 240px;
- 
-  }
-  
- 
-  
-  
-  .obedinen11-sub{
-   justify-content: flex-start;
-   position: absolute;
-   display: grid;
-   grid-template-columns: 1fr;
-   gap: 16px;
-   left: 15px;
-   top: 107px;
-   overflow-x: hidden;
-   width: 100vw;
-
-  }
-
-  .obedinen-sub{
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        width: calc(100vw - 30px);
-        margin-top: -490px;
-    }
-
-
-  .filter_button-sub {
-   /* Скрываем по умолчанию */
-   display: none;
 }
 
-  @media (max-width: 1279px) {
-
-   .library_container-s{
-      position: absolute;
-      width: 172px;
-      height: 48px;
-      left: 100px;
-      top: 111px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      gap: 8px;
-   }
-   
-   .zagolovokForL-s{
-      font-size: 48px;
-      line-height: 48px;
-   }
-   
-   .subtitle1ForL-s{
-      font-size: 16px;
-        line-height: 143%;
-        white-space: nowrap;
-        margin-left: -75px;
-   }
-
-   .filters-s{
-      display: none;
-   }
-   
-   .r1-s{
-      display: flex;
-      flex-direction: column;
-   }
-   .filter-hidden {
-       display: none; /* Скрывает элементы */
-   }
-
-
-   .sub_container{
-   /* Group 8786 */
-   
- 
-   margin-top:-123px;
-   height: 49px;
-   width: 215px;
-   left: 16px;
-   right: 30px;
-   
-   align-items: center; /* Выравниваем по центру по вертикали, если нужно */
-   }
-
-   
-   .zagolovok1{
-   /* Library */ 
-font-family: 'Stolzl';
-font-style: normal;
-font-weight: 400;
-font-size: 26px;
-line-height: 26px;
-/* or 24px */
-
-/* black */
-color: #0E0E0E;
-margin-right: 10px; /*  Добавляем  отступ  между  "Library"  и  "-"  */
-margin-top:139px;
-
-   }
-
-   .subtitle11{
-/* — [ˈlaɪbrərɪ] (en.) библиотека */
-
-position: absolute;
-width: 213px;
-height: 17px;
-
-margin-top: 190px;
-
-/* mobile/h3 */
-font-family: 'Stolzl';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 124%;
-/* or 17px */
-
-/* subt */
-color: #6D6D6D;
-
-white-space: nowrap;  /* Чтобы текст писался в одну строку */
-
+.obedinen11-sub {
+  justify-content: flex-start;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  left: 15px;
+  top: 107px;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
-
-.filter_button-sub{
-/* search_btn */
-display: block; /* Включаем отображение */
-position: absolute;
-width: 24px;
-height: 24px;
-right: 16px;
-top: 180px;
-
-
+.obedinen-sub {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: calc(100vw - 30px);
+  margin-top: -490px;
 }
 
-
-.modal-overlay {
-   position: fixed; /* Фиксируем окно поверх контента */
-   top: 0;
-   left: 0;
-   width: 100vw; /* Всегда на всю ширину экрана */
-   height: 100vh; /* Всегда на всю высоту экрана */
-   background: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
-   display: flex;
-   justify-content: flex-end; /* Прижимаем контент к правому краю */
-   align-items: center;
-}
-
-.modal-content {
-   width: 420px; /* Фиксированная ширина на десктопе */
-   max-width: 100vw; /* Ограничение ширины, чтобы на мобильных было 100% */
-   height: 100vh; /* Высота на весь экран */
-   background: white; /* Фон окна */
-   padding: 20px;
-   box-sizing: border-box;
-   overflow-y: auto;
-   right: 0; /* Прижимаем к правому краю */
-}
-
-
-.arrow-icon-before{
-   /* arrow_forward */
-
-position: absolute;
-width: 16px;
-height: 16px;
-left: 0;
-top: -30px;
-
-
-
-}
-
-
-.btnApply{
-   margin-top:350px;
-}
-
-.btnThrowOff{
-   margin-top:350px;
-   margin-left: 400px;
-}
-
-
-
-
+.filter_button-sub {
+  /* Скрываем по умолчанию */
+  display: none;
 }
 
 @media (max-width: 1279px) {
-   .modal-overlay {
-      display: block; /* Показываем модальное окно при ширине экрана меньше или равной 1279px */
-   }
+  .library_container-s {
+    position: absolute;
+    width: 172px;
+    height: 48px;
+    left: 100px;
+    top: 111px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
 
-   .modal-content {
-      display: block; /* Показываем контент модального окна */
-   }
+  .zagolovokForL-s {
+    font-size: 48px;
+    line-height: 48px;
+  }
 
-   .obedinen11l {
-      /* overflow-x: hidden; */
-      width: calc(100vw - 30px);
-      margin-left: 20px;
-      /* overflow-y: hidden; */
+  .subtitle1ForL-s {
+    font-size: 16px;
+    line-height: 143%;
+    white-space: nowrap;
+    margin-left: -75px;
+  }
+
+  .filters-s {
+    display: none;
+  }
+
+  .r1-s {
+    display: flex;
+    flex-direction: column;
+  }
+  .filter-hidden {
+    display: none; /* Скрывает элементы */
+  }
+
+  .sub_container {
+    /* Group 8786 */
+
+    margin-top: -123px;
+    height: 49px;
+    width: 215px;
+    left: 16px;
+    right: 30px;
+
+    align-items: center; /* Выравниваем по центру по вертикали, если нужно */
+  }
+
+  .zagolovok1 {
+    /* Library */
+    font-family: "Stolzl";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
+    /* or 24px */
+
+    /* black */
+    color: #0e0e0e;
+    margin-right: 10px; /*  Добавляем  отступ  между  "Library"  и  "-"  */
+    margin-top: 139px;
+  }
+
+  .subtitle11 {
+    /* — [ˈlaɪbrərɪ] (en.) библиотека */
+
+    position: absolute;
+    width: 213px;
+    height: 17px;
+
+    margin-top: 190px;
+
+    /* mobile/h3 */
+    font-family: "Stolzl";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 124%;
+    /* or 17px */
+
+    /* subt */
+    color: #6d6d6d;
+
+    white-space: nowrap; /* Чтобы текст писался в одну строку */
+  }
+
+  .filter_button-sub {
+    /* search_btn */
+    display: block; /* Включаем отображение */
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 16px;
+    top: 180px;
+  }
+
+  .modal-overlay {
+    position: fixed; /* Фиксируем окно поверх контента */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Всегда на всю ширину экрана */
+    height: 100vh; /* Всегда на всю высоту экрана */
+    background: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    display: flex;
+    justify-content: flex-end; /* Прижимаем контент к правому краю */
+    align-items: center;
+  }
+
+  .modal-content {
+    width: 420px; /* Фиксированная ширина на десктопе */
+    max-width: 100vw; /* Ограничение ширины, чтобы на мобильных было 100% */
+    height: 100vh; /* Высота на весь экран */
+    background: white; /* Фон окна */
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    right: 0; /* Прижимаем к правому краю */
+  }
+
+  .arrow-icon-before {
+    /* arrow_forward */
+
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: -30px;
+  }
+
+  .btnApply {
+    margin-top: 350px;
+  }
+
+  .btnThrowOff {
+    margin-top: 350px;
+    margin-left: 400px;
+  }
 }
 
-.otstup{
-   margin-left: 0px;
-}
+@media (max-width: 1279px) {
+  .modal-overlay {
+    display: block; /* Показываем модальное окно при ширине экрана меньше или равной 1279px */
+  }
 
-.r1-s{
-   width: calc(100vw - 30px);
-   margin-left: 0px;
-}
+  .modal-content {
+    display: block; /* Показываем контент модального окна */
+  }
+
+  .obedinen11l {
+    /* overflow-x: hidden; */
+    width: calc(100vw - 30px);
+    margin-left: 20px;
+    /* overflow-y: hidden; */
+  }
+
+  .otstup {
+    margin-left: 0px;
+  }
+
+  .r1-s {
+    width: calc(100vw - 30px);
+    margin-left: 0px;
+  }
 }
 
 @media (min-width: 1280px) {
-   .modal-overlay {
-      display: none; /* Скрываем модальное окно при ширине экрана больше 1280px */
-   }
+  .modal-overlay {
+    display: none; /* Скрываем модальное окно при ширине экрана больше 1280px */
+  }
 
-   .modal-content {
-      display: none; /* Скрываем контент модального окна */
-   }
-
-
-  
-
-   
+  .modal-content {
+    display: none; /* Скрываем контент модального окна */
+  }
 }
-
-
-
-
-
-
-
-
-  
-  

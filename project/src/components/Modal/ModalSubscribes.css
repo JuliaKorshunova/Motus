@@ -1,4 +1,3 @@
-
 .modal-overlay2 {
   position: fixed; /* Фон остается фиксированным */
   top: 0;
@@ -11,7 +10,6 @@
   align-items: flex-start;
   z-index: 2000;
   overflow-y: auto;
-
 }
 
 .modal-content2 {
@@ -25,7 +23,7 @@
   z-index: 1001;
   /* padding: 20px; */
   box-sizing: border-box;
-} 
+}
 
 .thefirstrowsub {
   display: flex;
@@ -36,14 +34,14 @@
 }
 
 .newpod {
-  font-family: 'Stolzl';
+  font-family: "Stolzl";
   font-style: normal;
   font-weight: 400;
   font-size: 60px;
   line-height: 60px;
   margin-left: 49px; /* Отступ слева от текста */
   margin-right: auto; /* Используется для заполнения свободного пространства */
-  color: #0E0E0E;
+  color: #0e0e0e;
 }
 
 .close {
@@ -52,90 +50,77 @@
   /* Используйте здесь для указания размера изображения, если нужно */
 }
 
-.forauthorssection{
+.forauthorssection {
   margin-left: -227px;
   margin-top: 30px;
-  width: calc(89vw  - 10px);
+  width: calc(89vw - 10px);
 }
 
-.countofsubcribes{
+.countofsubcribes {
   display: flex;
   flex-direction: row;
 }
-.countofsubcribes2{
-
-
-/* platform/h3 */
-font-family: 'Stolzl';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 124%;
-/* identical to box height, or 25px */
-margin-right: auto;
-margin-top: 2px;
-/* subt */
-color: #6D6D6D;
-
-
+.countofsubcribes2 {
+  /* platform/h3 */
+  font-family: "Stolzl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 124%;
+  /* identical to box height, or 25px */
+  margin-right: auto;
+  margin-top: 2px;
+  /* subt */
+  color: #6d6d6d;
 }
 .newpod1 {
-  font-family: 'Stolzl';
+  font-family: "Stolzl";
   font-style: normal;
   font-weight: 400;
   font-size: 60px;
   line-height: 60px;
   margin-left: 49px; /* Отступ слева от текста */
   margin-right: 20px; /* Используется для заполнения свободного пространства */
-  color: #0E0E0E;
+  color: #0e0e0e;
 }
 
 @media (max-width: 1279px) {
   .modal-content2 {
-
     border-radius: 20px;
     width: 99vw;
     top: 100px;
-  
-    
   }
   .newpod1 {
-  
-    font-family: 'Stolzl';
+    font-family: "Stolzl";
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
     line-height: 60px;
     margin-left: 16px; /* Отступ слева от текста */
     margin-right: 8px; /* Используется для заполнения свободного пространства */
-    color: #0E0E0E;
+    color: #0e0e0e;
     z-index: 1200;
-   
   }
-  .close{
+  .close {
     z-index: 1200;
   }
 
-  .countofsubcribes2{
-
-    font-family: 'Stolzl';
+  .countofsubcribes2 {
+    font-family: "Stolzl";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 124%;
     margin-top: 5px;
-    color: #6D6D6D;
+    color: #6d6d6d;
     z-index: 1200;
-
-
   }
-  .thefirstrowsub{
- 
+  .thefirstrowsub {
     position: fixed;
     width: calc(100vw - 8px);
     margin-top: 0px;
   }
-  .wbforsub{
+  .wbforsub {
     position: absolute;
     width: 99vw;
     height: 50px;
@@ -144,11 +129,10 @@ color: #6D6D6D;
     border-radius: 20px 20px 0 0;
     margin-top: -12px;
   }
-  .forauthorssection{
+  .forauthorssection {
     margin-top: 50px;
   }
-  .whiteblocksub{
+  .whiteblocksub {
     border-radius: 20px;
   }
-
 }
