@@ -117,12 +117,10 @@ bottom: 28.5%;
 /* position: absolute; */
 width: 40vw;
 height: 40px;
-min-width: 540px;
-/* left: 310px; */
-top: 40px;
+min-width: 478px;
+left: 310px;
+top: -25px;
 position: relative;
-
-
 display: flex; /* Активируем Flexbox */
 justify-content: space-between; /* Это выравнивает элементы по краям */
 align-items: center; /* Выровнять по центру по вертикали */
@@ -239,14 +237,60 @@ a {
 
 }
 
+input:focus{
+    outline: none;
+}
+/* .forhead{
+    display: none;
+} */
+ 
+@media (min-width: 1280px) {
+
+    .usr___btn1{
+        display: none;
+    }
+    .btnformb{
+        display: none;
+    }
+
+ }
+ 
+ @media (max-width: 1440px) {
+
+    .search{
+        left: 258px;
+        width:calc(100vw - 422px - 72px - 30px - 30px - 108px - 140px);
+    }
+
+ }
 
 @media (max-width: 1279px) {
 
-
+    .image-class1{
+        margin-left: 0.7px;
+        height: 16px;
+        width: 16px;
+    }
+    .bgforbtnnblack{
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0E0E0E;
+    }
     .logo2{
         width: 60px;
-        height: 32px;
+        height: 24px;
         border-radius: 10px;
+    }
+
+    .forhead{
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        margin-top: 56px;
+        margin-left: 16px;
     }
 
     .logo{
@@ -254,20 +298,30 @@ a {
 
      
         width: 60px;
-        height: 32px;
-        left: 16px;
-        top: 56px;
+        height: 24px;
+        /* left: 16px;
+        top: 56px; */
+        left: 0px;
+        top: 0px;
 
 
+    }
+    .usr___btn1{
+     
+        height: 24px;
+        width: 24px;
+        position: relative;
+        margin-top: 0px;
+        margin-left: 0px;
     }
 
     .search { 
         /* Search */
     
     /* position: absolute; */
-    width: calc(100vw - 10px - 16px - 60px - 10px);
-    height: 32px;
-
+    width: calc(100vw - 10px - 16px - 60px - 10px - 30px - 24px - 8px - 24px - 8px + 20px - 13px);
+    height: 24px;
+    left: 0px;
     top: 0px;
     position: relative;
     min-width: 50px;
@@ -279,6 +333,9 @@ a {
     }   
     .menu {
         display: none; /* Скрываем меню */
+    }
+    .rectangle_15{
+        height: 100%;
     }
 
     .header1 {
@@ -309,7 +366,7 @@ a {
         }
 
         .rectangle_16header {   
-            height: 32px;  
+            height: 24px;  
             padding: 0px;
             border-radius: 10px;
             font-size: 12px;
@@ -325,18 +382,18 @@ a {
         width: auto;
     }
     .test{
-        width: 32px;
+        width: 24px;
     }
     .search-container {
-        height: 32px;
-        top: 56px;
+        height: 24px;
+        top: 0px;
      }
      
 
      
     .motusforheader{/* Motus */
 
-       top: -5px;
+       top: -10px;
        left: 5px;
         font-size: 20px;
     

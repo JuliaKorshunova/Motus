@@ -3,6 +3,8 @@ import './Login.css'
 import MainButton2 from '../Button/MainButton2';
 import { Link } from 'react-router-dom';
 import HeaderForLR from "../Header/HeaderForLog";
+import { useDispatch } from 'react-redux';
+// import { loginSuccess } from './authSlice';
 
 export default function Login(props) {
   
@@ -69,6 +71,7 @@ const [errorPassword, setErrorPassword] = useState('');
             setErrorPassword(''); // Сбрасываем ошибку, если пароль валиден    
         }   
     };  
+    // const dispatch = useDispatch();
     const handleSubmit = (e) => {     
         e.preventDefault();     
 
@@ -95,6 +98,9 @@ const [errorPassword, setErrorPassword] = useState('');
             setPassword('');    
   
         }    
+
+        const userData = { id: 123, username: 'example', email: 'example@email.com' }; // Пример данных пользователя
+        dispatch(loginSuccess(userData));
     };  
     const [focusedState, setFocusedState] = useState({
         input1: false,

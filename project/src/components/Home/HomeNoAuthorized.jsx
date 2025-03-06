@@ -10,7 +10,6 @@ import newbie from '/newbie.png';
 import flashed from '/flashed.png';
 import star from '/star.png';
 import donetab from '/donetab.png';
-import classes from './HomeAuthorized.module.css'
 import donewhite from '/donewhite.png';
 import stargrey from '/stargrey.png';
 import stargreen from '/stargreen.png';
@@ -33,7 +32,7 @@ import ButtonTabGreen from '../Button/ButtonTab/ButtonTabGreen';
 import ButtonTabOrange from '../Button/ButtonTab/ButtonTabOrange';
 import ButtonTabPink from '../Button/ButtonTab/ButtonTabPink';
 import { useNavigate } from 'react-router-dom';
-export default function HomeAuthorized  () {
+export default function HomeNoAuthorized  () {
 
     const [numberOfCards, setNumberOfCards] = useState(calculateNumberOfCards());
     const [numberOfCards1, setNumberOfCards1] = useState(calculateNumberOfCards1());
@@ -678,10 +677,130 @@ export default function HomeAuthorized  () {
                 </div> 
              
  </div>
+                <div className="group4_home">
+                
+                <img  src={image2} alt="Описание изображения" className='gradientSmall'></img>
+                <div className="obedinenieforhome3">
+                <section   className='cards_for_home'>
+                    <div className="pinkblockforhome1">
+                        <div className="whiteblockforhome1">
+                            <div className="text_to_reg">
+                                Хочешь с нами?
+                            </div>
+                            <div className="text_to_reg1">
+                                Регистрируйся!
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+                </div>
+    
+    
+                <div className="inputforemail"> 
+                <div className='inputplustext11'>
+                      <div className={` ${(focusedState.input1 && error.trim()==='') ? '_pink1' : '_blacknewpod45'}  ${error ? '_red1' : '_blacknewpod45'}   ${(isEmailNotEmpty && error.trim()==='' && focusedState.input1==false) ? '_green1' : '_blacknewpod45'}` } > 
+                        
+                    <input 
+                        type="email" 
+                        className={`_rectangle16 ${error ? 'rectangle-error1' : ''}`}    
+                        placeholder="Почта" 
+                        // value=''
+                        onChange={handleEmailChange}
+                        required 
+                        {...input1FocusHandlers} 
+                    />     
+                     </div>  
+                     {error && (
+                               <div className="text_for_mistake">{error}</div>
+                        )}
+                  
+                      </div> 
+                </div> 
                  
+                <div className="input2"> 
+                <div className='inputplustext11'>
+              {/* <div className={`_rectangle15_3green ${errorPassword ? 'rectangle-container-error' : ''} ${focusedState.input6 ? '_rectangle15_3pink' : ''}`} > */}
+              <div className={`  ${errorPassword ? '_red1' : '_blacknewpod44'}  ${(focusedState.input6 && errorPassword.trim()==='') ? '_pink1' : '_blacknewpod44'} ${(isPassNotEmpty && errorPassword.trim()==='' && focusedState.input4==false) ? '_green1' : '_blacknewpod44'}`} >   
+                        <input    
+                            type="password"    
+                            className={`_rectangle16 ${errorPassword ? 'rectangle-error1' : ''}`}  
+                            placeholder="Пароль"    
+                            value={password}   
+                     
+                            onChange={handlePasswordChange}    
+                            required    
+                            {...input6FocusHandlers}  
+                        />    </div>       
+                        {errorPassword && (       
+                            <div className="text_for_mistake">{errorPassword}</div>       
+                        )}       
+                    </div>   
+                </div>
+
+                <div className='forcheckboxlocation'>
+                <div className="checkbox-container">
+                        <div className='blockforcheckbox'> </div>
+                        <input 
+                            type="checkbox" 
+                            className="checkbox-input" 
+                            checked={isChecked} 
+                            onChange={handleCheckboxChange} 
+                            id="custom-checkbox"/>
+                             
+                        <label htmlFor="custom-checkbox" className="custom-checkbox"></label>
+                        <span className="text_for_checkbox">Согласен на обработку персональных данных</span>
+              </div>
+              </div>
+
+
+              <div className='forBtnReg'>
+                    {isHoveredR === true ? (
+                      <div className='bgforbtnoformlenie'>
+                        <MainButtonBig 
+                        onMouseEnter={handleMouseEnterR} 
+                        onMouseLeave={handleMouseLeaveR}   
+                        onClick={handleRegisterClick}  >
+                          Зарегистрироваться
+                        </MainButtonBig>
+                      </div>
+                      ) : (
+                      <MainButtonBig  
+                      onMouseEnter={handleMouseEnterR}  
+                      onMouseLeave={handleMouseLeaveR} 
+                      onClick={handleRegisterClick}>
+                           Зарегистрироваться
+                      </MainButtonBig>
+                    )}
+                    </div>
+                    
+              <div className='forBtnExit'>
+                    {isHoveredE === false ? 
+                    (
+                      <div className='bgforbtnoformlenie'>
+                        <SecondButton 
+                        onMouseEnter={handleMouseEnterE} 
+                        onMouseLeave={handleMouseLeaveE}     
+                        onClick={handleLoginClick}>
+                          Войти
+                        </SecondButton>
+                      </div>
+                      ) : (
+                      <SecondButton  
+                      onMouseEnter={handleMouseEnterE}  
+                      onMouseLeave={handleMouseLeaveE}
+                      onClick={handleLoginClick} >
+                           Войти
+                      </SecondButton>
+                    )}
+                    </div>
+
+
+    
+                </div>
     
 
-            <div className={classes.aauthoors}>
+            <div className='aauthoors'>
 
                 <div className="text_to_authors">
                         Начинающие авторы

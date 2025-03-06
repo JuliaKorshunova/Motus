@@ -444,7 +444,25 @@ gap: 20px;
   }
 
 
-
+  @media (max-width: 1279px) {
+    .obedinenie3forpod{
+      height: 144px;
+      width: calc(100vw - 55px);
+      margin-bottom: 0px;
+  
+    }
+    .obedinenie2forpod{
+      height: 144px;
+      margin-left: 0px;
+      width: calc(100vw - 55px);
+      min-width: 100px;
+      margin-bottom: 0px;
+    }
+    .sForPodborka{
+      width: 100%;
+    }
+  
+    }
 
   
   @media (max-width: 1439px) {
@@ -543,22 +561,4 @@ gap: 20px;
     }
   }
 
-  @media (max-width: 1279px) {
-  .obedinenie3forpod{
-    height: auto;
-    width: calc(100vw - 55px);
-    margin-bottom: 0px;
-
-  }
-  .obedinenie2forpod{
-    height: auto;
-    margin-left: 0px;
-    width: calc(100vw - 55px);
-    min-width: 100px;
-    margin-bottom: 0px;
-  }
-  .sForPodborka{
-    width: 100%;
-  }
-
-  }
+ 
