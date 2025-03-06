@@ -49,8 +49,8 @@ const ModalFilterForPodcast = ({ isModalOpen, closeModal }) => {
 
   return (
     <div className="modal-overlay active">
-      <div className="modal-content">
-        <div className="filter-wrapper">
+      <div className="modal-content-1">
+        <div className="filter-wrapper-1">
           <img
             src="/arrow_forward.svg"
             alt="Close Icon"
@@ -61,7 +61,7 @@ const ModalFilterForPodcast = ({ isModalOpen, closeModal }) => {
             Фильтрация
           </div>
 
-          <div className="slider-wrapper">
+          <div className="slider-wrapper-p">
             {/* Ползунок Продолжительность */}
             <div className="filter-duration">
               <div className="duration-text-label">Продолжительность</div>

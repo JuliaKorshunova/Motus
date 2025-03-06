@@ -39,8 +39,8 @@ const ModalFilterForPodbor = ({ isModalOpen, closeModal }) => {
 
     return (
         <div className="modal-overlay active">
-            <div className="modal-content">
-                <div className="filter-wrapper">
+            <div className="modal-content-1">
+                <div className="filter-wrapper-1">
                     <img 
                         src="/arrow_forward.svg" 
                         alt="Close Icon" 
